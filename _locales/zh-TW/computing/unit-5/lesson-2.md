@@ -1,27 +1,28 @@
 ### @explicitHints 1
 
-# Unit 5 : Lesson 2 - Animate the Wind Farm 
+# 第五單元：課程2 - 動畫風力發電場
 
-## Step 1
-Code three model blades.   
+## 步驟1
+編寫三個渦輪機葉片模型。
 
-Find a space away from your wind farm to create secret models that will be used for the animations. These can be anywhere in the world, just ideally make sure you can't see them from up on the hill.
+在離你的風力發電場遠的地方找個空間，建立秘密模型，這些將用於動畫。這些地點可以是世界中的任何地方，只要確保從山丘上看不見它們。
 
-Create your first model of the turbine blades in one specific position of rotation. In our example below, we've made the blades in **Yellow Wool**, but you can make these from anything you wish. You must create these in the direction you want them to appear in final animation, so build them facing the way you want to see them when they finally appear at the end of this lesson. 
+在特定的旋轉位置創建你的第一個渦輪機葉片模型。在我們的示例中，我們使用了**黃色羊毛**來製作這些，但你可以用任何你喜歡的材料。必須根據最終動畫中希望看到的方向建造它們，所以建造它們時要面向你希望最終看到它們的方向。
 
-Remember when you use the ``||Blocks:clone||`` tool, the orientation of whatever you copy will always be the same. For example, if a building faces east, it is always going to face east. 
+記住，當你使用``||Blocks:克隆||``工具時，複製的東西的方向始終是相同的。例如，如果一個建築物面向東方，它始終會面向東方。
 
-## Step 2
-Now create another next to this one, only design the blades to be in another state of rotation. Create the third and final variation of the blades in one more, a different state of rotation.   
+## 步驟2
+現在在這個模型旁邊創建另一個，但設計葉片處於另一個旋轉狀態。再創建第三個和最後一個不同旋轉狀態的葉片變化。
 
-These three builds are three frames of what will be an animation. Like frames of a cartoon or a movie, when quickly played one after the other, they will create the illusion of movement.  
+這三個建築是動畫的三幀。就像卡通或電影的幀一樣，快速連續播放它們，將產生運動的錯覺。
 
-Clone the model blades on your first turbine. The next phase is to code the model blades to move. We'll work on one model blade. Then, you'll be able to repeat the steps for the other two wind blades afterward. 
+克隆你第一台渦輪機上的模型葉片。接下來的階段是編寫模型葉片的移動代碼。我們將先處理一個模型葉片，然後後續再重複這些步驟來處理其他兩個風葉。
 
-## Step 3
-Select a new ``||Player:on chat command||`` code block, then change the text to **wind_turbine**. 
+## 步驟3
+選擇一個新的``||Player:on chat command||``代碼塊，然後將文字更改為**wind_turbine**。
 
-Drag a ``||Loops:repeat [4] times||`` code block to your ``||Player:on chat command||`` block. For testing purposes, we will leave it set to **4**. 
+將一個``||Loops:重複 [4] 次||``代碼塊拖到你的``||Player:on chat command||``塊中。出於測試目的，我們將保留它設置為**4**。
+
 #### ~ tutorialhint
 ``` blocks
 player.onChat("wind_turbine", function () {
@@ -31,8 +32,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 4
-Now visit the ``||Blocks:BLOCKS||`` drawer and select a ``||Blocks:clone from||`` block to your ``||Player:on chat command||`` block. 
+## 步驟4
+現在訪問``||Blocks:方塊||``抽屜並將``||Blocks:從克隆||``塊拖到你的``||Player:on chat command||``塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -49,8 +50,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 5
-Replace all three of the **relative** coordinates oval with ``||Positions:world [0] [0] [0]||`` coordinates oval from the ``||Positions:POSITIONS||`` menu.  
+## 步驟5
+用``||Positions:POSITIONS||``菜單中的``||Positions:世界 [0] [0] [0]||``坐標橢圓替換所有三個**相對**坐標橢圓。
 
 #### ~ tutorialhint
 ``` blocks
@@ -67,33 +68,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 6
-Right click on the ``||Blocks:clone from||`` code block and select **Duplicate** to create another faded version, then drag it into your code block, under the first.   
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("wind_turbine", function () {
-    for (let index = 0; index < 4; index++) {
-        blocks.clone(
-        world(0, 0, 0),
-        world(0, 0, 0),
-        world(0, 0, 0),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(0, 0, 0),
-        world(0, 0, 0),
-        world(0, 0, 0),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-    }
-})
-```
-
-## Step 7
-Create one more duplicate and place this below again, so you have three ``||Blocks:clone from||`` blocks in total. 
+## 步驟6
+右擊``||Blocks:從克隆||``代碼塊，選擇**複製**以創建另一個淡化版本，然後將其拖入你的代碼塊中，放在第一個下面。
 
 #### ~ tutorialhint
 ``` blocks
@@ -113,6 +89,31 @@ player.onChat("wind_turbine", function () {
         CloneMask.Replace,
         CloneMode.Normal
         )
+    }
+})
+```
+
+## 步驟7
+再創建一個複本，放置在下面，這樣你總共有三個``||Blocks:從克隆||``代碼塊。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("wind_turbine", function () {
+    for (let index = 0; index < 4; index++) {
+        blocks.clone(
+        world(0, 0, 0),
+        world(0, 0, 0),
+        world(0, 0, 0),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(0, 0, 0),
+        world(0, 0, 0),
+        world(0, 0, 0),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
         blocks.clone(
         world(0, 0, 0),
         world(0, 0, 0),
@@ -124,28 +125,30 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 8
-Return to your turbine blade models and note the coordinates you will need for cloning in your workbook. Set the coordinates to the top right and bottom left of each build to create an invisible cube that includes the entire blade. 
+## 步驟8
+返回你的渦輪機葉片模型，並注意你需要用它們在工作表中克隆的坐標。將坐標設置為每個建築的右上角和左下角，以創建包含整個葉片的不可見立方體。
 
-**Blade set 1** – From: **55 78 -291** To: **61 85 -291**
+**葉片組1** – 從：**55 78 -291** 到：**61 85 -291**
 
-**Blade set 2** – From: **63 78 -291** To: **69 85 -291**
+**葉片組2** – 從：**63 78 -291** 到：**69 85 -291**
 
-**Blade set 3** – From: **71 78 -291** To: **77 85 -291**
+**葉片組3** – 從：**71 78 -291** 到：**77 85 -291**
 
-## Step 9
-Input the cloning coordinates. Return to MakeCode and carefully input the coordinates for the first, second and third set of blades into ``||Blocks:clone from||`` code blocks, in the ``||Blocks:from||`` and ``||Blocks:to||`` sections. Leave the ``||Blocks:into||`` set blank for now.  
+## 步驟9
+輸入克隆坐標。返回MakeCode，仔細輸入第一、第二和第三組葉片的坐標到``||Blocks:從克隆||``代碼塊中的``||Blocks:from||``和``||Blocks:to||``部分。暫時將``||Blocks:into||``設置為空白。
 
-## Step 10
-Return to your wind turbine structure, created in **Lesson 1** of this unit.  
+## 步驟10
+返回到本單元的**課程1**中創建的風力發電結構。
 
-## Step 11
-From the top of your turbine pillar, build a tower of 20 blocks, of any kind of material. This is a test pillar to allow you to find your final coordinates. In our example, we have built one from **Yellow Wool**.  
+## 步驟11
+從你的渦輪機柱頂部開始，建造一個20個任何種類材料的方塊的塔。這是一個測試柱，讓你能找到最終坐標。在我們的示例中，我們用了**黃色羊毛**來建造這個塔。
 
-Note the coordinate of the top most block of the tower in your workbook.  
+在你的工作表中記錄
 
-## Step 12
-Then add this to the into coordinates of all three of your ``||Blocks:clone from||`` code blocks. 
+這個塔最上方塊的坐標。
+
+## 步驟12
+然後將這些添加到所有三個``||Blocks:從克隆||``代碼塊的``||Blocks:into||``坐標中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -175,29 +178,27 @@ player.onChat("wind_turbine", function () {
     }
 })
 ```
-## Step 13
-Test the cloning coordinates. Run a small test before you commit to placing your animation permanently. This part is about finding where the blades clone in when you run the command. This is likely to differ for everyone depending on the direction you placed them, the size of them, etc.  
 
-Using the center of your blades, work your way down and to the center again. In our example, we have marked this with **Orange Wool**. Write this information in your workbook. 
+## 步驟13
+測試克隆坐標。在正式放置你的動畫之前進行一小部分測試。這部分是關於找出當你運行命令時葉片克隆在哪裡。這可能因為每個人放置它們的方向、它們的大小等而有所不同。
 
-The bottom, horizontal part of this tells us that the center of our blade animation was three blocks too far to the right so that we can compensate for that later. 
+使用你的葉片的中心，從頂部到中心再從中心向下。在我們的示例中，我們用**橙色羊毛**標記了這一點。在你的工作表中寫下這些信息。
 
-Now do the same for the height, from the top of your pillar to the center of the blade animation and note it in your workbook. Again, we have marked this in **Orange Wool** and on the left this time.  
+底部的水平部分告訴我們，我們的葉片動畫的中心比實際位置向右偏了三個方塊，所以我們可以稍後進行補償。
 
-This top, vertical part tells us that the center was four blocks too high. We can compensate for both now. 
+現在做同樣的高度測量，從塔的頂部到葉片動畫的中心，並在你的工作表中記錄。再次，我們用**橙色羊毛**標記了這一點，這次在左側。
 
-Using another material, measure from your turbine's actual center point, and compensate for the direction and numbers.  
+頂部的垂直部分告訴我們，中心向上偏了四個方塊。現在使用另一種材料，從你的渦輪機的實際中心點測量，並根據方向和數字進行補償。
 
-## Step 14
-We have found our new and accurate center coordinates for our animation. Stand on this final block to get the coordinates. Note these in your workbook and add them to your code in the ``||Blocks:into||`` set of coordinates.  
+## 步驟14
+我們找到了我們的動畫的新準確中心坐標。站在這個最後的方塊上，獲取坐標。在你的工作表中記錄這些，並將它們添加到你的代碼中的``||Blocks:into||``設置的坐標中。
 
-## Step 15
-Now run your code to see if you have an accurate and working wind blade at the top of your turbine pillar. If you don't have an accurate and working wind turbine, make other adjustments as needed. Use the space in your workbook as needed for notes. 
+## 步驟15
+現在運行你的代碼，看看你在渦輪機柱頂上是否有一個準確和正常工作的風葉。如果你的風葉不正確或不工作，根據需要進行其他調整。根據需要在你的工作表上使用空間進行筆記。
 
-## Step 16
-When it's cloned correctly, remove the test blocks that you added to determine how much the test clone was off. In the example, it would be removing the **Yellow, Orange, **and **Red Wool** blocks. 
+## 步驟16
+當克隆正確時，移除你添加的測試方塊，以確定測試克隆偏離了多少。在這個例子中，將會移除**黃色、橙色**和**紅色羊毛**方塊。
 
-Don't remove your model blades! They must stay there so you can clone them on your other turbines. 
+不要刪除你的模型葉片！它們必須留在那裡，這樣你才能將它們克隆到其他渦輪機上。
 
-Animate the other turbines in your farm. Now that you finished the first one, you're ready to animate other turbines. Remember, you can use the same model coordinates and just change the ``||Blocks:into||`` coordinates input for each new turbine. 
- 
+動畫其他渦輪機在你的農場中。現在你完成了第一個，準備好動畫其他渦輪機。記住，你可以使用相同的模型坐標，只需更改每個新渦輪機的``||Blocks:into||``坐標輸入。

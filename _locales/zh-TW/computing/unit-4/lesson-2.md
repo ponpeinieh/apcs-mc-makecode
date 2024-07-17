@@ -1,26 +1,11 @@
 ### @explicitHints 1
 
-# Unit 4: Lesson 2 - Code Zoo Paths 
+# 單元 4: 第 2 課 - 編寫動物園路徑
 
-## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **zoo_path_1**. 
+## 步驟 1
+將 ``||Player:on chat command||`` 程式碼方塊中 **run** 元素改名為 **zoo_path_1**。
 
-Select the ``||Blocks:fill with||`` code block and drag it into your ``||Player:on chat command||`` block. 
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("zoo_path_1", function () {
-    blocks.fill(
-    GRASS,
-    pos(0, 0, 0),
-    pos(0, 0, 0),
-    FillOperation.Replace
-    )
-})
-```
-
-## Step 2
-Use the drop-down menu to change the type of material from **Grass** to **Gravel**. 
+選擇 ``||Blocks:fill with||`` 程式碼方塊，並將其拖放到你的 ``||Player:on chat command||`` 方塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -34,12 +19,27 @@ player.onChat("zoo_path_1", function () {
 })
 ```
 
-## Step 3
-Now open ``||Positions:POSITIONS||`` on the left-hand menu. 
+## 步驟 2
+使用下拉菜單將材料類型從 **Grass** 更改為 **Gravel**。
 
-Remember, this drawer contains code blocks that allow you to manipulate the Minecraft world through ***positions*** or ***coordinates***. Every block in a Minecraft world has a position on an X, Y, and Z axis. 
+#### ~ tutorialhint
+``` blocks
+player.onChat("zoo_path_1", function () {
+    blocks.fill(
+    GRAVEL,
+    pos(0, 0, 0),
+    pos(0, 0, 0),
+    FillOperation.Replace
+    )
+})
+```
 
-Drag two ``||Positions:world [0] [0] [0]||`` ovals onto your coding Workspace and replace the ``||Positions:[~0] [~0] [~0]||`` ovals in the ``||Blocks:from||`` and ``||Blocks:to||`` elements. 
+## 步驟 3
+現在打開左側菜單的 ``||Positions:POSITIONS||``。
+
+請記住，這個抽屜包含通過 **positions** 或 **coordinates** 操控 Minecraft 世界的程式碼方塊。Minecraft 世界中的每個方塊都有 X、Y 和 Z 軸上的位置。
+
+從 ``||Positions:world [0] [0] [0]||`` 拖放兩個橢圓形方塊到你的編碼工作區，並替換 ``||Blocks:from||`` 和 ``||Blocks:to||`` 中的 ``||Positions:[~0] [~0] [~0]||`` 橢圓形方塊。
 
 #### ~ tutorialhint
 ``` blocks
@@ -53,8 +53,8 @@ player.onChat("zoo_path_1", function () {
 })
 ```
 
-## Step 4
-Now add your first set of coordinates from **Step 3** to the ``||Blocks:from||`` set of ``||Positions:world [0] [0] [0]||`` positions. 
+## 步驟 4
+現在將來自 **步驟 3** 的第一組座標添加到 ``||Blocks:from||`` 的 ``||Positions:world [0] [0] [0]||`` 中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -68,8 +68,8 @@ player.onChat("zoo_path_1", function () {
 })
 ```
 
-## Step 5
-Do the same for the ``||Blocks:to||`` set of ``||Positions:world [0] [0] [0]||`` positions, adding your coordinates from **Step 4**. 
+## 步驟 5
+對於 ``||Blocks:to||`` 的 ``||Positions:world [0] [0] [0]||`` 中的第二組座標，添加你在 **步驟 4** 中的座標。
 
 #### ~ tutorialhint
 ``` blocks
@@ -83,10 +83,10 @@ player.onChat("zoo_path_1", function () {
 })
 ```
 
-## Step 6
-Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**.  
+## 步驟 6
+將中心的 **Y** 座標改為低一號數字。在這個例子中，這將是 **68**。
 
-Remember, the center number of coordinates represents the height, from the bottom of the world **0** to the top **256**. We must change this to one block lower because we want to change the **Grass** beneath our feet to **Grey Gravel** and the block selected as part of the original coordinates is the that of our player's legs. So if we ran the code now, the road would be one block above ground level. This way, we replace the grass instead. 
+請記住，座標的中心數字代表高度，從世界底部 **0** 到頂部 **256**。我們必須將其更改為低一個方塊，因為我們想要將我們腳下的草地替換為灰色礫石，而選擇的方塊作為原始座標的一部分是我們的玩家的腿。所以如果我們現在運行代碼，路面將位於地面水平上方一個方塊。這樣，我們就能將草地取代。
 
 #### ~ tutorialhint
 ``` blocks
@@ -99,9 +99,10 @@ player.onChat("zoo_path_1", function () {
     )
 })
 ```
-## Step 7
-Now test your code. If you have coded correctly, you should see a road appear in place of the grass.   
 
-## Step 8
-Repeat the steps for the second, third, and fourth paths using your **Green Wool, Orange Wool** and **Red Wool** markers. You can plan any path network you wish if the example below doesn't suit your plans for your zoo. 
+## 步驟 7
+現在測試你的代碼。如果編碼正確，你應該會看到草地被一條道路取代。
 
+## 步驟 8
+重複第二、第三和第四個路徑的步驟，使用你的 **Green Wool, Orange Wool** 和 **Red Wool** 標記。如果下面的示例不符合你對動物園路徑網絡的計劃，你可以計劃任何路徑網絡。
+ 

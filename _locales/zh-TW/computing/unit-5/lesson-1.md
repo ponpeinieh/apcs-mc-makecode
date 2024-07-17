@@ -1,20 +1,19 @@
+# 第五單元：課程1 - 編寫風力發電場
 
-# Unit 5 : Lesson 1 - Code a Wind Farm
+## 步驟1
+風力渦輪機組成了風力發電場。***風力渦輪機***類似於風車，當風吹到它們的葉片時會轉動。在現實生活中，當葉片轉動時，能量會轉換成電能。在我們開始建造風力發電場之前，讓我們考慮一個適合的位置。在我們的示例中，我們將使用城市附近的山丘。讓我們使用我們學到的方法編寫一個風力渦輪機，然後克隆它來建造一個發電場。
 
-## Step 1
-Wind turbines make up a wind farm. A ***wind turbine*** is like a windmill, where blades rotate when the wind hits them. In real life as the blades turn, the energy is converted to produce power. Before we start building our wind farm, let's consider a good position for one. In our example, we'll use the hill near our city. Let's use one of the methods we've learned to code a turbine, then clone it to make a farm.  
 ```template
 player.onChat("run", function(){
 })
 player.teleport(world(19, 79, -413))
 ```
 
-## Step 2
-Test yourself. You should be familiar with the two main coding build methods, ``||Agent:AGENT||`` and ``||Builder:BUILDER||``, now that we have reached the last unit. Decide how you would like to build your turbine using one of these methods. There is an example in the world for you to see just up the hill. 
+## 步驟2
+測試一下自己。現在我們已經到達最後一個單元，你應該對兩種主要的編碼建造方法——``||Agent:代理||``和``||Builder:建造者||``——非常熟悉了。決定你想要使用哪種方法來建造你的風力渦輪機。在山丘上有一個示例供你參考。
 
-## Step 3
-Use the ``||Blocks:clone||`` command from the ``||Blocks:BLOCKS||`` toolbox drawer to make more of these, if you wish.   
-
+## 步驟3
+如果需要的話，可以使用``||Blocks:方塊||``工具箱抽屜中的``||Blocks:克隆||``命令來製作更多這樣的渦輪機。
 
 ```ghost
 player.onChat("run", function () {

@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Unit 3 : Lesson 1 - Code a Park Fence
+# 單元 3：課程 1 - 編碼公園圍欄
 
-## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **park_fence**. 
+## 步驟 1
+將 ``||Player:on chat command||`` 塊中的 **run** 元素重新命名為 **park_fence**。
 
-Drag and drop the ``||Agent:agent set active slot||`` code block to the coding Workspace and add it to your  ``||Player:on chat command||`` code block.
+將 ``||Agent:agent set active slot||`` 代碼塊拖放到編碼工作區並添加到你的 ``||Player:on chat command||`` 代碼塊中。
 
 ### ~ tutorialhint
 ``` blocks
@@ -13,8 +13,8 @@ player.onChat("park_fence", function () {
     agent.setSlot(1)
 })
 ```
-## Step 2
-Drag the ``||Loops:repeat [4] times||`` into your ``||Player:on chat command||`` set and change it to **25**.
+## 步驟 2
+將 ``||Loops:repeat [4] times||`` 拖放到你的 ``||Player:on chat command||`` 中並更改為 **25**。
 
 ### ~ tutorialhint
 ``` blocks
@@ -26,10 +26,10 @@ player.onChat("park_fence", function () {
 })
 ```
 
-## Step 3
-Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeat [25] times||`` loop, then set it to **1**. 
+## 步驟 3
+將 ``||Agent:agent move [forward]||`` 代碼塊拖放到編碼工作區中，添加到你的 ``||Player:on chat command||`` 代碼塊中，在 ``||Loops:repeat [25] times||`` 循環內部，然後設置為 **1**。
 
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeats [25] times||`` loop, under the ``||Agent.agent move[forward]||`` code block, then change **forward** to **back**.
+將 ``||Agent:agent place [forward]||`` 代碼塊拖放到編碼工作區中，添加到你的 ``||Player:on chat command||`` 代碼塊中，在 ``||Loops:repeats [25] times||`` 循環中，在 ``||Agent.agent move[forward]||`` 代碼塊下方，然後將 **forward** 更改為 **back**。
 
 ### ~ tutorialhint
 ``` blocks
@@ -42,10 +42,10 @@ player.onChat("park_fence", function () {
 })
 ```
 
-## Step 4
-Drag the ``||Agent:agent turn [left]||`` code block to your ``||PLayer:on chat command||`` code block after the loop. Set it to the direction your Agent needs to turn. In our example, this is **left**. 
+## 步驟 4
+在循環後，將 ``||Agent:agent turn [left]||`` 代碼塊拖放到你的 ``||PLayer:on chat command||`` 代碼塊中。設置它為你的代理需要轉向的方向。在我們的例子中，這是 **left**。
 
-### ~ tutorialhint
+###  ~ tutorialhint
 ``` blocks
 player.onChat("park_fence", function () {
     agent.setSlot(1)
@@ -57,7 +57,10 @@ player.onChat("park_fence", function () {
 })
 ```
 
-## Step 5
-Test your code. Place your Agent on the starting block and run your code by pressing **T** to open the chat box and type **park_fence**. 
+## 步驟 5
+測試你的代碼。將你的代理放在起始塊上，按 **T** 打開聊天框並輸入 **park_fence** 來運行你的代碼。
 
-This code will only do one side at a time. Make sure your agent has enough blocks to finish each side before you run! Ask the Unit 3 Lesson 1 NPC for more blocks if you need them.
+此代碼每次只做一邊。確保你的代理在運行之前有足夠的方塊完成每一邊！如果需要，向單元 3 課程 1 NPC 索要更多方塊。
+```
+```
+

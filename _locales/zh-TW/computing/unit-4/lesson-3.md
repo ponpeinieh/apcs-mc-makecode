@@ -1,13 +1,13 @@
 ### @explicitHints 1
 
-# Unit 4: Lesson 3 - Code Animal Enclosures 
+# 單元 4: 第 3 課 - 編寫動物園獸欄
 
-## Step 1
-Tell the BUILDER where to start. In MakeCode, rename the **run** element of the ``||Player:on chat command||`` block to **ocelot_wall**. 
+## 步驟 1
+告訴建造者從哪裡開始。在 MakeCode 中，將 ``||Player:on chat command||`` 方塊中 **run** 元素改名為 **ocelot_wall**。
 
-Visit the ``||Advanced:ADVANCED||`` drawer on the left of the screen then visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
+訪問屏幕左側的 ``||Advanced:ADVANCED||`` 抽屜，然後訪問屏幕左側的 ``||Builder:BUILDER||`` 抽屜。``||Builder:BUILDER||`` 抽屜允許玩家訪問和操作 Minecraft 的位置機制。想像 ``||Builder:BUILDER||`` 就像一個看不見的 ``||Agent:Agent||``。
 
-Set the coordinates of the first to begin. Drag a ``||Builder:builder teleport to [~0] [~0] [~0]||`` block into your ``||Player:on chat command||`` block. 
+將一個 ``||Builder:builder teleport to [~0] [~0] [~0]||`` 方塊拖放到你的 ``||Player:on chat command||`` 方塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -16,10 +16,10 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 2
-Drag the``||Positions:world [0] [0] [0]||`` oval onto your coding Workspace, replacing the **relative** coordinates oval already in there. 
+## 步驟 2
+將 ``||Positions:world [0] [0] [0]||`` 橢圓形方塊拖放到你的編碼工作區，取代其中已有的 **relative** 座標橢圓形方塊。
 
-Now set the ``||Positions:world [0] [0] [0]||`` coordinates to the position you want to start building your wall. We have marked our intended start point with a **Gold Block** at the coordinates **-40, 69, -575**. Write the coordinates of your starting point, or first marker, in your workbook. 
+現在將 ``||Positions:world [0] [0] [0]||`` 座標設置為你想要開始構建牆壁的位置。我們在座標 **-40, 69, -575** 上用 **Gold Block** 標記了我們打算的起始點。在你的工作簿中寫下你的起始點或第一個標記的座標。
 
 #### ~ tutorialhint
 ``` blocks
@@ -28,17 +28,17 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 3
-Tell the BUILDER the direction. Now, we need to tell it what direction to build in. Remember, Minecraft worlds have a North to South and East to West, as well as up and down grid. The easiest way to do this is to use a Compass. 
+## 步驟 3
+告訴建造者方向。現在，我們需要告訴它在哪個方向上進行構建。記住，Minecraft 的世界有從北到南和從東到西，以及上下的網格。最簡單的方法是使用指南針。
 
-You will find a compass in your inventory.
+你可以在你的物品欄找到一個指南針。
 
-As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
+當你移動時，**指南針** 也會移動。你可以用它來找到你的北（紅色刻度指向北），東、南和西。指南針上的方向是西。這就是我們希望 ``||Builder:BUILDER||`` 工作的方向。
 
-## Step 4
-Return to the ``||Builder:BUILDER||`` drawer and look for the ``||Builder:builder face [West (negative X)||`` code block. Add this to your main code and use the drop-down menu to set the correct direction for your build. 
+## 步驟 4
+返回 ``||Builder:BUILDER||`` 抽屜，找到 ``||Builder:builder face [West (negative X)||`` 方塊。將其添加到你的主代碼中，並使用下拉菜單設置構建的正確方向。
 
-Note:  If the direction your player is facing is East, North or South, change this code block accordingly. To recap, you use the **compass** to find the direction you want the ``||Builder:BUILDER||`` to go and then enter that into this code block. 
+註：如果玩家朝東、北或南，請相應地更改此代碼方塊。總結一下，你使用 **指南針** 找到希望 ``||Builder:BUILDER||`` 前進的方向，然後將其輸入到此代碼方塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -48,8 +48,8 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 5
-Now return to the ``||Builder:BUILDER||`` menu and drag a ``||Builder:builder move [forward]||`` block to your main code. 
+## 步驟 5
+現在返回 ``||Builder:BUILDER||`` 菜單，將一個 ``||Builder:builder move [forward]||`` 方塊拖放到你的主代碼中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -60,10 +60,8 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 6
-Change the number of the ``||Builder:builder move [forward]||`` to the number of blocks you would like to build. In our example, this is **21**, but it might be different for your enclosure. 
-
-Now drag a ``||Builder:builder turn [left]||`` code block to your main code. 
+## 步驟 6
+將 ``||Builder:builder move [forward]||`` 的數字更改為你想要構建的方塊數量。在我們的例子中，這是 **21**，但你的獸欄可能不同。現在將一個 ``||Builder:builder turn [left]||`` 方塊拖放到你的主代碼中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -75,10 +73,8 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 7
-Change this to the direction you wish your ``||Builder:BUILDER||`` to face next. In our example, this will be right. 
-
-Add another ``||Builder:builder move [forward]||`` code block and change the number to the total number of blocks you would like to build in this new direction. In our example, this is **9**. 
+## 步驟 7
+將其更改為你希望 ``||Builder:BUILDER||`` 下一個面對的方向。在我們的例子中，這將是右邊。添加另一個 ``||Builder:builder move [forward]||`` 方塊，並將數字更改為這個新方向上你想要構建的總方塊數。在我們的例子中，這是 **9**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -91,10 +87,10 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 8
-Tell the BUILDER what material to use. Finally, give your ``||Builder:BUILDER||`` something to build with. Return to your ``||Builder:BUILDER||`` drawer and drag a ``||Builder:builder trace a path from mark with||`` code block to your main code. 
+## 步驟 8
+告訴建造者要使用的材料。最後，給你的 ``||Builder:BUILDER||`` 一些建造物件。返回 ``||Builder:BUILDER||`` 抽屜，將一個 ``||Builder:builder trace a path from mark with||`` 方塊拖放到你的主代碼中。
 
-This tells your builder to leave a trail of a given material in the path it traces as it moves. 
+這告訴你的建造者在移動時在其過程中留下一條給定材料的軌跡。
 
 #### ~ tutorialhint
 ``` blocks
@@ -108,8 +104,8 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 9
-Use the drop-down menu to change the material element to the material you would like your perimeter wall to be. In our example, we will use **Stone Bricks**. 
+## 步驟 9豹猫
+使用下拉菜單將材料元素更改為你希望周邊牆壁的材料。在我們的例子中，我們將使用 **石磚**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -123,14 +119,14 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 10
-Run the code to build the walls. Test your code. ``||Builder:BUILDER||`` should now start at position **-40, 69, -575** and move West by **21** blocks, turn **left** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+## 步驟 10
+運行代碼以構建牆壁。測試你的代碼。``||Builder:BUILDER||`` 現在應該從位置 **-40, 69, -575** 開始向西移動 **21** 個方塊，左轉並移動 **9** 個方塊，同時在路上放置 **石磚**。結果是一個圍繞你的豹猫圍欄的小圍牆。你會發現這比之前的 ``||Agent:Agent||`` 和 ``||Blocks:BLOCKS||`` 課程快得多。通過一些預先規劃，你可以在幾秒鐘內創建巨大的結構。
 
-## Step 11
-Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 
+## 步驟 11
+添加柵欄和其他細節。這個牆壁不能讓豹猫逃走，讓我們在上方添加柵欄，以確保它們不會逃走。
 
-## Step 12
-Repeat the above coding or adjust your existing code to do this. You will only need to change your location to one block higher and the material to **Oak Fence**. See our example: 
+## 步驟 12
+重複上述編碼或調整你現有的代碼來完成這一步。你只需要將位置更改為高一個方塊並將材料更改為 **橡木柵欄**。看看我們的例子：
 
 #### ~ tutorialhint
 ``` blocks
@@ -144,18 +140,16 @@ player.onChat("ocelot_wall", function () {
 })
 ```
 
-## Step 13
-Now we can add some features to the enclosure for the ocelot. 
+## 步驟 13
+現在我們可以為豹猫圍欄添加一些特色。
 
-Code an ocelot to the enclosure. All that remains is to introduce the ocelot to its new enclosure. 
+## 步驟 14
+在編碼窗口中添加一個新的 ``||Player:on chat command||`` 方塊並命名為 **ocelot**。
 
-## Step 14
-Bring a new ``||Player:on chat command||`` block to the coding window and name it **ocelot**. 
+## 步驟 15
+從 ``||Mobs:MOBS||`` 菜單中將一個 ``||Mobs:spawn [animal] at||`` 方塊拖放到你的新 ``||Player:on chat command||`` 代碼中。
 
-## Step 15
-Drag a ``||Mobs:spawn [animal] at||`` code block from the ``||Mobs:MOBS||`` menu to your new ``||Player:on chat command||`` code. 
-
-Use the drop-down menu to change the **animal** element to **ocelot**. 
+使用下拉菜單將 **animal** 元素更改為 **ocelot**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -164,8 +158,8 @@ player.onChat("ocelot", function () {
 })
 ```
 
-## Step 16
-Go to the ``||Positions:POSITIONS||`` drawer and grab a ``||Positions:world [0] [0] [0]||`` to replace the **relative** coordinates oval. Then change the numbers to a position inside the enclosure. In our example, we will set them to **-50, 69, -580**. 
+## 步驟 16
+前往 ``||Positions:POSITIONS||`` 抽屜，抓取一個 ``||Positions:world [0] [0] [0]||`` 來取代 **relative** 座標橢圓形。然後將數字更改為圍欄內的位置。在我們的例子中，我們將其設置為 **-50, 69, -580**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -174,8 +168,8 @@ player.onChat("ocelot", function () {
 })
 ```
 
-## Step 17
-Spawn the ocelot. Run your code. Once complete, you should see an **ocelot** appear! 
+## 步驟 17
+生成豹猫。運行你的代碼。完成後，你應該能看到一只 **豹猫** 出現！
 
-## Step 18
-Add other enclosures and animals. Now you can add more enclosures and animals, like a **wolf** and a **polar bear**. Consider their habitat and decorate their enclosures accordingly.
+## 步驟 18
+添加其他獸欄和動物。現在你可以添加更多的獸欄和動物，如 **狼** 和 **北極熊**。考慮它們的棲息地並相應地裝飾它們的獸欄。

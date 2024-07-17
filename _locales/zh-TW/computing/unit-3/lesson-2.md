@@ -1,18 +1,18 @@
 ### @explicitHints 1
 
-# Unit 3 : Lesson 2 - Code a Water Feature
+# 單元 3：課程 2 - 編碼水景
 
-## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **park_fountain**.
+## 步驟 1
+將 ``||Player:on chat command||`` 塊中的 **run** 元素重新命名為 **park_fountain**。
 
-Dig the fountain boundary. The next phase is to create the frame or boundary of the fountain. We will do this by first digging out the ground and then replacing those blocks with **Cobblestone**.
+挖掘噴泉邊界。接下來的階段是創建噴泉的框架或邊界。我們將通過先挖掘地面，然後用 **Cobblestone** 方塊替換這些方塊來完成這一步。
 
-## Step 2
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` set and leave it set to **4**.  
+## 步驟 2
+將 ``||Loops:repeat [4] times||`` 代碼塊拖放到你的 ``||Player:on chat command||`` 中，並將其設置為 **4**。
 
-This means our Agent will repeat the next set of actions four times. Because we're going to use multiple loops, this first one will be referred to as the **outer** loop.  
+這意味著我們的代理將重複執行接下來的四組動作。因為我們將使用多個循環，這第一個將被稱為 **外部** 循環。
 
-#### ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
     for (let index = 0; index < 4; index++) {
@@ -21,12 +21,12 @@ player.onChat("park_fountain", function () {
 })
 ```
 
-## Step 3
-Drag another ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` set. Place it inside the first loop.
+## 步驟 3
+將另一個 ``||Loops:repeat [4] times||`` 代碼塊拖放到你的 ``||Player:on chat command||`` 中，並將其放在第一個循環內。
 
-Add an ``||Agent:agent destroy [forward]||`` code block to the coding Workspace and set it to and use the drop-down menu to set it to **down**.
+將一個 ``||Agent:agent destroy [down]||`` 代碼塊添加到編碼工作區中，並設置為使用下拉菜單設置為 **down**。
 
-#### ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
     for (let index = 0; index < 4; index++) {
@@ -37,62 +37,61 @@ player.onChat("park_fountain", function () {
 })
 ```
 
-## Step 4
-Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, place it in the ``||Loops:repeat [4] times||`` after the block we added in the last step.
+## 步驟 4
+將 ``||Agent:agent move [forward]||`` 代碼塊拖放到編碼工作區中，在上一步添加的 ``||Loops:repeat [4] times||`` 後放置。
 
-#### ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 4; index++) {
-          agent.destroy(DOWN)
-          agent.move(FORWARD, 1)
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
         }
     }
 })
 ```
 
+## 步驟 5
+將一個 ``||Agent:agent turn [left]||`` 代碼塊放在第一個或 **外部** ``||Loops:repeat [4] times||`` 內，但在第二個或 **內部** ``||Loops:repeat [4] times||`` 外。
 
-## Step 5
-Add an ``||Agent:agent turn [left]||`` code block inside the first or **outer** ``||Loops:repeat [4] times||`` but outside the second or inner ``||Loops:repeat [4] times||``.
-
-#### ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
     for (let index = 0; index < 4; index++) {
         for (let index = 0; index < 4; index++) {
-          agent.destroy(DOWN)
-          agent.move(FORWARD, 1)
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
         }
         agent.turn(LEFT_TURN)
     }
 })
 ```
 
-## Step 6
-Test your code now. You will see your Agent dig out the ground in a 5 x 5 frame.
+## 步驟 6
+現在測試你的代碼。你將看到你的代理挖出一個 5 x 5 的框架。
 
-Fill with Cobblestone. Now we need to fill this newly formed hole with Cobblestone as a frame for the fountain.
+填充 Cobblestone。現在我們需要用 Cobblestone 填充這個新形成的洞，作為噴泉的框架。
 
-## Step 7
-Drag the ``||Agent:agent set active slot||`` code block and place it under the ``||Loops:repeat [4] times||`` inside the ``||Player:on chat command||`` blocks. The Agent does not need to repeat this, and this is part of a new action.
+## 步驟 7
+將 ``||Agent:agent set active slot||`` 代碼塊拖放到 ``||Player:on chat command||`` 塊內的 ``||Loops:repeat [4] times||`` 下方。代理不需要重複執行這個，這是一個新動作的一部分。
 
-#### ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
     for (let index = 0; index < 4; index++) {
-      for (let index = 0; index < 4; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.turn(LEFT_TURN)
+        for (let index = 0; index < 4; index++) {
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
+        }
+        agent.turn(LEFT_TURN)
     }
     agent.setSlot(1)
 })
 ```
 
-## Step 8
-Now repeat the steps, placing the new set after the ``||Agent:agent set active slot||`` and replacing only the ``||Agent:agent destroy [down]||`` with ``||Agent:agent place [down]||``.  
+## 步驟 8
+現在重複這些步驟，將新的代碼集放在 ``||Agent:agent set active slot||`` 之後，僅將 ``||Agent:agent destroy [down]||`` 替換為 ``||Agent:agent place [down]||``。
 
 #### ~ tutorialhint
 ``` blocks
@@ -115,471 +114,199 @@ player.onChat("park_fountain", function () {
 })
 ```
 
-## Step 9
-Test your code once more. Note that this time, the Agent digs out the ground and then replaces it with **Cobblestone**. This forms the frame for the fountain.
+## 步驟 9
+再次測試你的代碼。注意，這次代理會挖掘地面，然後用 **Cobblestone** 替換它。這形成了噴泉的框架。
 
-Dig inside the fountain. Now, we need to code the Agent to clear the ground away inside the fountain, so the water doesn't flood the park.
+在噴泉內部挖掘。現在，我們需要編寫代理以清理噴泉內部的地面，以防水淹過公園。
 
-## Step 10
-Drag an ``||Agent:agent move [forward]||`` code block, change it to **left** and place it last in your current code.
+## 步驟 10
+拖放一個 ``||Agent:agent move [left]||`` 代碼塊，將其更改為 **left**，並將其放在當前代碼的最後。
 
-Get another ``||Agent:agent move [forward]||`` code block, leave it set to **forward** and place it last in your current code.
+再獲取另一個 ``||Agent:agent move [forward]||`` 代碼塊，保持設置為 **forward**，並將其放在當前代碼的最後。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-    for (let index = 0; index < 4; index++) {
-      for (let index = 0; index < 4; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.turn(LEFT_TURN)
-    }
-    agent.setSlot(1)
-    for (let index = 0; index < 4; index++) {
-      for (let index = 0; index < 4; index++) {
-        agent.place(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.turn(LEFT_TURN)
-    }
+    // 前面的代碼不重複列出
     agent.move(LEFT, 1)
     agent.move(FORWARD, 1)
 })
 ```
 
-## Step 11
-Drag a ``||Loops:repeat [4] times||`` code block onto the end of your ``||Player:on chat command||`` code and set it to **3**.
+## 步驟 11
+將一個 ``||Loops:repeat [3] times||`` 代碼塊拖放到你的 ``||Player:on chat command||`` 代碼的末尾，並將其設置為 **3**。
 
-There is a 3 x 3 block of Grass in the center of the fountain frame that the Agent needs to clear. Therefore, we need to give it three actions and repeat these three times. Again, we'll refer to the first as the outer loop. And the second as the inner loop.  
+在噴泉框架的中心有一個 3 x 3 的草塊，代理需要清理。因此，我們需要給它三個動作，並重複這三個動作三次。同樣，我們將第一個稱為外部循環，第二個稱為內部循環。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
 
-  }
+    }
 })
 ```
 
-## Step 12
-Get another ``||Loops:repeat [4] times||`` code block. Place it inside the first loop and set it to **3**.  
+## 步驟 12
+再獲取一個 ``||Loops:repeat [3] times||`` 代碼塊。將其放在第一個循環內，並設置為 **3**。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 3; index++) {
 
-      }
-  }
+        }
+    }
 })
 ```
 
-## Step 13
-Next, Get your Agent to ``||Agent:agent destroy||`` and set it to **down** with the drop-down menu.
+## 步驟 13
+接下來，讓你的代理 ``||Agent:agent destroy||``，並使用下拉菜單設置為 **down**。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 3; index++) {
+            agent.destroy(DOWN)
+        }
     }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-      }
-  }
 })
 ```
 
-## Step 14
-Get your Agent to ``||Agent:agent move [forward]||`` and leave it set to **1**.
+## 步驟 14
+讓你的代理 ``||Agent:agent move [forward]||``，並將其設置為 **1**。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 3; index++) {
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
+        }
     }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
+})
+```
+
+## 步驟 15
+讓你的代理回到位置。讓你的代理 ``||Agent:agent move [back]||``，並將其設置為 **3**。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 3; index++) {
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
+        }
+        agent.move(BACK, 3)
+    }
+})
+```
+
+## 步驟 16
+讓你的代理 ``||Agent:agent move [left]||``。
+
+這將使你的代理位於要移除的下一組三個塊的開始位置，外部循環將確保這個動作重複三次。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
+    for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 3; index++) {
+            agent.destroy(DOWN)
+            agent.move(FORWARD, 1)
+        }
+        agent.move(BACK, 3)
+        agent.move(LEFT, 1)
+    }
+})
+```
+
+## 步驟 17
+測試你的代碼，觀察你的代理挖掘噴泉框架的內部。
+
+## 步驟 18
+編寫水特效。將一個 ``||Agent:agent move [forward]||`` 代碼塊拖放到你的主代碼中。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
+    agent.move(FORWARD, 1)
+})
+```
+
+## 步驟 19
+獲取一個 ``||Agent:agent move [forward]||`` 代碼塊，將 **forward** 更改為 **right**，並將數字更改為 **2**。這將使你的代理位於噴泉的中心。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
+    agent.move(RIGHT, 2)
+})
+```
+
+## 步驟 20
+獲取一個 ``||Loops:repeat [5] times||`` 代碼塊，將數字更改為 **5**。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
     for (let index = 0; index < 5; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
+
     }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-  }
 })
 ```
 
-## Step 15
-Let's get the Agent back into position. Get your Agent to ``||Agent:agent move [forward]||``, set it to **back**, and change the number to **3**.
+## 步驟 21
+返回到 ``||Agent:AGENT||`` 抽屜，獲取一個 ``||Agent:agent place [down]||`` 代碼塊，並將其添加到你的代碼中，在 ``||Loops:repeat [5] times||`` 塊內部。
+這意味著你的代理將在噴泉底部放置五塊 **Cobblestone** 中的第一塊。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-  }
-})
-```
-
-## Step 16
-Get your Agent to ``||Agent:agent move [forward]||`` and set it to **left**.
-This will place your Agent at the start of the next set of three blocks to be removed, and the outer loop will ensure this is repeated three times.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-})
-```
-
-## Step 17
-Test your code and watch your Agent dig out the inside of the fountain frame.
-
-## Step 18
-Code the water feature. Drag an ``||Agent:agent move [forward]||`` code block to your main code.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-})
-```
-
-## Step 19
-Get an ``||Agent:agent move [forward]||`` code block, change **forward** to **right** with the drop-down menu and the number to **2**. This will place your Agent in the center of the fountain.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-  agent.move(RIGHT, 2)
-})
-```
-
-## Step 20
-Get a ``||Loops:repeat [4] times||`` code block, and change the number to **5**.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-  agent.move(RIGHT, 2)
-  for (let index = 0; index < 5; index++) {
-
-  }
-})
-```
-
-
-## Step 21
-Return to the ``||Agent:AGENT||`` drawer and get an ``||Agent:agent place [down]||`` code block, and add it to your code, inside the ``||Loops:repeat [5] times||`` block.
-This means your Agent will place the first of five blocks of **Cobblestone** in the base of the fountain.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-  agent.move(RIGHT, 2)
-  for (let index = 0; index < 5; index++) {
-    agent.place(DOWN)
-  }
-})
-```
-
-
-## Step 22
-Get an ``||Agent:agent move [forward]||`` code block, add it to your code and change it to **up** with the drop-down menu.
-This will put your Agent at the top of the fountain, ready for the water to be added.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
+    // 前面的代碼不重複列出
     for (let index = 0; index < 5; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
+        agent.place(DOWN)
     }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-  agent.move(RIGHT, 2)
-  for (let index = 0; index < 5; index++) {
-    agent.place(DOWN)
-    agent.move(UP, 1)
-  }
 })
 ```
 
+## 步驟 22
+獲取一個 ``||Agent:agent move [forward]||`` 代碼塊，將其添加到你的代碼中，並將其更改為 **up**。
 
-## Step 23
-Get an ``||Agent:agent set active slot||`` code block, add it to your code and change it to **2**, which is the slot in your Agent's inventory that has the **Bucket of Water** in it, then add an ``||agent:agent place||`` **down** block.
+這將使你的代理位於噴泉的頂部，準備添加水。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("park_fountain", function () {
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.destroy(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.setSlot(1)
-  for (let index = 0; index < 4; index++) {
-    for (let index = 0; index < 4; index++) {
-      agent.place(DOWN)
-      agent.move(FORWARD, 1)
-    }
-    agent.turn(LEFT_TURN)
-  }
-  agent.move(LEFT, 1)
-  agent.move(FORWARD, 1)
-  for (let index = 0; index < 3; index++) {
-      for (let index = 0; index < 3; index++) {
-        agent.destroy(DOWN)
-        agent.move(FORWARD, 1)
-      }
-      agent.move(BACK, 3)
-      agent.move(LEFT, 1)
-  }
-  agent.move(FORWARD, 1)
-  agent.move(RIGHT, 2)
-  for (let index = 0; index < 5; index++) {
-    agent.place(DOWN)
+    // 前面的代碼不重複列出
     agent.move(UP, 1)
-  }
-  agent.setSlot(2)
-  agent.place(DOWN)
 })
 ```
 
+## 步驟 23
+獲取一個 ``||Agent:agent set active slot||`` 代碼塊，將其添加到你的代碼中，並將其設置為 **2**，這是你的代理庫存中具有 **Bucket of Water** 的槽位，然後添加一個 ``||agent:agent place||`` **down** 塊。
 
-## Step 24
-Now check and test your code before placing your fountain somewhere in the park.
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+    // 前面的代碼不重複列出
+    agent.setSlot(2)
+    agent.place(DOWN)
+})
+```
+
+## 步驟 24
+現在在將噴泉放置在公園的某個地方之前，檢查並測試你的代碼。

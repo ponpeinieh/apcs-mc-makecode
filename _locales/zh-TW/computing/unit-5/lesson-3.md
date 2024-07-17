@@ -1,47 +1,12 @@
 ### @explicitHints 1
 
-# Unit 5 : Lesson 3 - Code a Lighting System  
+# 單元 5：課程 3 - 編碼照明系統  
 
-## Step 1
-Code a wind indicator. The first thing we need to do is to create the illusion that the blades of the turbines are not always turning. Like there is not always enough wind to do this, as is the case in real life.   
-
-Use the starter code and change the value for the ``||loops:repeat||`` element from **4** to **10**. 
+## 步驟 1
+編碼風力指示器。我們首先需要做的是創建一個假象，即風力渦輪的葉片不總是在轉動。就像現實生活中有時風力不足以使其轉動一樣。更改``||loops:repeat||``元素的值，從 **4** 改為 **10**。 
 
 ```template
 player.onChat("wind_turbine", function () {
-    for (let index = 0; index < 4; index++) {
-        blocks.clone(
-        world(55, 78, -291),
-        world(61, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(63, 78, -291),
-        world(69, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(71, 78, -291),
-        world(77, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-    }
-})
-```
-
-## Step 2
-Code to generate power. Drag a ``||Blocks:place [block] at||`` code block and slot it into the first part of your code, above your ``||Loops:repeat [10] times||`` block.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("wind_turbine", function () {
-    blocks.place(GRASS, pos(0, 0, 0))
     for (let index = 0; index < 10; index++) {
         blocks.clone(
         world(55, 78, -291),
@@ -68,41 +33,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 3
-Use the drop-down menu to change the **Grass Block** element to **Block of Redstone**. Remember, **Block of Redstone** is the input block we explored earlier in our inventory.  
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("wind_turbine", function () {
-    blocks.place(REDSTONE_BLOCK, pos(0, 0, 0))
-    for (let index = 0; index < 10; index++) {
-        blocks.clone(
-        world(55, 78, -291),
-        world(61, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(63, 78, -291),
-        world(69, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(71, 78, -291),
-        world(77, 85, -291),
-        world(8, 113, -409),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-    }
-})
-```
-
-## Step 4
-Replace the **relative** coordinates oval with the ``||Positions:world [0] [0] [0]||`` coordinates oval from the ``||Positions:POSITIONS||`` toolbox drawer.  
+## 步驟 2
+生成電力。將一個``||Blocks:place [方塊] 在||``代碼塊拖放到您的代碼塊的第一部分，放在``||Loops:repeat [10] 次||``塊的上方。
 
 #### ~ tutorialhint
 ``` blocks
@@ -134,11 +66,77 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 5
-Return to your game and stand on the first block in the trench you dug for your **Redstone**. Take note of the coordinates of this block in your workbook. In our example, this is **8 81 -412**, though yours will be unique to your own build.  
+## 步驟 3
+使用下拉菜單將 **Grass Block** 元素更改為 **Block of Redstone**。請記住，**Block of Redstone** 是我們在庫存中探索過的輸入方塊。
 
-## Step 6
-In MakeCode, insert these new coordinates into your ``||Blocks:place [Block of Redstone]||`` set.  
+#### ~ tutorialhint
+``` blocks
+player.onChat("wind_turbine", function () {
+    blocks.place(REDSTONE_BLOCK, world(0, 0, 0))
+    for (let index = 0; index < 10; index++) {
+        blocks.clone(
+        world(55, 78, -291),
+        world(61, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(63, 78, -291),
+        world(69, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(71, 78, -291),
+        world(77, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+    }
+})
+```
+
+## 步驟 4
+將所有三個 **relative** 坐標橢圓替換為 ``||Positions:POSITIONS||`` 工具抽屜中的 ``||Positions:world [0] [0] [0]||`` 坐標橢圓。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("wind_turbine", function () {
+    blocks.place(REDSTONE_BLOCK, world(0, 0, 0))
+    for (let index = 0; index < 10; index++) {
+        blocks.clone(
+        world(55, 78, -291),
+        world(61, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(63, 78, -291),
+        world(69, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(71, 78, -291),
+        world(77, 85, -291),
+        world(8, 113, -409),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+    }
+})
+```
+
+## 步驟 5
+返回遊戲並站在您挖掘用於您的 **Redstone** 的壕溝中的第一個方塊上。在您的工作簿中記下此方塊的坐標。在我們的例子中，這是 **8 81 -412**，但您的坐標將是獨特於您自己的建築。
+
+## 步驟 6
+在 MakeCode 中，將這些新坐標插入到您的 ``||Blocks:place [Block of Redstone]||`` 設置中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -170,10 +168,10 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 7
-Right-click on your completed ``||Blocks:place [Block of Redstone]||`` code block and select **Duplicate**.  
+## 步驟 7
+右鍵點擊您完成的 ``||Blocks:place [Block of Redstone]||`` 代碼塊並選擇 **Duplicate**。
 
-Drag the duplicated, faded version of this code block to the bottom of your main code and place it after your third ``||Blocks:clone from||`` code block and crucially, outside the ``||Loops:LOOP||``.  
+將這個複製的、淡化的代碼塊拖放到主代碼塊的底部，放在第三個 ``||Blocks:clone from||`` 代碼塊之後，重要的是，在 ``||Loops:LOOP||`` 之外。
 
 #### ~ tutorialhint
 ``` blocks
@@ -204,10 +202,10 @@ player.onChat("wind_turbine", function () {
     }
     blocks.place(REDSTONE_BLOCK, world(8, 81, -412))
 })
-```
+``` 
 
-## Step 8
-Use the drop-down menu to change the **Block of Redstone** element to **air**.Complete code so far. Your complete code so far should look like this, but with your own coordinates
+## 步驟 8
+使用下拉菜單將 **Block of Redstone** 元素更改為 **air**。到目前為止的完整代碼。你的完整代碼應該看起來像這樣，但要使用你自己的坐標。
 
 #### ~ tutorialhint
 ``` blocks
@@ -240,16 +238,16 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 9
-Test your code. If successful, your **Redstone Lamp** will light up whenever you run your **wind_turbine** command.  
+## 步驟 9
+測試你的代碼。如果成功，每次運行你的 **wind_turbine** 命令時，你的 **Redstone Lamp** 將會亮起。  
 
-## Step 10
-Get the ``||Loops:forever||`` code block.  
+## 步驟 10
+獲取 ``||Loops:forever||`` 代碼塊。  
 
-This code block creates a loop then runs eternally. This is useful for global constants, like weather conditions or in this case, wind. 
+這個代碼塊創建一個循環，並且永遠運行。這對於全局常量非常有用，比如天氣條件或者在這種情況下，風。
 
-## Step 11
-Drag this to the coding Workspace, then click and hold your left mouse button on your ``||Blocks:place [Block of Redstone]||`` code block. Dragging your mouse while holding the left button will drag this code block and all those attached below and attach them into your new ``||Loops:forever||`` block.  
+## 步驟 11
+將其拖到編碼工作區，然後單擊並保持按住左鼠標按鈕在你的 ``||Blocks:place [Block of Redstone]||`` 代碼塊上。在拖動鼠標時保持左鍵按下，將此代碼塊及其下方所有附加的代碼塊拖放到新的 ``||Loops:forever||`` 塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -285,8 +283,8 @@ loops.forever(function () {
 })
 ```   
 
-## Step 12
-Change the number in this ``||Loops:repeat [10] times||`` to **20**. 
+## 步驟 12
+將這個 ``||Loops:repeat [10] 次||`` 中的數字更改為 **20**。 
 
 #### ~ tutorialhint
 ``` blocks
@@ -321,15 +319,15 @@ loops.forever(function () {
     blocks.place(AIR, world(8, 81, -412))
     )
 })
-```  
+```   
 
-## Step 13
-Mimic wind variation. Finally, we need to add something that means a period of no wind activity. So far, we have the turbines turning endlessly and the power going on and off very quickly. A well-placed pause in this code will give us that effect. 
+## 步驟 13
+模擬風力變化。最後，我們需要添加一些內容，表示沒有風活動的時期。到目前為止，我們的渦輪機無休止地轉動，電源快速開啟和關閉。在這段代碼中恰當的暫停將給我們帶來這種效果。
 
-## Step 14
-Return to the ``||Loops:LOOPS||`` menu and select the ``||Loops:pause (ms)||`` code block. Drag it to your code and place it immediately after your final ``||Blocks:place [Air]||`` block. Then set the number to **5000**.  
+## 步驟 14
+返回 ``||Loops:LOOPS||`` 菜單並選擇 ``||Loops:pause (ms)||`` 代碼塊。將其拖放到你的代碼中，並將其放在最後一個 ``||Blocks:place [Air]||`` 代碼塊之後。然後將數字設置為 **5000**。
 
-As a guide, 1000ms is one second of in-game time. So, setting this to 5000ms will give us a pause in our animation of 5 seconds. Simulating a loss of wind power for 5 seconds. 
+作為指南，1000ms 是遊戲內時間的一秒。因此，將其設置為5000ms將使我們的動畫暫停5秒。模擬風力停電5秒的效果。
 
 #### ~ tutorialhint
 ``` blocks
@@ -365,5 +363,6 @@ loops.forever(function () {
     loops.pause(5000)
 })
 ```
-## Step 15
-Run your code. Test your code. Your blades should now be turning 20 times, before stopping for 5 seconds and doing this on an endless loop. Your **Redstone Lamp** should light up only when the blades are turning. If it doesn't work, go back to review your code and make adjustments as needed. Then you can repeat the steps for your other turbines.
+
+## 步驟 15
+運行你的代碼。測試你的代碼。你的風葉片現在應該轉動20次，然後停止5秒，並在無休止循環中進行。你的 **Redstone Lamp** 應該只在風葉片轉動時亮起。如果它沒有工作，回到代碼中進行審查並進行必要的調整。然後，你可以重複這些步驟來完成你的其他渦輪機。

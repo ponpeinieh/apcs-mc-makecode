@@ -1,69 +1,69 @@
 ### @explicitHints 1
 
-# Unit 3: Lesson 3 - Plant Some Flowers 
+# 單元 3: 第 3 課 - 種植一些花朵
 
-## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **plant_flowers**. 
+## 步驟 1
+將 ``||Player:on chat command||`` 程式碼方塊中 **run** 元素改名為 **plant_flowers**。
 
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to the number of blocks you have along one side of your park. In our example, we will set this to **20**. 
+拖放 ``||Loops:repeat [4] times||`` 程式碼方塊到你的 ``||Player:on chat command||`` 方塊中，並設置數字為你公園一邊的方塊數。在我們的示例中，我們將這個數字設置為 **20**。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
     	
     }
 })
 ```
 
-## Step 2
-Now drag the ``||Agent:agent set active slot||`` code block inside the ``||loops: repeat loop||``.    
+## 步驟 2
+現在將 ``||Agent:agent set active slot||`` 程式碼方塊拖放到 ``||loops:repeat loop||`` 內部。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(1)
     }
 })
 ```
 
-## Step 3
-Visit a new toolbox drawer in the left menu, called the ``||Math:MATH||`` drawer. 
+## 步驟 3
+前往左側菜單中的新工具箱抽屜，名為 ``||Math:MATH||``。
 
-The blocks in this drawer allow you to use mathematics within your code.
+這個抽屜中的方塊允許你在代碼中使用數學運算。
 
-Drag and drop the ``||Math:pick random [0] to [10]||`` code block to your ``||Player:on chat command||`` and place it as replacement for the number element of your ``||Agent:agent set active slot||``. 
+將 ``||Math:pick random [0] to [10]||`` 程式碼方塊拖放到你的 ``||Player:on chat command||`` 方塊中，並將其放置在 ``||Agent:agent set active slot||`` 的數字元素位置。
 
-This means that you have coded your Agent pick a random slot in its inventory, rather than choosing one slot specifically. 
+這意味著你的代理現在會隨機選擇一個庫存槽位，而不是特定選擇一個槽位。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(0, 10))
     }
 })
 ```
 
-## Step 4
-Set the first number to **1** and the second to **5**, corresponding with the five slots in the agent's inventory. 
+## 步驟 4
+將第一個數字設置為 **1**，第二個數字設置為 **5**，對應於代理庫存中的五個槽位。
+
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
     }
 })
 ```
 
-
-## Step 5
-Code your Agent randomly move around. Now visit the ``||Agent:Agent||``drawer and drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace.   
+## 步驟 5
+編寫你的代理隨機移動。現在訪問 ``||Agent:Agent||`` 抽屜，將 ``||Agent:agent move [forward]||`` 程式碼方塊拖放到編碼工作區。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
         agent.move(FORWARD, 1)
@@ -71,14 +71,16 @@ player.onChat(" plant_flowers", function () {
 })
 ```
 
-## Step 6
-Add another ``||Math:pick random [0] to [10]||`` to replace the number oval of the ``||Agent:agent move [forward]||``. Change the second number of the ``||Math:pick random [0] to [10]||`` to **20**. 
+## 步驟 6
+再次添加一個 ``||Math:pick random [0] to [10]||`` 來取代 ``||Agent:agent move [forward]||`` 中的數字橢圓形。
 
-When this line of code is added, your Agent will move forward to a random block between its current position and 20 blocks ahead. 
+將 ``||Math:pick random [0] to [10]||`` 的第二個數字更改為 **20**。
+
+當這行代碼被添加時，你的代理會向前移動到其當前位置和 20 個方塊之間的隨機位置。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
         agent.move(FORWARD, Math.randomRange(0, 20))
@@ -86,46 +88,47 @@ player.onChat(" plant_flowers", function () {
 })
 ```
 
-## Step 7
-Drag two ``||Agent:agent place [forward]||`` code blocks to the coding Workspace, setting the second one to **back** with the drop-down menu. 
+## 步驟 7
+將兩個 ``||Agent:agent place [forward]||`` 程式碼方塊拖放到編碼工作區，並使用下拉菜單將第二個方塊設置為 **back**。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
-    for (let index = 0; index < 20; index++) {
-        agent.setSlot(Math.randomRange(1, 5))
-        agent.move(FORWARD, Math.randomRange(0, 20))
-        agent.place(FORWARD)
-        agent.place(BACK)
-    }
-})
-
-```
-
-## Step 8
-Drag another ``||Agent:agent set active slot||`` code block to the coding Workspace. Revisit the ``||Math:MATH||`` drawer and add another ``||Math:pick random [0] to [10]||``. Add it to your ``||Agent:agent set active slot||`` code block and change the numbers to 1 and 5. 
-
-#### ~ tutorialhint
-``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
         agent.move(FORWARD, Math.randomRange(0, 20))
         agent.place(FORWARD)
         agent.place(BACK)
+    }
+})
+```
+
+## 步驟 8
+再次拖放一個 ``||Agent:agent set active slot||`` 程式碼方塊到編碼工作區。
+
+返回 ``||Math:MATH||`` 抽屜，並添加另一個 ``||Math:pick random [0] to [10]||``。將其添加到你的 ``||Agent:agent set active slot||`` 程式碼方塊中，並將數字更改為 1 和 5。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("plant_flowers", function () {
+    for (let index = 0; index < 20; index++) {
+        agent.setSlot(Math.randomRange(1, 5))
+        agent.move(FORWARD, Math.randomRange(0, 20))
+        agent.place(FORWARD)
+        agent.place(BACK)
         agent.setSlot(Math.randomRange(1, 5))
     }
 })
 ```
 
-## Step 9
-Now revisit the ``||Agent:Agent||`` drawer and select an ``||Agent:agent move [forward]||`` code block to the coding Workspace, setting it to **back** with the drop-down menu. 
+## 步驟 9
+現在回到 ``||Agent:Agent||`` 抽屜，並選擇一個 ``||Agent:agent move [forward]||`` 程式碼方塊到編碼工作區，將其設置為 **back**。
 
-Select another ``||Math:pick another pick random [0] to [10]||`` and add it to your ``||Agent:agent move [back]||`` code block and set the numbers to **0** and **20**. 
+選擇另一個 ``||Math:pick another pick random [0] to [10]||``，並將其添加到你的 ``||Agent:agent move [back]||`` 程式碼方塊中，並將數字設置為 **0** 和 **20**。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
         agent.move(FORWARD, Math.randomRange(0, 20))
@@ -137,14 +140,14 @@ player.onChat(" plant_flowers", function () {
 })
 ```
 
-## Step 10
-Now visit the ``||Agent:Agent||`` drawer and drag two ``||Agent:agent place [forward]||`` code blocks to the coding Workspace, setting the second one to **back**. 
+## 步驟 10
+現在前往 ``||Agent:Agent||`` 抽屜，將兩個 ``||Agent:agent place [forward]||`` 程式碼方塊拖放到編碼工作區，並將第二個設置為 **back**。
 
-Finally, drag an ``||Agent:agent move [left]||`` code block to the coding Workspace to finish this code. 
+最後，拖放一個 ``||Agent:agent move [left]||`` 程式碼方塊到編碼工作區，完成這段代碼。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat(" plant_flowers", function () {
+player.onChat("plant_flowers", function () {
     for (let index = 0; index < 20; index++) {
         agent.setSlot(Math.randomRange(1, 5))
         agent.move(FORWARD, Math.randomRange(0, 20))
@@ -159,7 +162,9 @@ player.onChat(" plant_flowers", function () {
 })
 ```
 
-## Step 11
-Position your Agent and run the code. Position your Agent at one corner of your park, with the back of the Agent against a fence and with the main body of the park to the left.
+## 步驟 11
+將你的代理定位並運行代碼。將你的代理放在公園的一個角落，使代理的
 
-Test your code. Your Agent should now move forward to a random location, plant two randomly selected flowers, move backward, do the same and move left to start again. This will create a random meadow of flowers. 
+背部靠著柵欄，公園的主體在左邊。
+
+測試你的代碼。你的代理現在應該會向前移動到一個隨機位置，種植兩種隨機選擇的花朵，後退，再重複一次，然後向左移動，以此類推。這樣就可以創建一個隨機的花卉草地。

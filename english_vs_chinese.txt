@@ -1,0 +1,50 @@
+``||Player:on chat command||``
+``||player:玩家 在聊天指令為||``
+
+``||Agent:agent set active slot||``
+``||Agent:Agent 將物品槽 [1] 設爲使用中||``
+
+``||Agent:agent [place on move]||``
+``||Agent:Agent 能力 [移動時放置(place on move)]||``
+
+
+``||Loops:LOOPS||``
+``||Loops:迴圈||``
+
+``||Loops:repeat [4] times||``
+``||Loops:重複 [4] 次||``
+
+`||Agent:AGENT||``
+`||Agent:代理||``
+
+``||Agent:agent move [forward]||``
+``||agent:Agent 移動 [前]||``
+
+``||Agent:agent turn [left]||``
+``||agent:Agent 轉動 [左]||``
+
+``||Agent:forward||``
+``||Agent:前||``
+
+``||Agent:agent destroy [forward]||``
+``||agent:Agent 破壞 [前]||``
+
+``||Agent:agent place [forward]||``
+``||Agent:Agent 放置 [前]||``
+
+``||Blocks:clone from||``
+``||Blocks:方塊 複製 開始位置||``
+
+
+``||Blocks:to||`` 
+``||Blocks:起點||`` 
+
+``||Blocks:into||``
+``||Blocks:終點||`` 
+
+
+``||Positions:POSITIONS||``
+``||positions:坐標||`` 
+
+``||Positions:world||``
+``||positions:世界 [0] [0] [0]||``

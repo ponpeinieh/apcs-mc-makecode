@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Unit 4: Lesson 1 - Code a Zoo Entrance
+# 單元 4: 第 1 課 - 編寫動物園入口
 
-## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **build_gates**.
+## 步驟 1
+將 ``||Player:on chat command||`` 程式碼方塊中 **run** 元素改名為 **build_gates**。
 
-Drag the ``||Agent:agent set active slot||`` code block to the coding Workspace and leave it set it to **1**. Then add a ``||Agent:agent move [forward]||`` block and use the drop-down menu to change it to **up**, and leave the number at **1**.
+拖放 ``||Agent:agent set active slot||`` 程式碼方塊到你的編碼工作區，並設置數字為 **1**。然後添加一個 ``||Agent:agent move [forward]||`` 程式碼方塊，使用下拉菜單將其設置為 **up**，數字設置為 **1**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -15,8 +15,8 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 2
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to **15**. This is going to be a large gate.
+## 步驟 2
+將 ``||Loops:repeat [4] times||`` 程式碼方塊拖放到你的 ``||Player:on chat command||`` 方塊中，並將數字設置為 **15**。這將是一個大門。
 
 #### ~ tutorialhint
 ``` blocks
@@ -29,27 +29,10 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 3
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace and use the drop-down menu to set it to **down**.   
+## 步驟 3
+將 ``||Agent:agent place [forward]||`` 程式碼方塊拖放到編碼工作區中，使用下拉菜單將其設置為 **down**。
 
-Add an ``||Agent:agent move [forward]||`` code block to your main code, use the drop-down menu to change it to **right**, and leave the number at **1**.
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("build_gates", function () {
-    agent.setSlot(1)
-    agent.move(UP, 1)
-    for (let index = 0; index < 15; index++) {
-        agent.place(DOWN)
-        agent.move(RIGHT, 1)
-    }
-})
-```
-
-## Step 4
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.
-
-Drag another ``||Agent:agent move [forward]||`` code block to the coding Workspace, leaving it set to **forward** and **1**.
+在你的主要代碼中添加一個 ``||Agent:agent move [forward]||`` 程式碼方塊，使用下拉菜單將其設置為 **right**，數字設置為 **1**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -59,17 +42,14 @@ player.onChat("build_gates", function () {
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
-        agent.place(DOWN)
-        agent.move(FORWARD, 1)
     }
 })
 ```
 
+## 步驟 4
+從 ``||Agent:Agent||`` 抽屜中拖放另一個 ``||Agent:agent place [forward]||`` 程式碼方塊，將其設置為 **down**。
 
-## Step 5
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.
-
-Then also add a ``||Agent:agent move [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **left**, leaving the number at **1**.
+再次從 ``||Agent:Agent||`` 抽屜中拖放一個 ``||Agent:agent move [forward]||`` 程式碼方塊到編碼工作區，保持設置為 **forward** 和 **1**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -81,15 +61,14 @@ player.onChat("build_gates", function () {
         agent.move(RIGHT, 1)
         agent.place(DOWN)
         agent.move(FORWARD, 1)
-        agent.place(DOWN)
-        agent.move(LEFT, 1)
     }
 })
 ```
 
-## Step 6
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.  
-Now we just need to get our ``||Agent:Agent||`` to the next starting position to complete this part of the gate's code.
+## 步驟 5
+從 ``||Agent:Agent||`` 抽屜中拖放另一個 ``||Agent:agent place [forward]||`` 程式碼方塊，將其設置為 **down**。
+
+然後再從 ``||Agent:Agent||`` 抽屜中拖放一個 ``||Agent:agent move [forward]||`` 程式碼方塊到編碼工作區，將其設置為 **left**，數字設置為 **1**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -103,13 +82,34 @@ player.onChat("build_gates", function () {
         agent.move(FORWARD, 1)
         agent.place(DOWN)
         agent.move(LEFT, 1)
+    }
+})
+```
+
+## 步驟 6
+從 ``||Agent:Agent||`` 抽屜中拖放另一個 ``||Agent:agent place [forward]||`` 程式碼方塊，將其設置為 **down**。
+
+現在，我們只需將我們的 ``||Agent:Agent||`` 移動到下一個起始位置，以完成門的這部分代碼。
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("build_gates", function () {
+    agent.setSlot(1)
+    agent.move(UP, 1)
+    for (let index = 0; index < 15; index++) {
+        agent.place(DOWN)
+        agent.move(RIGHT, 1)
+        agent.place(DOWN)
+        agent.move(FORWARD, 1)
+        agent.place(DOWN)
+        agent.move(LEFT, 1)
         agent.place(DOWN)
     }
 })
 ```
 
-## Step 7
-Revisit the ``||Agent:Agent||`` drawer, drag two more ``||Agent:agent move [forward]||`` code blocks to the coding Workspace, and connect under the ``||Agent:agent place [down]||`` block. Use the drop-down menu to change **forward** to **back** in the first one and the **forward** to **up** in the second one.  
+## 步驟 7
+返回 ``||Agent:Agent||`` 抽屜，拖放兩個 ``||Agent:agent move [forward]||`` 程式碼方塊到編碼工作區，並連接到 ``||Agent:agent place [down]||`` 方塊下方。使用下拉菜單在第一個方塊中將 **forward** 改為 **back**，在第二個方塊中將 **forward** 改為 **up**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -129,19 +129,20 @@ player.onChat("build_gates", function () {
     }
 })
 ```
-## Step 8
-Position your Agent on either **Yellow wool** blocks using your whistle.
 
-## Step 9
-Run your code. Type your ``||Player:on chat command||`` into the chat function **T** and watch your Agent build the first pillar of the gate.
+## 步驟 8
+使用哨子將你的代理定位在 **黃羊毛** 方塊上。
 
-## Step 10
-Repeat this for the second pillar. Position your Agent on the other **Yellow wool** block with your whistle, then run your code again. You should now have two wooden pillars.  
+## 步驟 9
+運行你的代碼。在聊天功能中輸入你的 ``||Player:on chat command||``，然後觀察你的代理建造門的第一支柱。
 
-## Step 11
-Code the sign entrance. Now we need to add the sign at the top.   
+## 步驟 10
+重複這個步驟來建造第二支柱。使用哨子將你的代理定位在另一個 **黃羊毛** 方塊上，然後再次運行你的代碼。現在你應該有兩個木柱。
 
-Get a new ``||Player:on chat command||`` block and rename the **jump** element to **zoo_sign**.
+## 步驟 11
+編寫標誌入口。現在我們需要在頂部添加標誌。
+
+獲取一個新的 ``||Player:on chat command||`` 方塊，並將 **jump** 元素改名為 **zoo_sign**。
 
 #### ~ tutorialhint
 ``` blocks
@@ -165,18 +166,20 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 12
-Select the ``||Blocks:print [HELLO]||`` code block, and drag it to your new on chat command code block.
+## 步驟 12
+選擇 ``||Blocks:print [HELLO]||`` 程式碼方塊，並將其拖放到你的新的 on chat command 代碼方塊中。
 
-Change the **HELLO** text to **ZOO**.
+將 **HELLO** 文本更改為 **ZOO**。
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat("zoo_sign", function () {
+player.on
+
+Chat("zoo_sign", function () {
     blocks.print(
     "ZOO",
-    GRASS,
-    pos(0, 0, 0),
+    LOG_OAK,
+    world(0, 0, 0),
     WEST
     )
 })
@@ -197,10 +200,10 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 13
-Use the drop-down menu to change the type of block material from **Grass** to **Oak Wood**.
+## 步驟 13
+使用下拉菜單將方塊材料類型從 **Grass** 更改為 **Oak Wood**。
 
-Drag a ``||Positions:world [0] [0] [0]||`` oval, replacing the ``||Positions:[~0] [~0] [~0]||`` oval inside your ``||Blocks:print [ZOO]||`` block.
+拖放一個 ``||Positions:world [0] [0] [0]||`` 橢圓形方塊，替換你的 ``||Blocks:[~0] [~0] [~0]||`` 橢圓形方塊，放入你的 ``||Blocks:print [ZOO]||`` 方塊中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -229,10 +232,10 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 14
-Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-31, 83, -560**. Take a moment to remember the importance of the minus when using these numbers.
+## 步驟 14
+更改 ``||Positions:world||`` 位置中的座標，將其設置為你希望文字開始的位置。在我們的示例中，這是 **-31, 83, -560**。在使用這些數字時，請記住負號的重要性。
 
-This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in.
+這可能需要在你的世界中進行一些試驗和錯誤，具體取決於你選擇創建多少字母、它們放置在哪裡以及它們的方向如何。
 #### ~ tutorialhint
 ``` blocks
 player.onChat("zoo_sign", function () {
@@ -260,8 +263,8 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 15
-Change the ``||Blocks:along||`` value to suit the direction you would like the text to go. In our example, this is **North (negative Z)**, but in your own version, it might be different.  
+## 步驟 15
+更改 ``||Blocks:along||`` 的值，以適應你希望文字走的方向。在我們的示例中，這是 **North (negative Z)**，但在你自己的版本中，可能會有所不同。
 
 #### ~ tutorialhint
 ``` blocks
@@ -290,5 +293,5 @@ player.onChat("build_gates", function () {
 })
 ```
 
-## Step 16
-Run the code. Time to test your code. Enter the **zoo_sign** command into the chat **T** function and press Enter. You will see the word **ZOO** appear in the sky above the zoo gates.
+## 步驟 16
+運行代碼。測試你的代碼。在聊天功能中輸入 **zoo_sign** 命令，然後按 Enter 鍵。你將看到 **ZOO** 這個詞出現在動物園門上空中。

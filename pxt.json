@@ -1,5 +1,5 @@
 {
-    "name": "apcs_mc_makecode",
+    "name": "apcs-mc-makecode",
     "version": "1.0.0",
     "dependencies": {
         "core": "*",

@@ -2,7 +2,7 @@
 ### @explicitHints true
 
 
-# Lesson 3
+# Unit 1 : Lesson 3
 
 ## Step 1
 With everything you have learnt so far, can you code your agent to build a bridge across the water? 

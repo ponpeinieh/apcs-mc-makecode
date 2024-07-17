@@ -2,7 +2,7 @@
 ### @explicitHints 1
 
 
-# Lesson 1
+# Unit 1 : Lesson 1 
 
 ## Step 1
 To code a conversation with your Agent select an ``||player:on chat||`` command and rename it from **run** to **hello**. Select a ``||player: say||`` command and drag it inside the ``||player:on chat||`` command.

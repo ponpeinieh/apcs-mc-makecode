@@ -100,7 +100,7 @@ player.onChat("wind_turbine", function () {
 ```
 
 ## 步驟 4
-將所有三個 **relative** 坐標橢圓替換為 ``||Positions:POSITIONS||`` 工具抽屜中的 ``||Positions:world [0] [0] [0]||`` 坐標橢圓。
+將所有三個 **relative** 座標橢圓替換為 ``||Positions:POSITIONS||`` 工具抽屜中的 ``||Positions:world [0] [0] [0]||`` 座標橢圓。
 
 #### ~ tutorialhint
 ``` blocks
@@ -133,10 +133,10 @@ player.onChat("wind_turbine", function () {
 ```
 
 ## 步驟 5
-返回遊戲並站在您挖掘用於您的 **Redstone** 的壕溝中的第一個方塊上。在您的工作簿中記下此方塊的坐標。在我們的例子中，這是 **8 81 -412**，但您的坐標將是獨特於您自己的建築。
+返回遊戲並站在您挖掘用於您的 **Redstone** 的壕溝中的第一個方塊上。在您的工作簿中記下此方塊的座標。在我們的例子中，這是 **8 81 -412**，但您的座標將是獨特於您自己的建築。
 
 ## 步驟 6
-在 MakeCode 中，將這些新坐標插入到您的 ``||Blocks:place [Block of Redstone]||`` 設置中。
+在 MakeCode 中，將這些新座標插入到您的 ``||Blocks:place [Block of Redstone]||`` 設置中。
 
 #### ~ tutorialhint
 ``` blocks
@@ -205,7 +205,7 @@ player.onChat("wind_turbine", function () {
 ``` 
 
 ## 步驟 8
-使用下拉菜單將 **Block of Redstone** 元素更改為 **air**。到目前為止的完整代碼。你的完整代碼應該看起來像這樣，但要使用你自己的坐標。
+使用下拉菜單將 **Block of Redstone** 元素更改為 **air**。到目前為止的完整代碼。你的完整代碼應該看起來像這樣，但要使用你自己的座標。
 
 #### ~ tutorialhint
 ``` blocks

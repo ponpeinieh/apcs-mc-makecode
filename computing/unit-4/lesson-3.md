@@ -124,7 +124,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Run the code to build the walls. Test your code. ``||Builder:BUILDER||`` should now start at position **-40, 69, -575** and move West by **21** blocks, turn **left** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+Run the code to build the walls. Test your code. ``||Builder:BUILDER||`` should now start at position **-40, 69, -575** and move West by **21** blocks, turn **right** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
 
 ## Step 11
 Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 

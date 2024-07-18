@@ -14,7 +14,7 @@ agent.collectAll()
 ```
 
 ## 步驟一
-將``||player:玩家 在聊天指令為||``方塊的 **run** 重新命名為 **road_1**。選擇``||blocks:方塊 填充||``代碼塊並將其拖曳到你的``||player:玩家 在聊天指令為||``方塊中。
+將``||player:玩家 在聊天指令為||``代碼方塊的 **run** 重新命名為 **road_1**。選擇``||blocks:方塊 填充||``代碼方塊並將其拖曳到你的``||player:玩家 在聊天指令為||``代碼方塊中。
 
 ### ~ tutorialhint
 ``` blocks
@@ -45,8 +45,8 @@ player.onChat("road_1", function () {
 ```
 
 ## 步驟三
-現在打開``||positions:坐標||``工具箱抽屜，將``||positions:世界 [0] [0] [0]||``代碼塊拖到你的編程工作區。
-將``||positions:世界 [0] [0] [0]||``代碼塊拖曳並替換``||blocks:方塊 填充||``方塊中的``||positions: 相對||``位置方塊。
+現在打開``||positions:坐標||``工具箱抽屜，將``||positions:世界 [0] [0] [0]||``代碼方塊拖到你的編程工作區。
+將``||positions:世界 [0] [0] [0]||``代碼方塊拖曳並替換``||blocks:方塊 填充||``代碼方塊中的``||positions: 相對||``位置代碼方塊。
 
 ### ~ tutorialhint
 ``` blocks
@@ -61,7 +61,7 @@ player.onChat("road_1", function () {
 ```
 
 ## 步驟四
-從``||positions:坐標||``工具箱抽屜中再拖一個``||positions:世界 [0] [0] [0]||``位置代碼塊，並替換``||blocks:方塊 填充||``方塊中的第二個``||positions:相對||位置方塊。
+從``||positions:坐標||``工具箱抽屜中再拖一個``||positions:世界 [0] [0] [0]||``代碼方塊，並替換``||blocks:方塊 填充||``代碼方塊中的第二個``||positions:相對||``代碼方塊。
 
 ### ~ tutorialhint
 ``` blocks

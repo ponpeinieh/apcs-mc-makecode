@@ -29,7 +29,7 @@ player.onChat("park_fence", function () {
 ## 步驟 3
 將 ``||agent:Agent 移動 [前]||`` 代碼方塊拖放到編碼工作區中，添加到你的 ``||player:玩家 在聊天指令為||`` 代碼方塊中，在 ``||Loops:重複 [25] 次||`` 迴圈內部，然後距離設為 **1**。
 
-將 ``||Agent:Agent 放置 [前]||`` 代碼方塊拖放到編碼工作區中，添加到你的 ``||player:玩家 在聊天指令為||`` 代碼方塊中，在 ``||Loops:重複 [25] 次||`` 迴圈中，在 ``||agent:Agent 移動 [前]||`` 代碼方塊下方，然後將 **前** 更改為 **後**。
+將 ``||Agent:Agent 放置 [前]||`` 代碼方塊拖放到編碼工作區中，添加到你的 ``||player:玩家 在聊天指令為||`` 代碼方塊中，在 ``||Loops:重複 [25] 次||`` 迴圈中，在 ``||agent:Agent 移動 [前]||`` 代碼方塊下方，然後將**前**方改為**後**方。
 
 ### ~ tutorialhint
 ``` blocks
@@ -43,9 +43,9 @@ player.onChat("park_fence", function () {
 ```
 
 ## 步驟 4
-在迴圈後，將 ``||agent:Agent 轉動 [左]||`` 代碼方塊拖放到你的 ``||player:玩家 在聊天指令為||`` 代碼方塊中。設置你的代理需要轉向的方向。在我們的例子中，方向是 **左** 邊。
+在迴圈後，將 ``||agent:Agent 轉動 [左]||`` 代碼方塊拖放到你的 ``||player:玩家 在聊天指令為||`` 代碼方塊中。設置你的代理需要轉的方向。在我們的例子中，方向是**左**邊。
 
-###  ~ tutorialhint
+### ~ tutorialhint
 ``` blocks
 player.onChat("park_fence", function () {
     agent.setSlot(1)

@@ -134,8 +134,8 @@ Repeat the above coding or adjust your existing code to do this. You will only n
 
 #### ~ tutorialhint
 ``` blocks
-player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-38, 69, -576))
+player.onChat("ocelot_fence", function () {
+    builder.teleportTo(world(-38, 70, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)

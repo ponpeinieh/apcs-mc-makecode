@@ -1,0 +1,12 @@
+/setblock -60 68 -575 minecraft:yellow_wool 
+/setblock -60 68 -585 minecraft:lime_wool 
+/setblock -60 68 -555 minecraft:lime_wool 
+/setblock -40 68 -543 minecraft:orange_wool 
+/setblock -70 68 -555 minecraft:red_wool 
+/setblock -40 68 -555 minecraft:red_wool 
+
+
+
+
+
+  

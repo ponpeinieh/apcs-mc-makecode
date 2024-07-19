@@ -48,3 +48,42 @@
 
 ``||Positions:world||``
 ``||positions:世界 [0] [0] [0]||``
+
+``||Blocks:print [HELLO]||``
+``||Blocks:方塊 輸出 [HELLO]||``
+
+``||Blocks:fill with||``
+``||Blocks:方塊 填充||``
+
+``||Math:MATH||``
+``||Math:數學||``
+
+``||Math:pick random [0] to [10]||``
+``||Math:pick random [0] to [10]||``
+
+``||Advanced:ADVANCED||``
+``||Advanced:進階||``
+
+``||Builder:BUILDER||``
+``||Builder:建造器||``
+
+``||Builder:builder teleport to [~0] [~0] [~0]||``
+``||Builder:建造器 傳送到 [~0] [~0] [~0]||``
+
+``||Builder:builder face [West (negative X)||``
+``||Builder:建造器 面向 [西 (West)||``
+
+``||Builder:builder move [forward]||``
+``||Builder:建造器 移動 方向 [前(forward)]||``
+
+``||Builder:builder turn [left]||``
+``||Builder:建造器 轉動 方向 [左(left)]||``
+
+``||Builder:builder trace a path from mark with||``
+``||Builder:建造器 追蹤路徑 使用||``
+
+``||Mobs:MOBS||``
+``||Mobs:生物||``
+
+``||Mobs:spawn [animal] at||``
+``||Mobs:生物 生成 [動物] 於||``

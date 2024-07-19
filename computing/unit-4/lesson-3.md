@@ -19,12 +19,12 @@ player.onChat("ocelot_wall", function () {
 ## Step 2
 Drag the``||Positions:world [0] [0] [0]||`` oval onto your coding Workspace, replacing the **relative** coordinates oval already in there. 
 
-Now set the ``||Positions:world [0] [0] [0]||`` coordinates to the position you want to start building your wall. We have marked our intended start point with a **Gold Block** at the coordinates **-40, 69, -575**. Write the coordinates of your starting point, or first marker, in your workbook. 
+Now set the ``||Positions:world [0] [0] [0]||`` coordinates to the position you want to start building your wall. We have marked our intended start point with a **Gold Block** at the coordinates **-38, 69, -576**. Write the coordinates of your starting point, or first marker, in your workbook. 
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
 })
 ```
 
@@ -43,7 +43,7 @@ Note:  If the direction your player is facing is East, North or South, change th
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
 })
 ```
@@ -54,7 +54,7 @@ Now return to the ``||Builder:BUILDER||`` menu and drag a ``||Builder:builder mo
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 1)
 })
@@ -68,7 +68,7 @@ Now drag a ``||Builder:builder turn [left]||`` code block to your main code.
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(LEFT_TURN)
@@ -83,7 +83,7 @@ Add another ``||Builder:builder move [forward]||`` code block and change the num
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -99,7 +99,7 @@ This tells your builder to leave a trail of a given material in the path it trac
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -114,7 +114,7 @@ Use the drop-down menu to change the material element to the material you would 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -124,7 +124,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Run the code to build the walls. Test your code. ``||Builder:BUILDER||`` should now start at position **-40, 69, -575** and move West by **21** blocks, turn **right** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+Run the code to build the walls. Test your code. ``||Builder:BUILDER||`` should now start at position **-38, 69, -576** and move West by **21** blocks, turn **right** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
 
 ## Step 11
 Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 
@@ -135,7 +135,7 @@ Repeat the above coding or adjust your existing code to do this. You will only n
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)

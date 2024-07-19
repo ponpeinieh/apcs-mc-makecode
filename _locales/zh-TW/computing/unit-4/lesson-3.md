@@ -23,12 +23,12 @@ player.onChat("ocelot_wall", function () {
 ## 步驟 2
 將 ``||positions:世界 [0] [0] [0]||`` 座標代碼方塊拖放到你的編碼工作區，取代其中的 ``||positions:相對[~0] [~0] [~0]||`` 座標代碼方塊。
 
-現在將 ``||positions:世界 [0] [0] [0]||`` 座標設置為你想要開始構建牆壁的位置。我們用 **黃色羊毛** 方塊標記了我們打算的起始點，這個位置的座標是 **-40, 69, -575** 。你可以使用不一樣的座標。
+現在將 ``||positions:世界 [0] [0] [0]||`` 座標設置為你想要開始構建牆壁的位置。我們用 **黃色羊毛** 方塊標記了我們打算的起始點，這個位置的座標是 **-38, 69, -576** 。你可以使用不一樣的座標。
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
 })
 ```
 
@@ -43,7 +43,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
 })
 ```
@@ -54,7 +54,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 1)
 })
@@ -67,7 +67,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(LEFT_TURN)
@@ -82,7 +82,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -98,7 +98,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -113,7 +113,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -123,7 +123,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## 步驟 10
-執行代碼以構建牆壁。``||Builder:建造器||`` 現在應該從位置 **-40, 69, -575** 開始向西移動 **21** 個方塊，右轉並移動 **9** 個方塊，同時在路上放置 **石磚**。建構的結果是一個小圍牆。你會發現這比之前使用的 ``||Agent:代理||`` 和 ``||Blocks:方塊||`` 建構方式快得多。通過一些預先規劃，你可以在幾秒鐘內創建巨大的結構。
+執行代碼以構建牆壁。``||Builder:建造器||`` 現在應該從位置 **-38, 69, -576** 開始向西移動 **21** 個方塊，右轉並移動 **9** 個方塊，同時在路上放置 **石磚**。建構的結果是一個小圍牆。你會發現這比之前使用的 ``||Agent:代理||`` 和 ``||Blocks:方塊||`` 建構方式快得多。通過一些預先規劃，你可以在幾秒鐘內創建巨大的結構。
 
 ## 步驟 11
 添加柵欄和其他細節。這個牆壁的目的是不讓豹猫逃走，所以下一步我們可以在上方添加柵欄，以確保它們不會逃走。
@@ -134,7 +134,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-38, 69, -576))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)

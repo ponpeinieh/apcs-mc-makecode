@@ -149,9 +149,10 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 11
+There is a 3 x 3 block of Grass in the center of the fountain frame that the Agent needs to clear. Therefore, we need to give it three actions and repeat these three times. Again, we'll refer to the first as the outer loop. And the second as the inner loop.  
+
 Drag a ``||Loops:repeat [4] times||`` code block onto the end of your ``||Player:on chat command||`` code and set it to **3**.
 
-There is a 3 x 3 block of Grass in the center of the fountain frame that the Agent needs to clear. Therefore, we need to give it three actions and repeat these three times. Again, we'll refer to the first as the outer loop. And the second as the inner loop.  
 
 #### ~ tutorialhint
 ``` blocks

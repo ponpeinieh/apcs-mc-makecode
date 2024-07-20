@@ -123,8 +123,45 @@ player.onChat("build_a_structure.", function () {
 ## 步驟 10
 現在，我們需要重複這個過程，建造四層墻壁。這需要另一個迴圈。返回``||Loops:迴圈||``抽屜，將另一個``||Loops:重複 [4] 次||``帶到您的編碼工作區，但這次，我們所要重複的工作是剛剛完成的建構一層牆壁的步驟。
 
+### ~ tutorialhint
+
+``` blocks
+player.onChat("build_a_structure.", function () {
+    agent.setSlot(1)
+    agent.setAssist(PLACE_ON_MOVE, true)
+    for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 5)
+            agent.turn(LEFT_TURN)
+        }
+        agent.move(UP, 1)
+        agent.setAssist(PLACE_ON_MOVE, false)
+        agent.move(RIGHT, 1)
+    }
+})
+```
+
 ## 步驟 11
 返回``||Agent:代理||``工具箱抽屜，添加另一個``||Agent:Agent 能力 [移動時放置(place on move)]||``，並將啓用設置為 **開**。測試您的代碼。
+
+### ~ tutorialhint
+
+``` blocks
+player.onChat("build_a_structure.", function () {
+    agent.setSlot(1)
+    agent.setAssist(PLACE_ON_MOVE, true)
+    for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 5)
+            agent.turn(LEFT_TURN)
+        }
+        agent.move(UP, 1)
+        agent.setAssist(PLACE_ON_MOVE, false)
+        agent.move(RIGHT, 1)
+        agent.setAssist(PLACE_ON_MOVE, true)
+    }
+})
+```
 
 ## 步驟 12
 我們接著建構屋頂。從``||Agent:代理||``工具箱抽屜，添加另一個``||Agent:Agent 將物品槽 [1] 設爲使用中||``，但設置為 **2**(使用 **石頭半磚**)。使用另一個迴圈，使代理前進 5 格，然後左移。然後讓代理後退 5 格，再次左移。然後重複 3 次。

@@ -126,8 +126,45 @@ player.onChat("build_a_structure.", function () {
 Now, we need to repeat this process for the four layers of wall. This will require another loop. 
 Return to your ``||Loops:LOOPS||`` drawer and bring another ``||Loops:repeat [4] times||`` to your coding Workspace, only this time, we want to repeat the walls building steps. 
 
+### ~ tutorialhint
+
+``` blocks
+player.onChat("build_a_structure.", function () {
+    agent.setSlot(1)
+    agent.setAssist(PLACE_ON_MOVE, true)
+    for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 5)
+            agent.turn(LEFT_TURN)
+        }
+        agent.move(UP, 1)
+        agent.setAssist(PLACE_ON_MOVE, false)
+        agent.move(RIGHT, 1)
+    }
+})
+```
+
 ## Step 11
 Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent [place on move]||``, and set it to **true**. Test your code. 
+
+### ~ tutorialhint
+
+``` blocks
+player.onChat("build_a_structure.", function () {
+    agent.setSlot(1)
+    agent.setAssist(PLACE_ON_MOVE, true)
+    for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 4; index++) {
+            agent.move(FORWARD, 5)
+            agent.turn(LEFT_TURN)
+        }
+        agent.move(UP, 1)
+        agent.setAssist(PLACE_ON_MOVE, false)
+        agent.move(RIGHT, 1)
+        agent.setAssist(PLACE_ON_MOVE, true)
+    }
+})
+```
 
 ## Step 12
 Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent set active slot||``, and set it to **2**. Use another loop to make the agent move forward 5 blocks and then move left. Then move the agent back 5 blocks and move left again. This should be repeated 3 times to make the roof using **Stone Slabs**.

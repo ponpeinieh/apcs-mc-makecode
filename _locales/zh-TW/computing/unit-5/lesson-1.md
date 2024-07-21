@@ -24,6 +24,7 @@ player.onChat("run", function () {
     CloneMask.Replace,
     CloneMode.Normal
     )
+    blocks.fill(GRASS, world(0, 0, 0), world(0, 0, 0),FillOperation.Replace)
     agent.destroy(FORWARD)
     agent.place(FORWARD)
     agent.setAssist(PLACE_ON_MOVE, false)

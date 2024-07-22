@@ -45,8 +45,7 @@ player.onChat("road_1", function () {
 ```
 
 ## 步驟三
-現在打開``||positions:座標||``工具箱抽屜，將``||positions:世界 [0] [0] [0]||``代碼方塊拖到你的編程工作區。
-將``||positions:世界 [0] [0] [0]||``代碼方塊拖曳並替換``||blocks:方塊 填充||``代碼方塊中的``||positions: 相對||``位置代碼方塊。
+現在打開``||positions:座標||``工具箱抽屜，將``||positions:世界 [0] [0] [0]||``代碼方塊拖到你的編程工作區，並替換``||blocks:方塊 填充||``代碼方塊中的``||positions: 相對||``位置代碼方塊。
 
 ### ~ tutorialhint
 ``` blocks

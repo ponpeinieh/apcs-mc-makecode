@@ -20,7 +20,7 @@
 
 ![預計葉片地點圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_location.png)
 
-![預計葉片地點圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png)
+![葉片一圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png)
 
 #### ~ tutorialhint
 ``` blocks
@@ -39,6 +39,9 @@ player.onChat("wind_blade"，function () {
 在這個未裁剪的葉片模型旁邊，用複製方式再創建另外兩個相同的模型。當我們將這三個模型裁剪成我們想要的葉片樣式之後，這三個模型就是動畫的三幀(frame)。就像卡通或電影的幀一樣，快速連續播放它們，將產生運動的錯覺。
 
 我們可以利用``||Blocks:方塊 複製||`` 代碼方塊來創建另外兩個相同的模型。
+
+![未剪裁葉片圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades_uncarved.png)
+
 
 #### ~ tutorialhint
 ``` blocks
@@ -68,6 +71,8 @@ player.onChat("clone_wind_blade"，function () {
 我們知道山上的風力渦輪機面向南邊。你必須先確認渦輪葉片的中心的坐標，是不是位於(7，98，-408)位置之上? 我們可以由此而計算出它的左下角位置，即(4，95，-408)。這也是我們要將山下的葉片模型複製的位置。
 
 我們可以利用``||Blocks:方塊 複製||`` 代碼方塊來測試。
+
+![渦輪中心圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/turbine_center.png)
 
 #### ~ tutorialhint
 ``` blocks

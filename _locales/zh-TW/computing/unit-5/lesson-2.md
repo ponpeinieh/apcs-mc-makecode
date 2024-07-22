@@ -18,9 +18,9 @@
 
 這個未剪裁的葉片是一個**7x7**方塊大小的正方形墻壁。我們可以使用``||blocks:方塊 填充||``代碼方塊來建造。整個墻面主體是**青色羊毛**，但在中央放置了一個**黃色羊毛**做爲標記。
 
-![預計葉片地點圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_location.png)
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_location.png" alt="預計葉片地點圖片" width="200"/>
 
-![葉片一圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png)
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png" alt="葉片一圖片" width="200"/>
 
 #### ~ tutorialhint
 ``` blocks
@@ -40,8 +40,7 @@ player.onChat("wind_blade"，function () {
 
 我們可以利用``||Blocks:方塊 複製||`` 代碼方塊來創建另外兩個相同的模型。
 
-![未剪裁葉片圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades_uncarved.png)
-
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades_uncarved.png" alt="未剪裁葉片圖片" width="400"/>
 
 #### ~ tutorialhint
 ``` blocks

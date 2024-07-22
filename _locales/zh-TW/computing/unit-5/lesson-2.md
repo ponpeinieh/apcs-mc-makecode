@@ -18,6 +18,10 @@
 
 這個未剪裁的葉片是一個**7x7**方塊大小的正方形墻壁。我們可以使用``||blocks:方塊 填充||``代碼方塊來建造。整個墻面主體是**青色羊毛**，但在中央放置了一個**黃色羊毛**做爲標記。
 
+![預計葉片地點圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_location.png)
+
+![預計葉片地點圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png)
+
 #### ~ tutorialhint
 ``` blocks
 player.onChat("wind_blade"，function () {
@@ -129,7 +133,7 @@ player.onChat("test_blade_3"，function () {
 ## 步驟8
 現在我們可以將牆壁裁切成我們想要的葉片形狀。
 
-![建築區圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades.png)
+![完成葉片圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades.png)
 
 
 ## 步驟9

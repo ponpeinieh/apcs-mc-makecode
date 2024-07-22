@@ -18,9 +18,7 @@
 
 這個未剪裁的葉片是一個**7x7**方塊大小的正方形墻壁。我們可以使用``||blocks:方塊 填充||``代碼方塊來建造。整個墻面主體是**青色羊毛**，但在中央放置了一個**黃色羊毛**做爲標記。
 
-<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_location.png" alt="預計葉片地點圖片" width="200"/>
-
-<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1.png" alt="葉片一圖片" width="200"/>
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blade_1s.png" alt="葉片一圖片" width="400"/>
 
 #### ~ tutorialhint
 ``` blocks
@@ -71,7 +69,7 @@ player.onChat("clone_wind_blade"，function () {
 
 我們可以利用``||Blocks:方塊 複製||`` 代碼方塊來測試。
 
-![渦輪中心圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/turbine_center.png)
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/turbine_center.png" alt="渦輪中心圖片" width="200"/>
 
 #### ~ tutorialhint
 ``` blocks
@@ -137,8 +135,7 @@ player.onChat("test_blade_3"，function () {
 ## 步驟8
 現在我們可以將牆壁裁切成我們想要的葉片形狀。
 
-![完成葉片圖片](https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades.png)
-
+<img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades.png" alt="完成葉片圖片" width="400"/>
 
 ## 步驟9
 最後我們完成這個動畫。

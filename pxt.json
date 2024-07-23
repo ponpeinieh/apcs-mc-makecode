@@ -1,6 +1,6 @@
 {
     "name": "apcs-mc-makecode",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "dependencies": {
         "core": "*",
         "builder": "*"

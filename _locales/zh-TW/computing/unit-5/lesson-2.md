@@ -133,7 +133,7 @@ player.onChat("test_blade_3"，function () {
 ```
 
 ## 步驟8
-現在我們可以將牆壁裁切成我們想要的葉片形狀。
+現在我們可以手動方式將牆壁裁切成我們想要的葉片形狀。
 
 <img src="https://raw.githubusercontent.com/ponpeinieh/apcs-mc-makecode/master/computing/unit-5/blades.png" alt="完成葉片圖片" width="400"/>
 

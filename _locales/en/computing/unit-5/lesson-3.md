@@ -79,7 +79,7 @@ Use the dropdown menu to change ``||Blocks:Grass||`` to ``||Blocks:Block of Reds
 
 Next, open the ``||positions:POSITIONS||`` drawer and drag the ``||positions:world [0] [0] [0]||`` code block into your workspace.
 
-Replace the ``||blocks:relative||`` position code block in the ``||Blocks:place [block] at||`` code block with the ``||positions:world [0] [0] [0]||`` code block.
+Replace the ``||positions:relative||`` position code block in the ``||Blocks:place [block] at||`` code block with the ``||positions:world [0] [0] [0]||`` code block.
 
 #### ~ tutorialhint
 ``` blocks

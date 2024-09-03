@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Secure the Area
+# 確保區域安全
 
-## Step 1
-Program the Agent to construct an **oak fence**. The agent needs to place **oak fence** blocks to the right, destroy obstacles and move forward. The fence should be **17 blocks** long. 
+## 步驟 1
+編程代理建造**橡木圍欄**。代理需要將**橡木圍欄**方塊放置在右側，破壞障礙物並向前移動。圍欄應該是**17個方塊**長。
 
 #### ~ tutorialhint
-Ensure that the Agent places blocks on the right and destroys blocks on the left. 
+確保代理在右側放置方塊，在左側破壞方塊。
 
 ```blocks
 player.onChat("fence", function () {

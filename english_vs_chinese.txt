@@ -1,89 +1,108 @@
-``||Player:on chat command||``
-``||player:玩家 在聊天指令為||``
+Before you do the translation , 
+I have summaried the term I need for your reference. 
+The English block names and its Chinese counterparts are listed below. 
+Please kindly follow. 
 
-``||Agent:agent set active slot||``
-``||Agent:Agent 將物品槽 [1] 設爲使用中||``
+||Player:on chat command||
+||player:玩家 在聊天指令為||
 
-``||Agent:agent [place on move]||``
-``||Agent:Agent 能力 [移動時放置(place on move)]||``
+||Agent:agent set active slot||
+||Agent:Agent 將物品槽 [1] 設爲使用中||
+
+||Agent:agent [place on move]||
+||Agent:Agent 能力 [移動時放置(place on move)]||
+
+||Agent:agent set block||
+||Agent:agent 道具設爲 ||
+
+||Agent:agent set block or item||
+||Agent:agent 道具設爲 ||
+
+||Agent:agent detect block||
+||Agent:agent 偵測 方塊||
+
+||Agent:agent inspect block||
+||Agent:agent 偵查 方塊||
+
+||Loops:LOOPS||
+||Loops:迴圈||
+
+||Loops:repeat [4] times||
+||Loops:重複 [4] 次||
+
+||loops:while||
+||Loops:重複 判斷||
+
+||Agent:AGENT||
+||Agent:代理||
+
+||Agent:agent move [forward]||
+||agent:Agent 移動 [前]||
+
+||Agent:agent turn [left]||
+||agent:Agent 轉動 [左]||
+
+||Agent:forward||
+||Agent:前||
+
+||Agent:agent destroy [forward]||
+||agent:Agent 破壞 [前]||
+
+||Agent:agent place [forward]||
+||Agent:Agent 放置 [前]||
+
+||Blocks:clone from||
+||Blocks:方塊 複製 開始位置||
 
 
-``||Loops:LOOPS||``
-``||Loops:迴圈||``
+||Blocks:to|| 
+||Blocks:起點|| 
 
-``||Loops:repeat [4] times||``
-``||Loops:重複 [4] 次||``
-
-`||Agent:AGENT||``
-`||Agent:代理||``
-
-``||Agent:agent move [forward]||``
-``||agent:Agent 移動 [前]||``
-
-``||Agent:agent turn [left]||``
-``||agent:Agent 轉動 [左]||``
-
-``||Agent:forward||``
-``||Agent:前||``
-
-``||Agent:agent destroy [forward]||``
-``||agent:Agent 破壞 [前]||``
-
-``||Agent:agent place [forward]||``
-``||Agent:Agent 放置 [前]||``
-
-``||Blocks:clone from||``
-``||Blocks:方塊 複製 開始位置||``
+||Blocks:into||
+||Blocks:終點|| 
 
 
-``||Blocks:to||`` 
-``||Blocks:起點||`` 
+||Positions:POSITIONS||
+||positions:坐標|| 
 
-``||Blocks:into||``
-``||Blocks:終點||`` 
+||Positions:world||
+||positions:世界 [0] [0] [0]||
 
+||Blocks:print [HELLO]||
+||Blocks:方塊 輸出 [HELLO]||
 
-``||Positions:POSITIONS||``
-``||positions:坐標||`` 
+||Blocks:fill with||
+||Blocks:方塊 填充||
 
-``||Positions:world||``
-``||positions:世界 [0] [0] [0]||``
+||Math:MATH||
+||Math:數學||
 
-``||Blocks:print [HELLO]||``
-``||Blocks:方塊 輸出 [HELLO]||``
+||Math:pick random [0] to [10]||
+||Math:pick random [0] to [10]||
 
-``||Blocks:fill with||``
-``||Blocks:方塊 填充||``
+||Advanced:ADVANCED||
+||Advanced:進階||
 
-``||Math:MATH||``
-``||Math:數學||``
+||Builder:BUILDER||
+||Builder:建造器||
 
-``||Math:pick random [0] to [10]||``
-``||Math:pick random [0] to [10]||``
+||Builder:builder teleport to [~0] [~0] [~0]||
+||Builder:建造器 傳送到 [~0] [~0] [~0]||
 
-``||Advanced:ADVANCED||``
-``||Advanced:進階||``
+||Builder:builder face [West (negative X)||
+||Builder:建造器 面向 [西 (West)||
 
-``||Builder:BUILDER||``
-``||Builder:建造器||``
+||Builder:builder move [forward]||
+||Builder:建造器 移動 方向 [前(forward)]||
 
-``||Builder:builder teleport to [~0] [~0] [~0]||``
-``||Builder:建造器 傳送到 [~0] [~0] [~0]||``
+||Builder:builder turn [left]||
+||Builder:建造器 轉動 方向 [左(left)]||
 
-``||Builder:builder face [West (negative X)||``
-``||Builder:建造器 面向 [西 (West)||``
+||Builder:builder trace a path from mark with||
+||Builder:建造器 追蹤路徑 使用||
 
-``||Builder:builder move [forward]||``
-``||Builder:建造器 移動 方向 [前(forward)]||``
+||Mobs:MOBS||
+||Mobs:生物||
 
-``||Builder:builder turn [left]||``
-``||Builder:建造器 轉動 方向 [左(left)]||``
-
-``||Builder:builder trace a path from mark with||``
-``||Builder:建造器 追蹤路徑 使用||``
-
-``||Mobs:MOBS||``
-``||Mobs:生物||``
-
-``||Mobs:spawn [animal] at||``
-``||Mobs:生物 生成 [動物] 於||``
+||Mobs:spawn [animal] at||
+||Mobs:生物 生成 [動物] 於|| 

@@ -5,14 +5,13 @@
 ### @explicitHints 1
 
 
-# Separated Family!
+# 分隔的家庭！
 
-## Step 1
-Program the Agent to build a bridge across the chasm in the ice. Ensure that the Agent has **64** blocks of **oak planks** in the inventory. 
+## 步驟 1
+程式設置代理在冰上的裂縫處建立一座橋。確保代理的庫存中有 **64** 個 **橡木木板**。
 
 #### ~ tutorialhint 
-Don't forget to use **not** in your **while** loop. Think where you want the Agent to place blocks. 
-
+不要忘記在 **while** 循環中使用 **not**。考慮一下你希望代理放置方塊的位置。
 
 ```ghost
 player.onChat("family", function () {
@@ -24,5 +23,4 @@ player.onChat("family", function () {
         agent.turn(LEFT_TURN)
     }
 })
-
-``` 
+```

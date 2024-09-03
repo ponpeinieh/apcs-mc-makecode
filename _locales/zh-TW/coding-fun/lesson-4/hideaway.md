@@ -5,14 +5,14 @@
 ### @explicitHints 1
 
 
-# Bamboo Hideaway
+# 竹子藏身處
 
-## Step 1
-Program the Agent to plant **3** blocks of bamboo on each side of the sand patch. Add an ``||agent: agent turn||``command to make sure the Agent can complete the activity. 
+## 步驟 1
+編程代理在沙地的每一邊種植**3**個竹子。添加一個``||agent:Agent 轉動||``指令，確保代理可以完成這個任務。
 
 #### ~ tutorialhint
-There should be 2 **repeat** loops, one nested inside the other.
- 
+應該有兩個**重複**循環，一個嵌套在另一個內部。
+
 ```ghost
 player.onChat("bamboo", function () {
     for (let index = 0; index < 3; index++) {
@@ -23,5 +23,4 @@ player.onChat("bamboo", function () {
     agent.turn(RIGHT_TURN)
 })
 ```
-
 

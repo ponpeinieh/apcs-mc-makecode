@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Locate the cub!
+# 尋找小熊！
 
-## Step 1
-Program the Agent to dig a path without knowing how far it goes by using ``||loops:while||`` & ``||agent:agent detect||`` commands. The Agent needs to ``||agent:destroy forward & up||`` for you to be able to walk through all the snow! When done, press the **Play** button to compile the code. Don't forget to run your code in Minecraft. 
+## 步驟 1
+程式設置代理挖掘一條不知道多遠的路徑，使用 ``||Loops:重複 判斷||`` 和 ``||Agent:agent 偵查 方塊||`` 命令。代理需要 ``||Agent:Agent 破壞 [前] 和 [上]||``，讓你能夠穿過所有的雪！完成後，按下 **Play** 按鈕來編譯代碼。不要忘記在 Minecraft 中執行你的代碼。
 
 #### ~ tutorialhint 
-Look at the coding snippets shapes when you snap them together. Use ``||agent:agent move forward||``.
+查看代碼片段的形狀當你將它們拼接在一起時。使用 ``||agent:Agent 移動 [前]||``。
 
 ```template
 player.onChat("cub", function () {
@@ -29,5 +29,4 @@ player.onChat("cub", function () {
         agent.destroy(UP)
     }
 })
-
 ``` 

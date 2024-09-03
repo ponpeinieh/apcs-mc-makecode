@@ -5,19 +5,19 @@
 ### @explicitHints 1
 
 
-# Higher Ground!
+# 高地！
 
-## Step 1
-Program the Agent to build a tower with **oak** blocks that is **10** blocks high. First, ensure that the Agent has **64** blocks of **oak plank**  using ``||agent:set block or item||`` command. Program the Agent to place oak planks **forward**, **left** & **right** by using ``||agent:agent place||`` block. The Agent needs to **move up** after placing the blocks.  
-
-#### ~ tutorialhint 
-Try using ``||loops:repeat||`` block and change the number to **10**. 
-
-## Step 2
-Program the Agent to move **down** from the tower and construct **ladder** that is **10** blocks high. You need the ladder so that you can climb up!
+## 步驟 1
+程式設置代理以建立一座高 **10** 塊的 **橡木** 塔。首先，確保代理擁有 **64** 塊 **橡木板**，使用 ``||Agent:agent 道具設爲 ||`` 命令。程式設置代理放置橡木板 **前方**、**左方** 和 **右方**，使用 ``||agent:Agent 放置 [前]||`` 區塊。在放置這些方塊後，代理需要 **向上移動**。
 
 #### ~ tutorialhint 
-Don't forget to select **64** blocks of **ladder** in the Agent's inventory using ``||agent: agent set block||``, so that the Agent can place the ladder. 
+試著使用 ``||Loops:重複 [10] 次||`` 區塊。
+
+## 步驟 2
+程式設置代理從塔上 **向下移動** 並構建 **梯子**，高度為 **10** 塊。你需要梯子才能爬上去！
+
+#### ~ tutorialhint 
+不要忘記在代理的庫存中選擇 **64** 塊 **梯子**，使用 ``||Agent:agent 道具設爲 ||``，以便代理能夠放置梯子。 
 
 
 ```ghost
@@ -30,7 +30,4 @@ player.onChat("tower", function () {
     }
     agent.move(DOWN, 10)
 })
-
-``` 
-
-
+```

@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# The great chasm!
+# 巨大的裂縫！
 
-## Step 1
-Program the Agent to **build a bridge** across the chasm in the ice. Use ``||agent:set block or item||`` to ensure that the Agent has the necessary materials in the inventory. Select the **oak** as a building material & **64** for the **amount of blocks**. ``||loops:while||`` the Agent does **not** detect blocks down, program the Agent to place the oak planks **down** and move **forward** to create a bridge.    
-
+## 步驟 1
+程式設計代理人**建造一座橋**橫跨冰中的裂縫。使用 ``||agent:Agent 將物品槽 [1] 設爲使用中||`` 以確保代理人擁有必要的材料。選擇 **橡木** 作為建材，並設置 **64** 為 **方塊數量**。當代理人**未**檢測到前方的方塊時，使用 ``||Loops:重複 判斷||`` 程式設計代理人將橡木木板 **向下** 放置並 **向前** 移動以建造橋樑。
 
 ```template
 player.onChat("chasm", function () {
@@ -30,6 +29,4 @@ player.onChat("chasm", function () {
         agent.move(FORWARD, 1)
     }
 })
-
 ``` 
-

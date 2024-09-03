@@ -6,10 +6,10 @@
 ### @explicitHints 1
 
 
-# Program the Agent to move along the turtle tracks!
+# 程式設計代理人沿著海龜軌道移動！
 
-## Step 1
-Move the Agent along the turtle tracks by using an ``||agent: agent move forward||`` block to the gates. When done, press the **Play** button to compile the code. Don't forget to run your code in Minecraft. 
+## 步驟 1
+使用 ``||agent:Agent 移動 [前]||`` 積木將代理人沿著海龜軌道移動到大門。完成後，按下 **播放** 按鈕來編譯程式碼。不要忘記在 Minecraft 中運行您的程式碼。
 
 ```ghost
 player.onChat("tracks", function () {
@@ -19,4 +19,4 @@ player.onChat("tracks", function () {
 for (let index = 0; index < 4; index++) {
     	
  }
-``` 
+```

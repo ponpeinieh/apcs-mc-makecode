@@ -6,11 +6,10 @@
 ### @explicitHints 1
 
 
-# Program the Agent to move along the turtle tracks & destroy obstacles!
+# 編程代理沿著海龜足跡移動並破壞障礙物！
 
-## Step 1
-Use the Agent to **destroy the tree trunk** that is in the way by using ``||agent: agent destroy||`` & ``||agent:agent collect all||``blocks. Try using a ``||loops:repeat||`` block to make the code more efficient. When done, press the **Play** button to compile the code. Don't forget to run your code in Minecraft. 
-
+## 第一步
+使用代理**破壞樹幹**，這樣的話，你可以使用 ``||agent:Agent 破壞||`` 和 ``||agent:Agent 收集所有||`` 這些積木。嘗試使用 ``||loops:重複||`` 積木來使代碼更加高效。完成後，按下 **播放** 按鈕來編譯代碼。不要忘了在 Minecraft 中運行你的代碼。
 
 ```ghost
 player.onChat("path", function () {
@@ -21,5 +20,4 @@ player.onChat("path", function () {
         agent.collectAll()
     }
 })
-``` 
-
+```

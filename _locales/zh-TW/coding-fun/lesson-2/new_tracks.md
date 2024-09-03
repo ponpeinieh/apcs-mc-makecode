@@ -3,16 +3,16 @@
 ### @explicitHints 1
 
 
-# Program the Agent to move along the turtle tracks!
+# 編程代理沿著海龜足跡移動！
 
-## Step 1
-Move the Agent along the turtle tracks by using an ``||agent: agent move forward||`` block. 
+## 第一步
+使用 ``||agent:Agent 移動 [前]||`` 積木來讓代理沿著海龜足跡移動。
 
 #### ~ tutorialhint 
-Try using a ``||loops:repeat||`` block to make the code more efficient.
+嘗試使用 ``||loops:重複||`` 積木來使代碼更有效率。
 
-## Step 2
-When done, press the **Play** button to compile the code. Don't forget to run your code in Minecraft. 
+## 第二步
+完成後，按下 **播放** 按鈕來編譯代碼。不要忘了在 Minecraft 中運行你的代碼。
 
 ```blocks
 player.onChat("run", function () {
@@ -22,5 +22,4 @@ player.onChat("run", function () {
 for (let index = 0; index < 4; index++) {
     	
  }
-``` 
-
+```

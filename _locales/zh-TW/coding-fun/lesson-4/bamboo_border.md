@@ -5,12 +5,12 @@
 ### @explicitHints 1
 
 
-# Bamboo Border
+# 竹子邊界
 
-## Step 1
-There is a starter code that we prepared for you.  Try running it first. The final goal is to plant bamboo along **4** sides of the panda's plot. 
+## 步驟 1
+我們為您準備了一段起始代碼。先嘗試運行它。最終目標是沿著熊貓的地塊的 **4** 個邊種植竹子。
 
-```template
+```ghost
 player.onChat("bamboo", function () {
     agent.setItem(BAMBOO, 64, 1)
     for (let index = 0; index < 16; index++) {

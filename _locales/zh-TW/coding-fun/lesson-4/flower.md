@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Make the area pretty!
+# 讓區域更美麗！
 
-## Step 1
-You need to plant **14 dandelions** along **4** sides of the hideaway. The Agent can plant **14** dandelions on one side. 
+## 步驟 1
+你需要在藏身處的**4**個邊緣上種植**14**朵蒲公英。代理可以在每一邊種植**14**朵蒲公英。
 
 #### ~ tutorialhint 
-Don't forget to select a count for ``||agent:agent set block||`` command. 
+不要忘記為``||agent:agent 道具設爲||`` 指令選擇數量。 
 
 
 ```ghost
@@ -25,5 +25,4 @@ player.onChat("flower", function () {
         agent.turn(RIGHT_TURN)
     }
 })
-
-``` 
+```

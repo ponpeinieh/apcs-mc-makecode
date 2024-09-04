@@ -5,12 +5,10 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周圍環境
 
-## Step 1
-While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**. 
-
-
+## 步驟 1
+當代理**檢查下方的方塊**且該方塊**不是浮冰**時，將代理程式設置為定位、**破壞**並**收集**以下方塊：**鐵**、**金**、**翡翠方塊(綠寶石)**和**鑽石**。
 
 ```ghost
 player.onChat("3", function () {

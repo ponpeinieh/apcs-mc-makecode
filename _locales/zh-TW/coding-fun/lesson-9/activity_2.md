@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Deep Stone 
+# 深石
 
-## Step 1
-Fix this coding snippet. Here is the Agent's objective: dig down into the surface until it hits a **gold** block on the **left**. On the way down, the Agent will detect if **stone** is in front of it, and collect it.
+## 步驟 1
+修正這段代碼。這是代理的目標：向下挖掘至表面，直到在**左側**碰到**金**方塊。在下挖的過程中，代理將檢測是否有**石頭**在它的前方，並收集它。
 
 ```template
 player.onChat("dig", function () {
@@ -16,7 +16,7 @@ player.onChat("dig", function () {
         agent.destroy(DOWN)
         agent.move(DOWN, 1)
             if (agent.inspect(AgentInspection.Block, FORWARD) != GRASS) {
-                player.say("Found the stone!")
+                player.say("找到石頭了！")
                 agent.destroy(FORWARD)
                 agent.collectAll()
         }

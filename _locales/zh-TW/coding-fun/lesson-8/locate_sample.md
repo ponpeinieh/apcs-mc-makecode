@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Locate the Sample! 
+# 定位樣本！
 
-## Step 1
-**While** the Agent **inspects the block down** and does **not** find **blue ice**, program the Agent to **destroy** and **move down**. When the Agent locates the **blue ice**, it needs to **destroy down** and **collect** the sample. 
+## 步驟 1
+**當**代理**檢查下方的方塊**且**沒有**找到**藍色冰塊**時，編程讓代理**摧毀**並**向下移動**。當代理找到**藍色冰塊**時，需**摧毀下方**並**收集**樣本。
 
 ```ghost 
 player.onChat("ice", function () {
@@ -21,4 +21,3 @@ player.onChat("ice", function () {
     
 })
 ```
-

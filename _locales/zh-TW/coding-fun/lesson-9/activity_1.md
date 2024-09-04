@@ -5,14 +5,10 @@
 ### @explicitHints 1
 
 
-# Locating stone 
+# 定位石頭
 
-## Step 1
-Fix this coding snippet. Here is what the Agent needs to do: **move** to the **left 4 times**, **destroy down**, **move down**. If the Agent detects a **stone** block forward, it needs to say "Found the stone!", **destroy forward** and **collect all**. If the stone is **not detected**, the Agent needs to say, "No stone here!". Each time after moving down, the Agent needs to **move 1 block up** to the surface. This activity needs to repeat **4** times.
-
-
-
-
+## 步驟 1
+修正這段代碼。這是代理需要做的事情：**向左移動 4 次**，**摧毀下方**，**向下移動**。如果代理檢測到**石頭**方塊，則需要說「找到石頭了！」，**摧毀前方**並**收集所有**。如果沒有檢測到石頭，代理需要說「這裡沒有石頭！」。每次向下移動後，代理需要**向上移動 1 個方塊**到達表面。這項活動需要重複**4**次。
 
 ```template
 player.onChat("stone", function () {
@@ -21,11 +17,11 @@ player.onChat("stone", function () {
         agent.destroy(DOWN)
         agent.move(DOWN, 1)
         if (agent.inspect(AgentInspection.Block, FORWARD) != STONE) {
-            player.say("Found the stone!")
+            player.say("找到石頭了！")
             agent.destroy(FORWARD)
             agent.collectAll()
         } else {
-            player.say("No stone here!")
+            player.say("這裡沒有石頭！")
         }
         agent.move(UP, 1)
     }

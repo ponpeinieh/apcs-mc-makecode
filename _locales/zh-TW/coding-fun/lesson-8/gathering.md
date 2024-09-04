@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Holodeck 
+# 全息艙(Holodeck, 是一種在《星際迷航》電視系列出現的虛構設備)
 
 ## Step 1
-Use this holodeck to sharpen your skills! 
+利用這個全息艙來提升你的技能！
 
 ```ghost
 player.onChat("3", function () {
@@ -22,10 +22,10 @@ player.onChat("3", function () {
     agent.destroy(FORWARD)
     agent.collectAll()
     agent.setItem(GRASS, 1, 1)
-agent.place(FORWARD)
-agent.till(FORWARD)
-agent.collect(IRON_SHOVEL)
-agent.setSlot(1)
-agent.transfer(1, 1, 2)
+    agent.place(FORWARD)
+    agent.till(FORWARD)
+    agent.collect(IRON_SHOVEL)
+    agent.setSlot(1)
+    agent.transfer(1, 1, 2)
 })
-```
+``` 

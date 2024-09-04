@@ -4,12 +4,10 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
+# 周圍環境
 
-# Surroundings 
-
-## Step 1
-Time to work on your skills on the Holodeck!
-
+## 步驟 1
+是時候在全息艙上鍛鍊你的技能了！
 
 
 ```ghost

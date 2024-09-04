@@ -5,12 +5,10 @@
 ### @explicitHints 1
 
 
-# Repair the Rover 
+# 修理探測車
 
-## Step 1
-Fix this coding snippet. Here is the objective: while **inspecting** for a block of **air** and **not** finding it, the Agent needs to **move right**. If the Agent finds the block of **lapis lazuli** **in front**, it needs to **move right**, **turn left**, then **move right**. After that the Agent needs to say, "Found the break!" and **place a block of redstone forward**.
-
-
+## 步驟 1
+修正這段代碼。目標如下：當**檢查**是否有**空氣**方塊且**未發現**時，代理需要**向右移動**。如果代理在**前方**找到**青金石**方塊，它需要**向右移動**，**向左轉**，然後再**向右移動**。之後，代理需要說：“找到破損處了！”並且**在前方放置一個紅石方塊**。
 
 ```template
 player.onChat("repair", function () {
@@ -22,7 +20,7 @@ player.onChat("repair", function () {
             agent.move(LEFT, 1)
         }
     }
-    player.say("Found the break!")
+    player.say("找到破損處了！")
     agent.setItem(GRASS, 1, 1)
     agent.place(FORWARD)
 })

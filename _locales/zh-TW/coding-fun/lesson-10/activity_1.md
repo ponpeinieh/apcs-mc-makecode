@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周圍環境
 
-## Step 1
-While  **inspecting the block down** that is **packed ice**, **if** the Agent **detects the block right**, it needs to **move forward**. Otherwise it needs to **move right**. 
-
+## 步驟 1
+當**檢查下方的方塊**是否為**浮冰**時，**如果**代理**偵測到右側的方塊**，它需要**向前移動**。否則，它需要**向右移動**。
 
 
 ```ghost

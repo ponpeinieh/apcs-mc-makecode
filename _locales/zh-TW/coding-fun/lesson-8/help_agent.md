@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Iron
+# 鐵礦
 
-## Step 1
-While the Agent **inspects the block down** and this block is not **iron ore**, it needs to **move forward**. If the Agent **detects a block forward**, then it needs to **destroy forward**. When the Agent locates iron, program it to **collect** it. Note that in order to collect a block, Agent needs to destroy it first. 
+## 步驟 1
+當代理**檢查下方的方塊**並且這個方塊不是**鐵礦石**時，代理需要**向前移動**。如果代理**檢測到前方有方塊**，則需要**摧毀前方的方塊**。當代理找到鐵礦時，編程讓它**收集**它。注意，為了收集一個方塊，代理需要先摧毀它。
 
 ```ghost
 player.onChat("4", function () {
@@ -18,7 +18,7 @@ player.onChat("4", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("Found the iron ore!")
+    player.say("找到鐵礦石了！")
     agent.destroy(DOWN)
     agent.collectAll()
 })

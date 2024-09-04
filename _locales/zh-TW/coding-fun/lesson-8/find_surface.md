@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Reach magma
+# 到達熔岩
 
 ## Step 1
-Program the Agent to **move forward**. While the Agent **inspects** block **down** and it is **not magma**, the Agent needs to **move down**. 
-
+編寫程序讓代理**向前移動**。當代理**檢查**下方的方塊時，如果不是**熔岩**，代理需要**向下移動**。
 
 ```ghost
 player.onChat("magma", function () {
@@ -18,5 +17,4 @@ player.onChat("magma", function () {
         agent.move(DOWN, 1)
     }
 })
-```
-
+``` 

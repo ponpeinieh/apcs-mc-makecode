@@ -5,12 +5,10 @@
 ### @explicitHints 1
 
 
-# Track Down the Rover 
+# 追踪探測車
 
-## Step 1
-Fix this coding snippet. Here is the objective: while **inspecting forward** for a block of **quartz** and **not** finding it, the Agent needs to **move forward**. If it **detects** a **gold** block **down**, it needs to **turn right**. If it detects a **block of iron down**, it needs to **turn left**. In the end the Agent needs to say, "Found the rover!"
-
-
+## 步驟 1
+修正這段代碼。目標如下：當**檢查前方**的方塊**不是**石英時，代理需要**向前移動**。如果檢測到**下方**是金塊，代理需要**向右轉**。如果檢測到**下方**是鐵塊，代理需要**向左轉**。最後，代理需要說，“找到探測車了！”
 
 
 ```template
@@ -24,7 +22,7 @@ player.onChat("rover", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("Found the rover!")
+    player.say("找到探測車了！")
 })
 ```
 

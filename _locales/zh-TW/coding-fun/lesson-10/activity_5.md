@@ -4,11 +4,10 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-
-# Holodeck 
+# 全息艙(Holodeck)
 
 ## Step 1
-Use this holodeck to sharpen your skills! 
+利用這個全息艙來提升你的技能！
 
 ```ghost
 player.onChat("3", function () {

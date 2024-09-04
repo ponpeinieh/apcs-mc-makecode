@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周圍環境
 
-## Step 1
-While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**. 
-
+## 步驟 1
+當代理**檢查下方的方塊**且該方塊**不是浮冰**時，如果代理**偵測到右側的方塊**，它需要**向前移動**。否則，它需要**向右移動**。在同一個迴圈中，如果代理**檢查下方的方塊**並且該方塊是**鵝卵石**或**礫石**，它需要**破壞下方**並**收集所有物品**。
 
 
 ```template

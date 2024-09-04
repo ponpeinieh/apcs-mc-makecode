@@ -4,11 +4,10 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
+# 讓它下雨吧！
 
-# Make it rain!
-
-## Step 1
-Make it rain while you dance in Minecraft! To make it happen you will need to use several event handlers. 1. Create your variables, for example: **walk**, **jump** and/or **break**. 2. Select the event handlers, for example ``||player: on player fall||``, ``||player: on player walk||``. 3. Set your new ``||variables||`` to ``||logic: true||`` inside each corresponding event block. 4. Use a ``||loop: forever||`` block and drag an ``||logic: if statement||``  inside of it. Set all your conditions to ``||logic:true||`` and add ``||gameplay: weather||`` block set to  **rain** to it. 
+## 步驟 1
+在 Minecraft 中跳舞時讓它下雨！為了實現這個目標，你需要使用幾個事件處理器。 1. 創建你的變數，例如：**walk**（走路）、**jump**（跳躍）和/或 **break**（破壞）。 2. 選擇事件處理器，例如 ``||player: 玩家 在行動方式為 墜落(fall) 時||``、``||player: 玩家 在行動方式為 走路(walk) 時||``。 3. 將你的新 ``||variable:變數||`` 設置為 ``||logic:true||`` 在每個對應的事件方塊內。 4. 使用 ``||loops: 無窮迴圈||`` 方塊，並拖動 ``||logic: 如果 那麽||`` 方塊進入其中。將條件設置為**是否所有以上變數皆爲** ``||logic: true||``(使用**並且**串聯條件)，在``||logic: 如果 那麽||``中添加 ``||gameplay: 遊戲 天氣設爲||`` 方塊設置為 **下雨(rain)**。
 
 ### ~ tutorialHint
 ```blocks

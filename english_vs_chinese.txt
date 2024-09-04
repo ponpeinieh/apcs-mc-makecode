@@ -126,7 +126,7 @@ Please kindly follow.
 ||player: 玩家 在行動方式為 走路(walk) 時||
 
 ||variables||
-||變數||
+||variable:變數||
 
 ||change count by 1||
 ||variable: 變數 count 改變 1||
@@ -152,9 +152,14 @@ Please kindly follow.
 ||blocks: pillar of quartz block broken||
 ||blocks: 方塊 在被破壞的方塊為 柱狀石英方塊 時||
 
+||blocks:on block placed||
+||blocks:方塊 在被放置的方塊為 時||
+
 ||functions: call plantSection||
 ||functions: 呼叫 plantSection||
 
 ||blocks: lapis lazuli||
 ||blocks: 方塊 青金石方塊(lapis lazuli)||
 
+||mobs:Give||
+||mobs:生物 給予||

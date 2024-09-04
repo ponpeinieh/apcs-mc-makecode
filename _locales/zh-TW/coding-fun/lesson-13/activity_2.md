@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# The Climb
+# 攀爬
 
-## Step 1
-Your challenge is to ``||mobs:jump||`` really high to climb up to the inaccessible area. 
+## 步驟 1
+你的挑戰是 ``||mobs:跳躍||`` 提升，以爬升到無法進入的區域。
 
 
 ```ghost

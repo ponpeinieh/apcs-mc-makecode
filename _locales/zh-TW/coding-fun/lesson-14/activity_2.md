@@ -4,11 +4,11 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
+# 沙堡！
 
-# Sandcastle!
+## 步驟 1
+運用你的編程超能力來克服面臨的挑戰。記住，解決這些問題的方法可能有很多種。
 
-## Step 1
-Use your coding superpowers to overcome the challenges presented. Remember, there might be a lot of ways to solve them. 
 
 ```ghost
 player.onTravelled(SNEAK, function () {

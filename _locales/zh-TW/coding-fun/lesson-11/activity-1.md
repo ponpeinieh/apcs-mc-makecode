@@ -5,12 +5,10 @@
 ### @explicitHints 1
 
 
-# Planet visit
+# 行星探險
 
-## Step 1
-Select the right code to run! You have only one attempt, so be careful!
-
-
+## 步驟 1
+選擇正確的程式碼來執行！你只有一次嘗試機會，所以要小心！
 
 ```template
 player.onChat("1", function () {

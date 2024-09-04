@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Collaborative activity
+# 協作活動
 
-## Step 1
-Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use!
-
+## 步驟 1
+選擇你在太空中需要使用的方塊。你會找到我們在課程中使用過的所有方塊供你使用！
 
 ```ghost
 player.onChat("run", function () {
@@ -37,7 +36,6 @@ player.onChat("run", function () {
         }
         agent.move(FORWARD, 1)
     }
-})
 })
 
 ``` 

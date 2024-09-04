@@ -5,14 +5,14 @@
 ### @explicitHints 1
 
 
-# Building
+# 建造
 
-## Step 1
-``||mobs:Give||`` yourself at least **34 emerald** blocks. Create a new ``||variable||`` and name it **count**.  Get an ``||blocks:on block placed||`` block and set it to **emerald**. Drag the ``||change count||`` block inside the ``||blocks: on block placed||`` and add ``||player: say||`` block. Add ``||count||`` inside the ``||player: say||`` block. This way whenever you place blocks, the game will be counting how many blocks you placed. 
+## 步驟 1
+給自己至少 **34 顆翡翠** 方塊。創建一個新的 ``||variable:變數||`` 並將其命名為 **count**。取得一個 ``||blocks:方塊 在被放置的方塊為 時||`` 方塊並將其設為 **翡翠**。將 ``||variable: 變數 count 改變 1||`` 方塊拖到 ``||blocks:方塊 在被放置的方塊為 時||`` 中，並添加 ``||player: 玩家 説出||`` 方塊。在 ``||player: 玩家 説出||`` 方塊中添加 ``||variable:count||``。這樣，每當你放置方塊時，遊戲將會計算你放置了多少個方塊。
 
-### ~ tutorialhint 
+### ~ tutorialhint
 
-You can select iron, gold, emerald or diamond. 
+你可以選擇鐵、金、翡翠或鑽石。
 
 ```blocks
 let count = 0
@@ -34,7 +34,7 @@ mobs.target(NEAREST_PLAYER),
 STONE,
 1
 )
-})
+
 ```
 
 

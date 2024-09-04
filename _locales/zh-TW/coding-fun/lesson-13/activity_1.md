@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Lava swim
+# 熔岩游泳
 
-## Step 1
-Your challenge is to ``||player:swim||`` across the lava lake. Try ``||mobs:applying fire resistance||`` to the **nearest player**.
-
+## 步驟 1
+你的挑戰是 ``||player:游泳||`` 穿越熔岩湖。嘗試對 **最近的玩家** ``||mobs:生物 套用效果 抗火||``。
 
 
 ```ghost

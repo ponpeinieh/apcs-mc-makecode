@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# 3d Space
+# 3D 空間
 
 ## Step 1
-To solve this challenge, you need to program the Agent to get to the **gold** block and collect it. The Agent needs to do it first on the ground level and then **move 3 levels up** and repeat the previous procedure.  
+要解決這個挑戰，你需要編程代理以到達**金塊**並收集它。代理需要首先在地面層進行這個操作，然後**向上移動 3 層**，並重複之前的步驟。
 
 ```template
 player.onChat("3D", function () {
@@ -32,3 +32,4 @@ player.onChat("3D", function () {
     }
 })
 ```
+ 

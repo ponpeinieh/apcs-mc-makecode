@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Simulation  
+# 模擬
 
 ## Step 1
-Welcome to Simulations! Program your Agent to collect the gold blocks and destroy obstacles on its way.
-
+歡迎來到模擬！編程你的代理來收集金塊並破壞路上的障礙物。
 
 ```template
 player.onChat("simulations", function () {
@@ -40,3 +39,4 @@ player.onChat("5", function () {
     agent.collectAll()
 })
 ```
+ 

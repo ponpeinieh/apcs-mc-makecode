@@ -4,11 +4,10 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-
-# Detecting your first material
+# 偵測你的第一種材料
 
 ## Step 1
-The Agent needs to **destroy** and then **collect** the **gold** block. 
+代理需要 **破壞** 然後 **收集** **金塊**。
 
 ```template
 player.onChat("material", function () {
@@ -31,7 +30,4 @@ player.onChat("1", function () {
         }
     }
 })
-```
-
-
-
+``` 

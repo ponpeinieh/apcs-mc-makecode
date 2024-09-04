@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Chicken Coup
+# 雞舍
 
-## Step 1
-The Agent needs to place **2** layers of **9** blocks of **iron bars**. There are **4** sides that need to have **iron bars**. Don't forget to use ``||agent:agent move up||``to build the second level.
+## 步驟 1
+代理(Agent)需要放置**2**層**9**個鐵柵欄方塊。共有**4**個面需要放置**鐵柵欄**。別忘了使用``||agent:Agent 移動 向上||``來建造第二層。
 
 #### ~ tutorialhint
-At the end you will have **3** ``||loops:repeat|`` commands nested inside each other. Make sure that the Agent has more than 64 blocks in its inventory!
+最終你將會有**3**個``||loops:重複||``命令嵌套在一起。確保代理的物品槽中有超過64個方塊！
 
 ```ghost
 player.onChat("chicken", function () {
@@ -27,5 +27,4 @@ player.onChat("chicken", function () {
         agent.move(UP, 1)
     }
 })
-
-``` 
+```

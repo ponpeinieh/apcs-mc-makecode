@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Hazing 
+# 驅趕
 
-## Step 1
-The Agent needs to set **tripwire** so that wolves won't get in. Set the ``||agent:agent set block||`` to **tripwire** and set the count to **64**. Use the ``||loops:while||`` block and drop a condition inside it.  
+## 步驟 1
+代理(Agent)需要設置**絆線鉤**來防止狼進入。將``||agent:Agent 道具設爲||``設置為**絆線鉤**並將數量設置為**64**。使用``||loops:重複 判斷||``方塊，並在其中放置條件。
 
 #### ~ tutorialhint
-Remember to use **not** in your condition. 
+記得在你的條件中使用**不成立**。
 
 ```blocks
 player.onChat("hazing", function () {
@@ -30,4 +30,4 @@ player.onChat("hazing", function () {
         agent.move(FORWARD, 1)
     }
 })
-```
+``` 

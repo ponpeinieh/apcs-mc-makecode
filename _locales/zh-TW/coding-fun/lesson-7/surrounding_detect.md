@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 環境
 
 ## Step 1
-While the Agent is **inspecting the block down** and the block is **stone**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent needs to **move forward**, otherwise it needs to **turn left**. 
-
+當代理在**檢查下方的方塊**且該方塊是**石頭**時，代理需要**向前移動**。如果代理**未**檢測到前方有方塊，則代理需要**向前移動**，否則需要**左轉**。
 
 ```template
 player.onChat("inspect", function () {
@@ -30,4 +29,4 @@ player.onChat("inspect", function () {
     }
 })
 ```
-
+ 

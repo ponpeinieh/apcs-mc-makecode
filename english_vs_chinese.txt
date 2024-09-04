@@ -106,3 +106,55 @@ Please kindly follow.
 
 ||Mobs:spawn [animal] at||
 ||Mobs:生物 生成 [動物] 於|| 
+
+||logic: if statement||
+||logic: 如果 那麽||
+
+||logic: Else||
+||logic: 否則||
+
+||logic:not||
+||logic:不成立||
+
+||logic:else if||
+||logic:否則如果 那麽||
+
+||player: on player fall||
+||player: 玩家 在行動方式為 墜落(fall) 時||
+
+||player: on player walk||
+||player: 玩家 在行動方式為 走路(walk) 時||
+
+||variables||
+||變數||
+
+||change count by 1||
+||variable: 變數 count 改變 1||
+
+||set count||
+||variable: 變數 count 設爲||
+
+||gameplay: weather||
+||gameplay: 遊戲 天氣設爲||
+
+||loops: on start||
+||loops: 當啓動時||
+
+||blocks: test for||
+||blocks: 方塊 測試 位置||
+
+||mobs: spawn a lightning bolt||
+||mobs: 生物 生成 彈射物 閃電電流 於||
+
+||player: say||
+||player: 玩家 説出||
+
+||blocks: pillar of quartz block broken||
+||blocks: 方塊 在被破壞的方塊為 柱狀石英方塊 時||
+
+||functions: call plantSection||
+||functions: 呼叫 plantSection||
+
+||blocks: lapis lazuli||
+||blocks: 方塊 青金石方塊(lapis lazuli)||
+

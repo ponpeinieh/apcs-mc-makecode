@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Spiral
+# 螺旋
 
 ## Step 1
-While the Agent is **inspecting the block forward** and the block is **not** the **gold block**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent also needs to move forward, otherwise it needs to **turn left**. When the Agent reaches the **gold block**, it needs to **destroy** and **collect** it. 
-
+當代理在**檢查前方方塊**且該方塊**不是**金塊時，代理需要**向前移動**。如果代理**未**檢測到前方有方塊，則代理也需要向前移動，否則需要**左轉**。當代理到達**金塊**時，需要**破壞**並**收集**它。
 
 ```ghost
 player.onChat("3", function () {
@@ -23,4 +22,4 @@ player.onChat("3", function () {
     agent.destroy(FORWARD)
     agent.collectAll()
 })
-```
+``` 

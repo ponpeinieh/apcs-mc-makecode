@@ -1,16 +1,15 @@
-
 ### @hideIteration false 
 ### @flyoutOnly 1
 ### @explicitHints 1
 
 
-# Hazing One
+# 狼驅趕(一)
 
-## Step 1
-Set the ``||agent:agent set block||`` to **tripwire** and set the count to **64**. 
+## 步驟 1
+將``||agent:Agent 道具設爲||``設置為**絆線鉤**並將數量設置為**64**。
 
-## Step 2
-Use the ``||loops:while||`` block and drop a condition inside the ``||loops:while||`` block.  
+## 步驟 2
+使用``||loops:重複 判斷||``方塊，並在``||loops:重複 判斷||``方塊內放置條件。
 
 #### ~ tutorialhint
 
@@ -23,8 +22,8 @@ player.onChat("hazing", function () {
 })
 
 ``` 
-## Step 3
-Add ``||agent: agent place||`` and ``||agent: agent move||`` blocks inside the ``||loops:while||`` block. 
+## 步驟 3
+在``||loops:重複 判斷||``方塊內添加``||agent:Agent 放置||``和``||agent:Agent 移動||``方塊。
 
 ```blocks
 player.onChat("run", function () {
@@ -34,4 +33,4 @@ player.onChat("run", function () {
         agent.move(FORWARD, 1)
     }
 })
-```
+``` 

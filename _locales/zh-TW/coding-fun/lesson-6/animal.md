@@ -5,11 +5,10 @@
 ### @explicitHints 1
 
 
-# Collaborative activity
+# 協作活動
 
-## Step 1
-Select the blocks you need to build the right home for the animals. You will find all the blocks we have used throughout the lessons for you to use!
-
+## 步驟 1
+選擇你需要的方塊來為動物建造合適的家。你將會找到我們在課程中使用過的所有方塊供你使用！
 
 ```ghost
 player.onChat("run", function () {
@@ -26,5 +25,4 @@ player.onChat("run", function () {
     	
     }
 })
-
-``` 
+```

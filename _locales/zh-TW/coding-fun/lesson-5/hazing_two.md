@@ -6,13 +6,13 @@
 ### @explicitHints 1
 
 
-# Hazing Two
+# 狼驅趕(二)
 
-## Step 1
-Step 1 is to do hazing two.  
+## 步驟 1
+步驟1是執行「狼驅趕(二)」挑戰。
 
-## Step 2
-When done, press the **Play** button to compile the code. Don't forget to run your code in Minecraft. 
+## 步驟 2
+完成後，按下**播放**按鈕來編譯代碼。別忘了在Minecraft中運行你的代碼。
 
 ```blocks
 player.onChat("run", function () {
@@ -22,5 +22,4 @@ player.onChat("run", function () {
         agent.destroy(UP)
     }
 })
-
-``` 
+```

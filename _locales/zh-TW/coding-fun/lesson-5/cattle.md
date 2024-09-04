@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Cattle
+# 牛
 
-## Step 1
-Look at the starter code and try running it. This code allows you to navigate the Agent without counting blocks. Look at the path the Agent needs to take and make sure you finish the coding sequence with correct turns for the Agent. Make sure that the Agent can reach the **gold plate**.  
+## 步驟 1
+查看初始代碼並嘗試執行它。此代碼允許你在不數方塊的情況下導航代理(Agent)。觀察代理需要走的路徑，並確保你用正確的轉向來完成編碼序列，使代理能夠到達**金壓力板**。
 
 ```template
 player.onChat("sheep", function () {
@@ -17,6 +17,4 @@ player.onChat("sheep", function () {
     }
     agent.turn(LEFT_TURN)
 })
-
-``` 
-
+```

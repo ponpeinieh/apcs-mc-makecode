@@ -4,20 +4,20 @@
 ### @hideIteration false 
 ### @explicitHints 1
 
+# 漂亮的圖案！
 
-# Pretty things!
+## 步驟 1
+你的任務是在浴池的地板邊界上構建一個**石英方塊**和**青金石方塊**的交替圖案。首先，創建兩個變數：``||variable:變數 blockA||`` 和 ``||variable:變數 blockB||``。將 ``||variable:變數 blockA||`` 設置為**石英方塊**，將 ``||variable:變數 blockB||`` 設置為**青金石方塊**。將這些命令添加到``||loops: 當啓動時||``中。
 
-## Step 1
-Your mission is to to construct the alternating pattern of **quartz pillar** and **lapiz lazuli** blocks along the floor border of the bath. Start by creating ``||variable:blockA||`` and ``||variable:blockB||`` variables. Set the ``||variable:blockA variable||`` to a **block of quartz** and ``||variable:blockB variable||`` to a **lapis lazuli block**. Add the commands to the ``||loops: on start||`` block. 
+## 步驟 2
+在 ``||logic: 如果 那麽||`` 語句中，檢查``||variable:變數 count||``是否等於 **0**。如果為真，Agent 需要放置來自``||variable:變數 blockA||``的方塊（它應在第一個物品欄槽中），然後``||agent:Agent 破壞 [下方]||``，``||agent:Agent 放置 [下方]||``，並``||variable:變數 count 改變 1||``。否則，Agent 應該放置來自``||variable:變數 blockB||``的方塊（也在第一個物品欄槽中），然後放置這些方塊，並``||variable:變數 count 改變 -1||``。在``||logic: 否則||``塊之後，讓 Agent ``||Agent:Agent 移動 [前]||`` 移動**1**格。
 
-## Step 2
-``||logic: If||`` ``||count||`` = **0**, then agent needs to set ``||variable:blockA||``, ``||agent:destroy down||``, ``||agent:place down||`` and ``||variable:change the count by 1||``. ``||logic: Else||`` the Agent needs to set ``||blockB||``, place blocks and ``||change count by -1||``.  
+## 步驟 3
+Agent 需要在``||Loops:重複 判斷||``循環中重複步驟2的放置方塊過程。循環應在``||Agent:agent 偵測 方塊||`` **前方** 的條件為假的情況下繼續運行。
 
-## Step 3
-The Agent needs to place blocks in a row ``||loops: while||`` it does ``||logic:not||`` ``|| detect||`` a block **forward**. 
+## 步驟 4
+前面的步驟涵蓋了在水池的一側放置方塊的過程。由於水池有**4**個側面，添加一個``||Loops:重複 [4] 次||``迴圈。在這個迴圈內，將``||variable:變數 count||``重置為**0**，然後重複前面步驟中的邏輯。在完成每一側後，使用``||Agent:Agent 轉動 [右]||``讓 Agent 轉向並繼續沿著下一個側面逆時針方向構建。
 
-## Step 4
-There are **4** sides of reservoir that the Agent needs to complete, so add a ``||loops: repeat||`` block. Set the ``||count||`` to **0** before sending the Agent to place blocks.
 
 ```template
 let count = 0

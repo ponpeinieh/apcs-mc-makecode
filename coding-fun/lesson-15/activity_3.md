@@ -8,16 +8,17 @@
 # Pretty things!
 
 ## Step 1
-Your mission is to to construct the alternating pattern of **quartz pillar** and **lapiz lazuli** blocks along the floor border of the bath. Start by creating ``||variable:blockA||`` and ``||variable:blockB||`` variables. Set the ``||variable:blockA variable||`` to a **block of quartz** and ``||variable:blockB variable||`` to a **lapis lazuli block**. Add the commands to the ``||loops: on start||`` block. 
+Your mission is to construct an alternating pattern of **quartz** and **lapis lazuli** blocks along the floor border of the bath. Start by creating two variables: ``||variable:blockA||`` and ``||variable:blockB||``. Set ``||variable:blockA||`` to a **block of quartz** and ``||variable:blockB||`` to a **lapis lazuli block**. Add these commands to the ``||loops:on start||`` block.
 
 ## Step 2
-``||logic: If||`` ``||count||`` = **0**, then agent needs to set ``||variable:blockA||``, ``||agent:destroy down||``, ``||agent:place down||`` and ``||variable:change the count by 1||``. ``||logic: Else||`` the Agent needs to set ``||blockB||``, place blocks and ``||change count by -1||``.  
+Within the ``||logic:if||`` statement, check if ``||variable:count||`` equals **0**. If true, the Agent needs to place the block from ``||variable:blockA||`` (which should be in its first inventory slot), then ``||agent:destroy down||``, ``||agent:place down||``, and ``||variable:change count by 1||``. Otherwise, the Agent should place the block from ``||variable:blockB||`` (also in the first inventory slot), then place the blocks, and ``||variable:change count by -1||``. After the ``||logic:if else||`` block, have the Agent move **1** block ``||Agent:forward||``.
 
 ## Step 3
-The Agent needs to place blocks in a row ``||loops: while||`` it does ``||logic:not||`` ``|| detect||`` a block **forward**. 
+The Agent needs to repeat the block placement process from Step 2 inside a ``||loops:while||`` loop. The loop should continue as long as the condition ``||Agent:detect block||`` **forward** is false.
 
 ## Step 4
-There are **4** sides of reservoir that the Agent needs to complete, so add a ``||loops: repeat||`` block. Set the ``||count||`` to **0** before sending the Agent to place blocks.
+The previous steps cover placing blocks along one side of the reservoir. Since the reservoir has **4** sides, add a ``||Loops:repeat [4] times||`` loop block. Inside this loop, reset ``||variable:count||`` to **0** before repeating the logic from the previous steps. After completing each side, use ``||Agent:turn [right]||`` to have the Agent turn and continue building along the next side, moving counterclockwise.
+
 
 ```template
 let count = 0

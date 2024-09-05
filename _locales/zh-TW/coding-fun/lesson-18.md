@@ -1,14 +1,15 @@
+Here is the translation for the additional text:
+
 ### @codeStart players set @s makecode 0
 ### @codeStop players set @s makecode 1
 
 ### @hideIteration true 
 ### @explicitHints 1
 
+# 甜菜！
 
-# Beets!
-
-## Step 1
-It is your time to shine! 
+## 第一步
+輪到你大顯身手了！
 
 ```ghost
 blocks.onBlockBroken(GRASS, function () {

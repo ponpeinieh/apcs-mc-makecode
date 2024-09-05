@@ -4,17 +4,14 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
+# 甜菜!
 
-# Beets!
-
-## Step 1
-You are provided with three functions: ``||functions: plantSeed||``, ``||functions: plantSection||`` and ``||functions: checkTurn||``. First, create  a new ``||player: on chat||`` command and add your condition: ``||loops:while||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions. 
-
-
+## 第一步
+你提供了三個函數: ``||functions: plantSeed||``, ``||functions: plantSection||`` 和 ``||functions: checkTurn||``。首先，創建一個新的 ``||player:在聊天指令為||`` 命令，並添加條件: 當 ``||loops:重複 判斷||`` 代理 ``||Agent:代理 偵查方塊||`` 向下時，且不是 **金磚**，則 ``||functions: 呼叫||`` 所需的函數。
 
 ```template
 /**
- * We are calling a function inside a function
+ * 我們正在函數內調用另一個函數
  */
 function plantSection () {
     for (let index = 0; index < 11; index++) {
@@ -23,7 +20,7 @@ function plantSection () {
     agent.move(FORWARD, 1)
 }
  /**
- * The code was modified to not place seeds if there's no block under the Agent.
+ * 修改代碼以避免當代理下方無方塊時放置種子。
  */
 function plantSeed () {
     agent.till(FORWARD)
@@ -45,7 +42,6 @@ function checkTurn () {
 }
 
 ```
-
 
 ```ghost
 player.onChat("plant", function () {

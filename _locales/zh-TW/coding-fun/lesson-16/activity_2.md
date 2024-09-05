@@ -5,14 +5,13 @@
 ### @explicitHints 1
 
 
-# Build a starter house!
+# 建造起始房屋！
 
-## Step 1
-Use the provided sample code to place 1 row of blocks. Then Agent needs to repeat the same procedure **4 times**, then ``||agent: move up||`` and **repeat** it more. Get the ``||variable: height||`` and add it to the ``||loops: repeat||`` block. This code will allow you to build **1** house. 
-
+## 步驟 1
+使用提供的範例代碼來放置 1 排方塊。然後，Agent 需要重複相同的步驟 **4 次**，接著 ``||Agent:Agent 移動 [上]||`` 並再重複一次。取得 ``||variable:height(高度)||`` 並將其添加到 ``||Loops:重複||`` 塊中。這段代碼將幫助您建造 **1** 棟房屋。
 
 ### ~ tutorialHint
-Don't forget to input your numbers in the in-game chat when typing in the command, for example **house 2 5**. 
+在遊戲內聊天時，別忘了輸入您的數字，例如 **house 2 5**。
 
 ```template    
  player.onChat("house", function (height, size) {

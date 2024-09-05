@@ -51,6 +51,9 @@ Please kindly follow.
 ||Agent:agent place [forward]||
 ||Agent:Agent 放置 [前]||
 
+||agent:agent till forward||
+||agent: Agent 耕種 [前]||
+
 ||Blocks:clone from||
 ||Blocks:方塊 複製 開始位置||
 

@@ -5,13 +5,13 @@
 ### @explicitHints 1
 
 
-# Mine the resources!
+# 採礦資源！
 
-## Step 1
-The Agent needs to mine **gold ore** and **iron ore** blocks. Try creating several ``||player:on chat||`` commands that will program the Agent to move in different directions, for example, **forward**, **back**, **right**. Instead of specifying how far you want the Agent to move, you can use variables. When typing the command in in-game chat, type **forward** and **a number**, for example **forward 5** if you want the Agent to **move 5 steps forward**. This way you can change on the fly how many steps the Agent needs to move without changing the code. 
+## 步驟 1
+Agent 需要挖掘 **金礦石** 和 **鐵礦石** 方塊。嘗試創建幾個 ``||Player:玩家 在聊天指令為||`` 命令，讓 Agent 向不同方向移動，例如 **Forward(前進)**、**back(後退)**、**right(右轉)**。您可以使用變數來指定 Agent 移動的距離，而不是明確指定移動的步數。在遊戲內聊天時，輸入 **forward** 和 **一個數字**，例如 **forward 5**，如果您希望 Agent **向前移動 5 步**。這樣您可以在不改變代碼的情況下，即時更改 Agent 需要移動的步數。
 
 ### ~ tutorialHint
-Don't forget to add ``||agent: destroy||`` and ``||agent: collect||`` blocks to program the Agent to mine the minerals. 
+別忘了添加 ``||Agent:Agent 破壞||`` 和 ``||Agent:Agent 收集||`` 塊來編程 Agent 挖掘礦物。
 
 ```template
 player.onChat("forward", function (num1) {

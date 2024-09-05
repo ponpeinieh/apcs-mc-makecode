@@ -5,10 +5,10 @@
 ### @explicitHints 1
 
 
-# Build a Town Hall!
+# 建造市政廳！
 
-## Step 1
-Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; set the ``||variable: variables||`` to the correct parameters. Don't forget to add your variables to the ``||player: on chat||`` command.
+## 步驟 1
+使用 **石頭** 作為建材，創建 **3** 個 ``||variable:變數||``，並命名為 **width(寬度)**、**length(長度)** 和 **height(高度)**；將 ``||variable:變數||`` 設置為正確的參數。別忘了將您的變數添加到 ``||player: 在聊天指令為||`` 命令中。
 
 ```ghost
 player.onChat("town_hall", function (length, width, height) {

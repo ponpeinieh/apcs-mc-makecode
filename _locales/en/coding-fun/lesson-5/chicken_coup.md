@@ -8,7 +8,7 @@
 # Chicken Coup
 
 ## Step 1
-The Agent needs to place **2** layers of **9** blocks of **iron bars**. There are **4** sides that need to have **iron bars**. Don't forget to use ``||agent:agent move up||``to build the second level.
+The Agent needs to place **9** blocks of **iron bars** on each of the **4** sides for each layer, and build two layers in total, using ``||agent:agent move up||`` to move to the second layer.
 
 #### ~ tutorialhint
 At the end you will have **3** ``||loops:repeat|`` commands nested inside each other. Make sure that the Agent has more than 64 blocks in its inventory!

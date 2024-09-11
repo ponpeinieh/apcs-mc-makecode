@@ -8,9 +8,9 @@
 # Surroundings 
 
 ## Step 1
-While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**. 
 
-
+Your task is to mine and gather all the **iron**, **gold**, **emerald**, and **diamond** blocks. Here's a suggested approach to complete the task:
+While **inspecting the block below**, if it is **not packed ice**, program the Agent to locate, **destroy**, and **collect** the following blocks: **iron**, **gold**, **emerald**, and **diamond**.
 
 ```ghost
 player.onChat("3", function () {

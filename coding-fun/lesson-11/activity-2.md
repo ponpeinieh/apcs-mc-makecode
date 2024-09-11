@@ -5,11 +5,13 @@
 ### @explicitHints 1
 
 
-# 行星探險
+# Planet visit
 
-## 步驟 1
-哪一段代碼可以幫助代理找到黃金礦石沉積?
-選擇正確的程式碼來執行！你只有一次嘗試機會，所以要小心！
+## Step 1
+Which piece of code will help the Agent collect all the redstone ore?
+Select the right code to run! You have only one attempt, so be careful!
+
+
 
 ```template
 player.onChat("1", function () {

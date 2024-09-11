@@ -7,7 +7,11 @@
 # Change the world!
 
 ## Step 1
-Use ``||player:on player walk||`` event to set a block at a specific set of ``||positions: world||``coordinates, which are **100, 68, 100**. Create a ``||variable||`` and name it **count**. Drag the ``||change count by 1||`` block and ``||blocks:place||`` block with an added ``||count||`` variable, this will increase by 1 and place a block that's associated with that block ID. 1=Stone, 2=Grass, 3=Dirt, etc. Use another event block, for example ``||player:on player fall||`` to reset the block. To do that, drag ``||set count||`` to **0** to restart the count and add a ``||blocks: place||`` block with an added ``||variable:count||`` variable set with the same world coordinates. This way whenever you jump in the world, the block will get reset. 
+
+
+Use the ``||player:on player walk||`` event to place a block at the specified ``||positions:world||`` coordinates (**100, 68, 100**). Create a ``||variable||`` named **count**, which will serve as the block ID. Then, add the ``||change count by 1||`` block and the ``||blocks:place||`` block, using **count** as the block ID. Each time **count** increases by 1, the corresponding block is placed: for example, count = 1 places Stone, count = 2 places Grass, count = 3 places Dirt, and so on.
+
+To reset the block ID, use another event, such as ``||player:on player fall||``. In this event, drag the ``||set count||`` block and set **count** to 0. Then, use the ``||blocks:place||`` block again with the ``||variable:count||`` as the block ID at the same coordinates. This way, every time you jump in the world, the block will reset to its initial state.
 
 ### ~ tutorialhint 
 Don't forget to use ``||positions: world||`` positions to indicate the coordinates. 

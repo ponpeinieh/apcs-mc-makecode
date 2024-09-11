@@ -9,6 +9,7 @@
 
 ## Step 1
 Which piece of code will help the Agent collect all the redstone ore?
+
 Select the right code to run! You have only one attempt, so be careful!
 
 

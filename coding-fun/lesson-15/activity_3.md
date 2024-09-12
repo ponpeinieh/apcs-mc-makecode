@@ -8,7 +8,7 @@
 # Pretty things!
 
 ## Step 1
-Your mission is to construct an alternating pattern of **quartz** and **lapis lazuli** blocks along the floor border of the bath. Start by creating two variables: ``||variable:blockA||`` and ``||variable:blockB||``. Set ``||variable:blockA||`` to a **block of quartz** and ``||variable:blockB||`` to a **lapis lazuli block**. Add these commands to the ``||loops:on start||`` block.
+Your mission is to construct an alternating pattern of **quartz** and **lapis lazuli** blocks along the floor border of the bath. Start by creating two variables: ``||variable:blockA||`` and ``||variable:blockB||``. Set ``||variable:blockA||`` to a **block of quartz** and ``||variable:blockB||`` to a **lapis lazuli block**. Add these commands to the ``||player: on chat command||`` block.
 
 ## Step 2
 Within the ``||logic:if||`` statement, check if ``||variable:count||`` equals **0**. If true, the Agent needs to place the block from ``||variable:blockA||`` (which should be in its first inventory slot), then ``||agent:destroy down||``, ``||agent:place down||``, and ``||variable:change count by 1||``. Otherwise, the Agent should place the block from ``||variable:blockB||`` (also in the first inventory slot), then place the blocks, and ``||variable:change count by -1||``. After the ``||logic:if else||`` block, have the Agent move **1** block ``||Agent:forward||``.

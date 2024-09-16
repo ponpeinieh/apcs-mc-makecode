@@ -1,5 +1,3 @@
-Here is the translation for the additional text:
-
 ### @codeStart players set @s makecode 0
 ### @codeStop players set @s makecode 1
 

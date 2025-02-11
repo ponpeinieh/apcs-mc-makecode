@@ -78,7 +78,9 @@ player.onChat("stop", function () {
 ```
 
 ## 第十步  
-建立複製指令。打開 ``||Blocks:方塊||``，將 ``||Blocks:方塊 複製||`` 方塊拖曳到 ``||Player:玩家 在聊天指令為||`` **"copy"** 方塊中。
+建立複製指令。
+將 一個``||Player:玩家 在聊天指令為||`` 方塊拖曳到編碼工作區。將方塊的名稱更改為 **"copy"**。
+打開 ``||Blocks:方塊||``，將 ``||Blocks:方塊 複製||`` 方塊拖曳到 ``||Player:玩家 在聊天指令為||`` **"copy"** 方塊中。
 
 ### ~ tutorialhint
 ```blocks

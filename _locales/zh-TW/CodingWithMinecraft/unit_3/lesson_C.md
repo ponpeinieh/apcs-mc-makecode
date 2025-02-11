@@ -1,32 +1,32 @@
 ### @explicitHints 1
 
-# Activity: Auto Farmer
+# 活動：自動農場
 
-## Step 1
-Get ``||Player:on walk||`` block and drag it into the workspace.
+## 第一步  
+將 ``||Player:玩家 在行動方式為 走路(walk) 時||`` 方塊拖曳到工作區。
 
-Drag the ``||Mobs:spawn||`` block into ``||Player:on walk||``block. Select the **sheep** or another animal for your farm in ``||Mobs:spawn||`` block.
+將 ``||Mobs:生物 生成||`` 方塊放入 ``||Player:玩家 在行動方式為 走路(walk) 時||`` 方塊中。在 ``||Mobs:生物 生成||`` 方塊中選擇 **羊** 或其他你想養的動物。
 
-## Step 3
-Put the coordinates **(~0, ~0, ~1)** in ``||Mobs:spawn||`` block. Sheep will spawn one block south of the player along the **Z**-axis.
+## 第二步  
+在 ``||Mobs:生物 生成||`` 方塊中輸入坐標 **(~0, ~0, ~1)**。羊會在玩家南邊一格的位置生成，沿著 **Z** 軸。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onTravelled(WALK, function () {
     mobs.spawn(SHEEP, pos(0, 0, 1))
 })
 ```
 
-## Step 4
-Start the sheep pen. Drag a new ``||Player:on chat command||`` to the workspace and change the command to **"pen"**.
+## 第三步  
+開始建造羊圈。將一個新的 ``||Player:玩家 在聊天指令為||`` 方塊拖曳到工作區，並將指令更改為 **"pen"**。
 
-## Step 5
-Place a ``||Blocks:fill with||`` bllock inside the ``||Player:on chat command "pen"||``.
+## 第四步  
+將 ``||Blocks:方塊 填充||`` 方塊放入 ``||Player:玩家 在聊天指令為 "pen"||`` 方塊中。
 
-Adjust the ``||Blocks:fill with||`` to **Nether Brick Fence**. And change coordinates to **~5, ~0, ~1** and **~-5, ~4, ~1**. 
+將 ``||Blocks:方塊 填充||`` 方塊的材質更改為 **地獄磚柵欄**，並將坐標更改為 **~5, ~0, ~1** 和 **~-5, ~4, ~1**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onTravelled(WALK, function () {
     mobs.spawn(SHEEP, pos(0, 0, 1))
 })
@@ -40,17 +40,17 @@ player.onChat("pen", function () {
 })
 ```
 
-## Step 6
-Create side walls. Right-click the ``||Blocks:fill with||`` block that is making your south wall and duplicate it twice. These new duplicates will be your side walls.
+## 第五步  
+建立側牆。右鍵點擊用來建造南牆的 ``||Blocks:方塊 填充||`` 方塊並複製兩次。這些新的複製方塊將用來建造側牆。
 
-## Step 7
-Adjust the material for the side walls. One side can be **Acacia Fence**, and the other can be **Birch Fence**.
+## 第六步  
+調整側牆的材質。一側可以使用 **相思木柵欄**，另一側可以使用 **樺木柵欄**。
 
-## Step 8
-Adjust the coordinates for **Acacia Fence** to **~5, ~0, ~1** and **~-5, ~4, ~20**; and **Birch Fence** to **~5, ~0, ~1** and **~-5, ~4, ~20**.
+## 第七步  
+調整 **相思木柵欄** 的坐標為 **~5, ~0, ~1** 和 **~-5, ~4, ~20**；**樺木柵欄** 的坐標為 **~5, ~0, ~1** 和 **~-5, ~4, ~20**。
 
 ### ~ tutorialhint
-``` blocks 
+```blocks
 player.onTravelled(WALK, function () {
     mobs.spawn(SHEEP, pos(0, 0, 1))
 })
@@ -75,11 +75,12 @@ player.onChat("pen", function () {
     )
 })
 ```
-## Step 9
-Close the sheep pen with north entrance. **Z** should be exactly **20** blocks away from your south wall because that is how long your side walls are. Try it out in Minecraft and spawn as many sheep as you want!
+
+## 第八步  
+關閉羊圈的北側入口。**Z** 坐標應與南牆相距 **20** 格，因為這是側牆的長度。在 Minecraft 中試試看，並生成任意數量的羊吧！
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("pen", function () {
     blocks.fill(
     NETHER_BRICK_FENCE,

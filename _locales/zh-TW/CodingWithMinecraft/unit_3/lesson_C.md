@@ -23,7 +23,7 @@ player.onTravelled(WALK, function () {
 ## 第四步  
 將 ``||Blocks:方塊 填充||`` 方塊放入 ``||Player:玩家 在聊天指令為 "pen"||`` 方塊中。
 
-將 ``||Blocks:方塊 填充||`` 方塊的材質更改為 **地獄磚柵欄**，並將坐標更改為 **~5, ~0, ~1** 和 **~-5, ~4, ~1**。
+將 ``||Blocks:方塊 填充||`` 方塊的材質更改為 **地獄石磚柵欄**，並將坐標更改為 **~5, ~0, ~1** 和 **~-5, ~4, ~1**。
 
 ### ~ tutorialhint
 ```blocks
@@ -44,10 +44,10 @@ player.onChat("pen", function () {
 建立側牆。右鍵點擊用來建造南牆的 ``||Blocks:方塊 填充||`` 方塊並複製兩次。這些新的複製方塊將用來建造側牆。
 
 ## 第六步  
-調整側牆的材質。一側可以使用 **相思木柵欄**，另一側可以使用 **樺木柵欄**。
+調整側牆的材質。一側可以使用 **相思木(金合歡木)柵欄**，另一側可以使用 **樺木柵欄**。
 
 ## 第七步  
-調整 **相思木柵欄** 的坐標為 **~5, ~0, ~1** 和 **~-5, ~4, ~20**；**樺木柵欄** 的坐標為 **~5, ~0, ~1** 和 **~-5, ~4, ~20**。
+調整 **相思木柵欄** 的坐標為 **~5, ~0, ~1** 和 **~5, ~4, ~20**；**樺木柵欄** 的坐標為 **~-5, ~0, ~1** 和 **~-5, ~4, ~20**。
 
 ### ~ tutorialhint
 ```blocks
@@ -90,14 +90,14 @@ player.onChat("pen", function () {
     )
     blocks.fill(
     ACACIA_FENCE,
-    positions.create(-5, 0, -1),
-    positions.create(-5, 4, 20),
+    positions.create(5, 0, -1),
+    positions.create(5, 4, 20),
     FillOperation.Replace
     )
     blocks.fill(
     BIRCH_FENCE,
-    positions.create(5, 0, -1),
-    positions.create(5, 4, 20),
+    positions.create(-5, 0, -1),
+    positions.create(-5, 4, 20),
     FillOperation.Replace
     )
     blocks.fill(

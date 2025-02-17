@@ -47,7 +47,7 @@ Create side walls. Right-click the ``||Blocks:fill with||`` block that is making
 Adjust the material for the side walls. One side can be **Acacia Fence**, and the other can be **Birch Fence**.
 
 ## Step 8
-Adjust the coordinates for **Acacia Fence** to **~5, ~0, ~1** and **~-5, ~4, ~20**; and **Birch Fence** to **~5, ~0, ~1** and **~-5, ~4, ~20**.
+Adjust the coordinates for **Acacia Fence** to **~5, ~0, ~1** and **~5, ~4, ~20**; and **Birch Fence** to **~-5, ~0, ~1** and **~-5, ~4, ~20**.
 
 ### ~ tutorialhint
 ``` blocks 

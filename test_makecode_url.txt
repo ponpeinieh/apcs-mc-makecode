@@ -1,1 +1,19 @@
 https://minecraft.makecode.com/?ipc=1&noRunOnX=1#tutorial:github:ponpeinieh/apcs-mc-makecode/computing/unit-5/lesson-2
+
+https://minecraft.makecode.com/?ipc=1&noRunOnX=1#tutorial:github:ponpeinieh/apcs-mc-makecode/coding-fun/lesson-1/agent-move
+
+
+https://minecraft.makecode.com/?ipc=1&noRunOnX=1#tutorial:github:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_2/lesson_A
+
+
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_2/lesson_A
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_2/lesson_B/song
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_2/lesson_B/last_stand
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_2/lesson_C
+
+
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_3/lesson_A
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_3/lesson_B
+/codebuilder navigate @p false https://minecraft.makecode.com/?ipc=1#tutorial:ponpeinieh/apcs-mc-makecode/CodingWithMinecraft/unit_3/lesson_C
+
+

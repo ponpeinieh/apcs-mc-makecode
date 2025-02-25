@@ -23,10 +23,13 @@ player.onChat("chickens", function () {
 ```
 
 ## Step 5
-Go into Minecraft, press **T** to open the chat window, and enter **chickens** in the chat window. It’s raining hens! Now if you enter **chickens 15** in the chat window, the variable **num1** will take the value **15**. 
+
+Click the **plus sign(+)** just to the right of the on chat command for **"chickens"**. Another drop-down menu should appear, with the name **num1** at the top of it. **num1** is a number variable that you can use in your code.
 
 ## Step 6
-More chickens! From ``||Variables:VARIABLES||``, replace the number **4** in ``||Loops:repeat||`` with ``||Variables:num1||``.
+More chickens! From ``||Variables:VARIABLES||``, replace the number **4** in ``||Loops:repeat||`` with ``||Variables:num1||``. 
+
+Go into Minecraft, press **T** to open the chat window, and enter **chickens 15** in the chat window, the variable **num1** will take the value **15**. 
 
 ### ~ tutorialhint
 ``` blocks

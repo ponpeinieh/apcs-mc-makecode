@@ -1,103 +1,102 @@
 ### @explicitHints 1
-#Activity: Fall Is in the Air
 
-## Step 1
-Drag an ``||Player:on chat command||`` block to the Workspace.
+# 活動：墜落感應器
 
-## Step 2
-Right-click the ``||Player:on chat command||`` and select duplicate. Do this twice so that you end up with three ``||Player:on chat command||`` blocks.
+## 第一步  
+將 ``||Player:玩家 在聊天指令為||`` 方塊拖曳到工作區。
 
-## Step 3
-Name these commands **"cr"** (creative), **"su"** (survival), and **"pm"** (postmortem).
+## 第二步  
+右鍵點擊 ``||Player:玩家 在聊天指令為||`` 並選擇複製。重複此操作兩次，最終你會得到三個 ``||Player:玩家 在聊天指令為||`` 方塊。
 
-## Step 4
-Drag out two event blocks: ``||Player:on player walk||``, and ``||Player:on player died||``.
+## 第三步  
+將這些指令命名為 **"cr"**（創造模式）、**"su"**（生存模式）和 **"pm"**（墜落報告）。
 
-## Step 5
-Change ``||Player:on player walk||`` to ``||Player:on player fall||`` block.
+## 第四步  
+拖出兩個事件方塊：``||Player:玩家 在行動方式為 走路(walk) 時||`` 和 ``||Player:玩家 在死亡時||``。
+
+## 第五步  
+將 ``||Player:玩家 在行動方式為 走路(walk) 時||`` 更改為 ``||Player:玩家 在行動方式為 墜落(fall) 時||`` 方塊。
 
 ### ~ tutorialhint
-``` blocks
-    player.onChat("cr", function () {
+```blocks
+player.onChat("cr", function () {
 
-    })
-    player.onChat("su", function () {
+})
+player.onChat("su", function () {
 
-    })
-    player.onTravelled(TravelMethod.Walk, function () {
+})
+player.onTravelled(TravelMethod.Walk, function () {
 
-    })
-    player.onChat("pm", function () {
+})
+player.onChat("pm", function () {
 
-    })
-    player.onDied(function () {
+})
+player.onDied(function () {
 
-    })
+})
 ```
 
-## Step 6
-Be "Creative". Construct the ``||Player:on chat command||`` for **"cr"**. This command will change the game mode to Creative. You can fly in Creative mode, so this is very helpful to get to a high place.
- 
-## Step 7
-Drag out ``||Gameplay:change game mode||``block and drop it inside ``||Player:on chat command "cr"||``.
+## 第六步  
+進入「創造模式」。構建 **"cr"** 的 ``||Player:玩家 在聊天指令為||``。這個指令會將遊戲模式更改為創造模式。在創造模式下你可以飛行，這對於到達高處非常有幫助。
 
-## Step 8
-In ``||Gameplay:change game mode||``, select **creative** mode, and change ``||Mobs:target||`` to yourself **@s**.
+## 第七步  
+將 ``||Gameplay:遊戲 更改遊戲模式||`` 方塊拖曳到 ``||Player:玩家 在聊天指令為 "cr"||`` 方塊內。
+
+## 第八步  
+在 ``||Gameplay:遊戲 更改遊戲模式||`` 中，選擇 **創造模式**，並將 ``||Mobs:目標||`` 更改為 **自己 @s**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("cr", function () {
     gameplay.setGameMode(
     CREATIVE,
     mobs.target(LOCAL_PLAYER)
-    )
 })
 ```
 
-##Step 9
-Just survive. Drag out ``||Gameplay:change game mode||`` block and drop it inside on chat command  "su".
+## 第九步  
+進入「生存模式」。將 ``||Gameplay:遊戲 更改遊戲模式||`` 方塊拖曳到 ``||Player:玩家 在聊天指令為 "su"||`` 方塊內。
 
-## Step 10
-In ``||Gameplay:change game mode||`` change ``||Mobs:target||`` to **yourself @s**.
+## 第十步  
+在 ``||Gameplay:遊戲 更改遊戲模式||`` 中，選擇 **生存模式**，將 ``||Mobs:目標||`` 更改為 **自己 @s**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("su", function () {
     gameplay.setGameMode(
     SURVIVAL,
     mobs.target(LOCAL_PLAYER)
-    )
 })
 ```
 
-## Step 11
-In ``||Variables:VARIABLES||``, click **Make a Variable**, and name the new variable ``||Variable:fall||``. This variable will start incrementing (adding up) each block, as the player falls.
+## 第十一步  
+在 ``||Variables:變數||`` 中，點擊 **創建變數**，並將新變數命名為 ``||Variables:fall||``。這個變數會隨著玩家墜落時每墜落一格而遞增（累加）。
 
-##Step 12
-Remember the fall. In ``||Variables:VARIABLES||``, click **Make a Variable**, and name the new variable ``||Variables:report||``.
+## 第十二步  
+記錄墜落高度。在 ``||Variables:變數||`` 中，點擊 **創建變數**，並將新變數命名為 ``||Variables:report||``。
 
-## Step 13
-Drag ``||Variables:change item||`` block into the ``||Player:on player fall||`` event.
+## 第十三步  
+將 ``||Variables:變數 改變||`` 方塊放入 ``||Player:玩家 在行動方式為 墜落(fall) 時||`` 事件中。
 
-## Step 14
-In ``||Variables:change item||``, select your variable **fall** instead of the default, **item**.
+## 第十四步  
+在 ``||Variables:變數 改變||`` 方塊中，選擇變數 **fall** 。
 
-## Step 15
-Drag out ``||Variables:change item||``. Right-click and duplicate this once. Now you should have two. 
+## 第十五步  
+拖出 ``||Variables:變數 設爲||`` 方塊。右鍵點擊並複製一次。現在你應該有兩個這樣的方塊。
 
-Put one ``||Variables:change item||`` into on player died.
+將其中一個 ``||Variables:變數 設爲||`` 方塊放入 ``||Player:玩家 在死亡時||`` 事件中。
 
-## Step 16
-In this ``||Variables:change item||`` block, select **report** instead of **item**.
+## 第十六步  
+在這個 ``||Variables:變數 設爲||`` 方塊中，選擇 **report** 。
 
-## Step 17
-Drag **fall** into the second slot and replace the **0** so the block reads **set report to fall**.
+## 第十七步  
+將 **fall** 拖曳到第二個欄位中，替換 **0**，使方塊顯示為 **將 report 設為 fall**。
 
-## Step 18
-Reset the fall count. Move the other ``||Variable:set item||`` you duplicated in step 15. Put this inside ``||Player:on player died||`` at the very bottom. Change the variable to **fall**.
+## 第十八步  
+重置墜落計數。將你在第十五步複製的另一個 ``||Variables:變數 設為||`` 方塊移動到 ``||Player:玩家 在死亡時||`` 事件的最下方。將變數更改為 **fall**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let fall = 0
 let report = 0
 player.onDied(function () {
@@ -109,32 +108,33 @@ player.onTravelled(TravelMethod.Fall, function () {
 })
 ```
 
-## Step 19
-Report your fall count. Drag ``||Player:say||`` into ``||Player:on chat command "pm"||``.
+## 第十九步  
+報告你的墜落高度。將 ``||Player:玩家 説出||`` 方塊放入 ``||Player:玩家 在聊天指令為 "pm"||`` 方塊中。
 
-## Step 20
-Click **Advanced** to see the ``||Text:TEXT||`` Toolbox category.
+## 第二十步  
+點擊 **進階** 以顯示 ``||Text:文字||`` 工具箱類別。
 
-Drag ``||Text:join||`` into ``||PLayer:say||`` and replace **"Hi!"**.
+將 ``||Text:合併||`` 方塊拖曳到 ``||Player:玩家 説出||`` 方塊中，替換 **"Hi!"**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let report = 0
 player.onChat("pm", function () {
     player.say("Hello" + "World")
 })
 ```
 
-## Step 21
-Join the variable to the message. In ``||Text:join||``, enter **"You fell"** in the first slot, replacing *"Hello"*.
+## 第二十一步  
+將變數與訊息合併。在 ``||Text:合併||`` 的第一個欄位中，輸入 **"你墜落了"**，替換 *"Hello"*。
 
-## Step 22
-Drag ``||Variables:report||`` into the second ``||Text:join||`` slot, replacing *"World"*.
+## 第二十二步  
+將 ``||Variables:report||`` 拖曳到 ``||Text:合併||`` 的第二個欄位中，替換 *"World"*。
 
 ### ~ tutorialhint
 ```blocks
 let report = 0
 player.onChat("pm", function () {
-    player.say("You fell " + report)
+    player.say("你墜落了 " + report)
 })
 ```
+ 

@@ -42,4 +42,4 @@ player.onArrowShot(function () {
 ## Step 8
 Try it Out! Go into Minecraft and try it out! Give yourself a bow and arrows by typing the following commands into the chat window:
 * /give @p bow
-* /give @p arrows 64
+* /give @p arrow 64

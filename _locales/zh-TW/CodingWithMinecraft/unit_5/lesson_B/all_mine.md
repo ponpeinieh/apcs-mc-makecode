@@ -1,21 +1,21 @@
 ### @explicitHints 1
 
-# Activity: All Mine!
+# 活動：全部都是我的！
 
-## Step 1
-Create controls for the agent. Rename the existing ``||Player:on chat command||`` to **"do"**.
+## 第一步  
+創建 Agent 的控制指令。將現有的 ``||Player:玩家 在聊天指令為||`` 方塊重命名為 **"do"**。
 
-## Step 2
-You can make a simple menu to handle all the agent commands. Drag an ``||Logic:if then else||`` into ``||Player:on chat command "do"||``. Click the **(+)**  sign on the ``||Logic:if then else||`` to add a third branch for this because you will test for three conditions.
+## 第二步  
+你可以製作一個簡單的選單來處理所有 Agent 指令。將一個 ``||Logic:如果 那麽 否則||`` 方塊放入 ``||Player:玩家 在聊天指令為 "do"||`` 方塊內。點擊 ``||Logic:如果 那麽 否則||`` 方塊上的 **(+)** 按鈕，添加第三個分支，因為你將測試三個條件。
 
-## Step 3
-Click the **(+)** sign on ``||Player:on chat command "do"||`` and **rename num1** to **AgentOrder**.
+## 第三步  
+點擊 ``||Player:玩家 在聊天指令為 "do"||`` 上的 **(+)** 按鈕，並將 **num1** 重命名為 **AgentOrder**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("do", function (AgentOrder) {
     if (true) {
-
+        agent.teleportToPlayer()
     } else if (false) {
 
     } else {
@@ -24,17 +24,16 @@ player.onChat("do", function (AgentOrder) {
 })
 ```
 
-##Step 4
-Now just test to see what the user entered. You want the user to be able to teleport the agent and turn it. The third branch will give the user some information, if nothing is entered. Grab the **‘0 = 0’** comparison block and duplicate this because you need two.
+## 第四步  
+現在只需測試用戶輸入的內容。你希望用戶能夠傳送 Agent 並讓它轉身。第三個分支將在用戶未輸入任何內容時提供一些信息。抓取 **‘0 = 0’** 比較方塊並複製它，因為你需要兩個。
 
-Place these into the ``||Logic:if then else||`` block.
+將這些方塊放入 ``||Logic:如果 那麽 否則||`` 方塊中。
 
-## Step 5
-Adjust these so you test for what the user entered. We need to test the value of ``||Agent:AgentOrder||``. Let’s say a value of **1** means the agent teleports and a value of **2** means the agent should turn.
-
+## 第五步  
+調整這些方塊以測試用戶輸入的內容。我們需要測試 ``||Agent:AgentOrder||`` 的值。假設值為 **1** 表示傳送 Agent，值為 **2** 表示讓 Agent 轉身。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("do", function (AgentOrder) {
     if (AgentOrder == 1) {
 
@@ -44,36 +43,34 @@ player.onChat("do", function (AgentOrder) {
 
     }
 })
-
 ```
 
-## Step 6
-Last, you just need to add blocks to the branches to make your agent do the actions. Add an ``||Agent:agent teleport to player||`` block into the first branch of your ``||Logic:if then else||``.
+## 第六步  
+最後，你只需在分支中添加方塊以使 Agent 執行操作。將一個 ``||Agent:Agent 傳送到玩家||`` 方塊放入 ``||Logic:如果 那麽 否則||`` 的第一個分支中。
 
-## Step 7
-Add an ``||Agent:agent turn||`` into the second branch of your ``||Logic:if then else||``.
+## 第七步  
+將一個 ``||Agent:Agent 轉動||`` 方塊放入 ``||Logic:如果 那麽 否則||`` 的第二個分支中。
 
-## Step 8
-In the last branch, add a message to give the user directions. Add a ``||Player:say||`` to the third branch of your ``||Logic:if then else||``.
+## 第八步  
+在最後一個分支中，添加一條訊息以向用戶提供指示。將一個 ``||Player:玩家 説出||`` 方塊放入 ``||Logic:如果 那麽 否則||`` 的第三個分支中。
 
-## Step 9
-Adjust the text in the ``||PLayer:say||`` to read **Enter 1 to teleport or 2 to turn**.
+## 第九步  
+將 ``||Player:玩家 説出||`` 中的文字調整為 **輸入 1 傳送或 2 轉身**。
 
-## Step 10
-Make the “dig” command. Place an ``||Player:on chat command||`` into the coding Workspace, and rename it to **"dig"**.
+## 第十步  
+創建「挖掘」指令。將一個 ``||Player:玩家 在聊天指令為||`` 方塊放入編碼工作區，並將其重命名為 **"dig"**。
 
-## Step 11
-You can only mine diamonds in Survival mode, so the first thing you should do is make sure you change the game mode to Survival. Place ``||Gameplay:change game mode||`` into ``||Player:on chat command "dig"||``.
+## 第十一步  
+你只能在生存模式中挖掘鑽石，因此你應該首先確保將遊戲模式更改為生存模式。將 ``||Gameplay:遊戲 更改遊戲模式||`` 方塊放入 ``||Player:玩家 在聊天指令為 "dig"||`` 方塊內。
 
-## Step 12
-Adjust ``||Gameplay:change game mode||`` by clicking the player selector drop-down menu to select **yourself @s**.
+## 第十二步  
+調整 ``||Gameplay:遊戲 更改遊戲模式||``，點擊玩家選擇器的下拉選單，選擇 **自己 @s**。
 
-## Step 13
-Drag an ``||Logic:if then else||`` out and drop it after the ``||Gameplay:change game mode||`` block.
-
+## 第十三步  
+將一個 ``||Logic:如果 那麽 否則||`` 方塊拖曳到 ``||Gameplay:遊戲 更改遊戲模式||`` 方塊之後。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("dig", function () {
     gameplay.setGameMode(
     SURVIVAL,
@@ -85,19 +82,18 @@ player.onChat("dig", function () {
 })
 ```
 
-## Step 14
-Look for diamonds. You want to give an alert if the agent finds valuable blocks like diamond ore. Grab an **Equals (=)** comparison block to replace the **true** in your ``||Logic:if then else||``.
+## 第十四步  
+尋找鑽石。你希望在 Agent 找到有價值的方塊（如鑽石礦）時發出警報。抓取一個 **等於 (=)** 比較方塊來替換 ``||Logic:如果 那麽 否則||`` 中的 **true**。
 
-## Step 15
-Drag an ``||Agent: agent inspect||`` into the first slot of the **Equals**, ``||Logic:0 = 0||``, replacing the number **0**. The ``||Agent:agent inspect||`` block will check the block directly in front of the agent.
+## 第十五步  
+將一個 ``||Agent:Agent 偵查||`` 方塊拖曳到 **等於 (=)** 比較方塊的第一個欄位中，替換數字 **0**。``||Agent:Agent 偵查||`` 方塊將檢查 Agent 正前方的方塊。
 
-Drag a ``||Blocks:block||`` out and drop it into the second slot of the **Equals**, ``||Logic:0 = 0||``.
+將一個 ``||Blocks:方塊||`` 方塊拖曳到 **等於 (=)** 比較方塊的第二個欄位中。
 
-In ``||Blocks:block||``, use the drop-down menu to select **Diamond Ore** as the block you are checking.
-
+在 ``||Blocks:方塊||`` 中，使用下拉選單選擇 **鑽石礦** 作為你要檢查的方塊。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("dig", function () {
     gameplay.setGameMode(
     SURVIVAL,
@@ -111,23 +107,23 @@ player.onChat("dig", function () {
 })
 ```
 
-## Step 16
-Get rich! If you do find **Diamond Ore**, then you’ll want to print a message to the screen and mine the ore. Drag ``||Player:say||`` and drop it into the first branch of the ``||Logic:if then else||`` block.
+## 第十六步  
+發財吧！如果你找到 **鑽石礦**，則需要在屏幕上輸出訊息並挖掘礦石。將一個 ``||Player:玩家 説出||`` 方塊拖曳到 ``||Logic:如果 那麽 否則||`` 的第一個分支中。
 
-In the ``||Player:say||`` block, enter a message like **"We’re rich!"**.
+在 ``||Player:玩家 説出||`` 方塊中，輸入一條訊息，例如 **"我們發財了！"**。
 
-## Step 17
-Drag the following three blocks and drop them in order under the ``||Player:say||`` block: ``||Agent:agent destroy||``, ``||Agent:agent move||``, and ``||Agent:agent collect all||``.
+## 第十七步  
+將以下三個方塊按順序拖曳到 ``||Player:玩家 説出||`` 方塊下方：``||Agent:Agent 破壞||``、``||Agent:Agent 移動||`` 和 ``||Agent:Agent 收集全部||``。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("dig", function () {
     gameplay.setGameMode(
     SURVIVAL,
     mobs.target(LOCAL_PLAYER)
     )
     if (agent.inspect(AgentInspection.Block, FORWARD) == DIAMOND_ORE) {
-        player.say("We're rich!")
+        player.say("我們發財了！")
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
         agent.collectAll()
@@ -136,16 +132,16 @@ player.onChat("dig", function () {
 })
 ```
 
-## Step 18
-Destroy the other blocks and keep mining. If the agent doesn’t find Diamond Ore, he should simply destroy the non-valuable block in front of it, and move forward without collecting anything. From ``||Agent:AGENT||``, drag ``||Agent:agent destroy||`` and ``||Agent:agent move||`` into the ``||Logic:else||`` clause.
+## 第十八步  
+摧毀其他方塊並繼續挖掘。如果 Agent 沒有找到鑽石礦，它應該簡單地摧毀前方的非貴重方塊，並向前移動而不收集任何東西。從 ``||Agent:AGENT||`` 中，將 ``||Agent:Agent 破壞||`` 和 ``||Agent:Agent 移動||`` 方塊拖曳到 ``||Logic:否則||`` 分支中。
 
-## Step 19
-You need to repeat this process **64** times, so you’ll use a loop. Drag a ``||Loops:repeat||`` loop out and surround your ``||Logic:if then else||`` block.
+## 第十九步  
+你需要重複這個過程 **64** 次，因此你將使用一個迴圈。將一個 ``||Loops:重複||`` 迴圈拖曳出來，並包圍你的 ``||Logic:如果 那麽 否則||`` 方塊。
 
-In the ``||Loops:repeat||`` loop, enter the number **64**.
+在 ``||Loops:重複||`` 迴圈中，輸入數字 **64**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("dig", function () {
     gameplay.setGameMode(
     SURVIVAL,
@@ -153,7 +149,7 @@ player.onChat("dig", function () {
     )
     for (let i = 0; i < 64; i++) {
         if (agent.inspect(AgentInspection.Block, FORWARD) == DIAMOND_ORE) {
-            player.say("We’re rich!")
+            player.say("我們發財了！")
             agent.destroy(FORWARD)
             agent.move(FORWARD, 1)
             agent.collectAll()
@@ -165,18 +161,17 @@ player.onChat("dig", function () {
 })
 ```
 
-## Step 20
-Make a return trip. This will send your agent forward to mine **64** blocks, but you need to have it turn around and come back. So, you’ll use another loop outside your ``||Loops:repeat||`` loop. You are creating a “Nested Loop” because there will be a loop within a loop. Drag another ``||Loops:repeat||`` loop out and surround your existing ``||Loops:repeat 64||`` loop.
+## 第二十步  
+讓 Agent 返回。這將讓你的 Agent 向前挖掘 **64** 個方塊，但你需要讓它轉身並返回。因此，你將在 ``||Loops:重複||`` 迴圈外使用另一個迴圈。你正在創建一個「嵌套迴圈」，因為迴圈內還有迴圈。將另一個 ``||Loops:重複||`` 迴圈拖曳出來，並包圍現有的 ``||Loops:重複 64||`` 迴圈。
 
-## Step 21
-In the ``||Loops:repeat||`` loop, enter the number **2**, because you’ll want your agent to mine just two rows of blocks. At the end of the first row, you want your agent to move up and turn around.
+## 第二十一步  
+在 ``||Loops:重複||`` 迴圈中，輸入數字 **2**，因為你希望你的 Agent 挖掘兩行方塊。在第一行結束時，你希望你的 Agent 向上移動並轉身。
 
-## Step 22
-Drag the following four blocks out and drop them in order under the inner ``||Loops:repeat||`` loop: ``||Agent:agent destroy||``, ``||Agent:agent move||``, and two ``||Agent:agent turn||`` blocks. Place them here to position your agent to come back. You will need to adjust the direction for a few of these blocks by using the the drop-down menu to select up.
-
+## 第二十二步  
+將以下四個方塊按順序拖曳到內層 ``||Loops:重複||`` 迴圈下方：``||Agent:Agent 破壞||``、``||Agent:Agent 移動||`` 和兩個 ``||Agent:Agent 轉動||`` 方塊。將它們放在這裡以讓 Agent 返回。你需要使用下拉選單調整其中一些方塊的方向，選擇 **上**。
 
 ### ~ tutorialhint
-``` blocks 
+```blocks
 player.onChat("dig", function () {
     gameplay.setGameMode(
     SURVIVAL,
@@ -185,7 +180,7 @@ player.onChat("dig", function () {
     for (let i = 0; i < 2; i++) {
         for (let i = 0; i < 64; i++) {
             if (agent.inspect(AgentInspection.Block, FORWARD) == DIAMOND_ORE || agent.inspect(AgentInspection.Block, FORWARD) == GOLD_ORE) {
-                player.say("We're rich!")
+                player.say("我們發財了！")
                 agent.destroy(FORWARD)
                 agent.move(FORWARD, 1)
                 agent.collectAll()
@@ -201,5 +196,3 @@ player.onChat("dig", function () {
     }
 })
 ```
-
-

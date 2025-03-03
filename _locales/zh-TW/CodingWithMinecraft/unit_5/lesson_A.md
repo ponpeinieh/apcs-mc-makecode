@@ -1,34 +1,34 @@
 ### @explicitHints 1
 
-# Activity: How Old Are You? 
+# 活動：你幾歲？
 
-## Step 1
-Rename the existing ``||Player:on chat command "run"||`` to **"age"**.
+## 第一步  
+將現有的 ``||Player:玩家 在聊天指令為 "run"||`` 方塊重命名為 **"age"**。
 
-Click the Plus **(+)** sign on the ``||Player:on chat command "run"||`` to create a **num1** variable parameter.
+點擊 ``||Player:玩家 在聊天指令為 "run"||`` 上的加號 **(+)**，以創建一個 **num1** 變數參數。
 
-Rename **num1** to **FriendsAge**. This makes your code more readable. Always use meaningful names when making variables in coding. This makes finding errors more intuitive. You can rename variables from the drop-down menu.
+將 **num1** 重命名為 **FriendsAge**。這使你的代碼更易讀。在編碼時，請始終使用有意義的名稱來命名變數。這使得查找錯誤更加直觀。你可以從下拉選單中重命名變數。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("age", function(FriendsAge) {
 
 })
 ```
 
-## Step 2
-Use a conditional. Drag an ``||Logic:if then else||`` block inside ``||Player:on chat command "age"||``.
+## 第二步  
+使用條件判斷。將一個 ``||Logic:如果 那麽 否則||`` 方塊放入 ``||Player:玩家 在聊天指令為 "age"||`` 方塊內。
 
-Click the Plus **(+)** sign in the ``||Logic:if then else||`` to create another ``||Logic:else if||`` branch.
+點擊 ``||Logic:如果 那麽 否則||`` 方塊上的加號 **(+)**，以創建另一個 ``||Logic:否則如果 那麽||`` 分支。
 
-## Step 3
-Insert the comparisons. Drag a **less** than, ``||Logic:0 < 0||``, comparison block into the ``||Logic:if||`` slot, replacing **true**.
+## 第三步  
+插入比較條件。將一個 **小於**，``||Logic:0 < 0||``，比較方塊放入 ``||Logic:如果||`` 欄位中，替換 **true**。
 
-## Step 4
-Drag an **Equals**, ``||Logic:0 = 0||``, comparison block into the ``||Logic:else if||`` slot.
+## 第四步  
+將一個 **等於**，``||Logic:0 = 0||``，比較方塊放入 ``||Logic:否則如果||`` 欄位中。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("age", function (FriendsAge) {
     if (0 < 0) {
     } else if (0 == 0) {
@@ -37,13 +37,13 @@ player.onChat("age", function (FriendsAge) {
 })
 ```
 
-## Step 5
-Compare with your variable. Drag two of the ``||Variables:num1||`` blocks into the first slot of each of the **Comparison** blocks.
+## 第五步  
+與你的變數進行比較。將兩個 ``||Variables:num1||`` 方塊拖曳到每個 **比較** 方塊的第一個欄位中。
 
-In the second slot of the Comparison blocks, enter your age (for example, **12**).
+在比較方塊的第二個欄位中，輸入你的年齡（例如 **12**）。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("age", function (FriendsAge) {
     if (FriendsAge < 12) {
 
@@ -55,13 +55,13 @@ player.onChat("age", function (FriendsAge) {
 })
 ```
 
-## Step 6
-Print blocks for each condition. Drag a ``||Blocks:print "Hello"||`` block onto your Workspace. Right-click ``||Blocks:print "Hello"||`` block and select **Duplicate** to make a copy.
+## 第六步  
+為每個條件輸出方塊。將一個 ``||Blocks:方塊 輸出 "Hello"||`` 方塊拖曳到工作區。右鍵點擊 ``||Blocks:方塊 輸出 "Hello"||`` 方塊並選擇 **複製** 以創建一個副本。
 
-Place one in each of your ``||Logic:if||``,``||Logic:else if||``, and ``||Logic:else||`` clauses.
+將這些方塊分別放入 ``||Logic:如果||``、``||Logic:否則如果||`` 和 ``||Logic:否則||`` 分支中。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("age", function (FriendsAge) {
     if (FriendsAge < 12) {
         blocks.print(
@@ -88,16 +88,16 @@ player.onChat("age", function (FriendsAge) {
 })
 ```
 
-## Step 7
-Print different messages. In each ``||Blocksprint "Hello"||``, type a different message for people who are younger than you, your same age, or older than you.
+## 第七步  
+輸出不同的訊息。在每個 ``||Blocks:方塊 輸出 "Hello"||`` 方塊中，輸入不同的訊息，分別針對比你年輕、與你同齡或比你年長的人。
 
-## Step 8
-Use the drop-down menu in the ``||Blocks:print||`` blocks to select a different block to use for each message.
+## 第八步  
+使用 ``||Blocks:方塊 輸出||`` 方塊中的下拉選單，為每條訊息選擇不同的方塊。
 
-In all the ``||Blocks:print||`` blocks, set the **Y** coordinate to 10 (so these messages print in the sky).
+在所有 ``||Blocks:方塊 輸出||`` 方塊中，將 **Y** 坐標設為 10（以便這些訊息在天空中輸出）。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("age", function (FriendsAge) {
     if (FriendsAge < 12) {
         blocks.print(
@@ -124,9 +124,9 @@ player.onChat("age", function (FriendsAge) {
 })
 ```
 
-## Step 9
-Have fun showing the age messages. Pair up to run these messages. In the Minecraft Game, enter ‘t’ to open the chat window.
+## 第九步  
+享受顯示年齡訊息的樂趣。與同伴一起運行這些訊息。在 Minecraft 遊戲中，按下 **T** 打開聊天窗口。
 
-Ask your neighbor their age, and enter ‘age x’ – where x is your neighbor’s age.
+詢問你旁邊的人的年齡，並輸入 **age x** —— 其中 **x** 是你旁邊的人的年齡。
 
-Look in the sky above you at your message!
+抬頭看看你上方的訊息吧！

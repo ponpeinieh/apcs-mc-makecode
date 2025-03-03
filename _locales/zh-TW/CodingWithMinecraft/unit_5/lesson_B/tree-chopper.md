@@ -1,21 +1,21 @@
 ### @explicitHints 1
 
-# Activity: Agent Tree Chopper 
+# 活動：代理樹木砍伐者
 
-## Step 1
-Rename the existing ``||Player:on chat command||`` to **"tp"**.
-Drag an ``||Agent:agent teleport to player||`` block inside ``||Player:on chat command "tp"||``.
+## 第一步  
+將現有的 ``||Player:玩家 在聊天指令為||`` 方塊重命名為 **"tp"**。  
+將 ``||Agent:Agent 傳送到玩家||`` 方塊放入 ``||Player:玩家 在聊天指令為 "tp"||`` 方塊內。
 
-## Step 2
-Now, let's also create a directional command, so we can turn our Agent around. You can right-click on ``||Player:on chat command "tp"||`` and select **Duplicate** to make a copy.
+## 第二步  
+現在，讓我們創建一個方向指令，以便我們可以讓 Agent 轉身。你可以右鍵點擊 ``||Player:玩家 在聊天指令為 "tp"||`` 並選擇 **複製** 來創建一個副本。
 
-Rename the duplicate **"lt"**.
+將副本重命名為 **"lt"**。
 
-## Step 3
-Delete the inside block for this new duplicate and replace ``||Agent:agent teleport to player||`` with ``||Agent:agent turn 'left'||``.
+## 第三步  
+刪除這個新副本中的內部方塊，並將 ``||Agent:Agent 傳送到玩家||`` 替換為 ``||Agent:Agent 轉動 '左'||``。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 player.onChat("tp", function () {
     agent.teleportToPlayer()
 })
@@ -24,19 +24,19 @@ player.onChat("lt", function () {
 })
 ```
 
-##Step 4
-Create the height variable. Drag an ``||Player:on chat command||`` block into the coding Workspace and rename it **"chop"**.
+## 第四步  
+創建高度變數。將一個 ``||Player:玩家 在聊天指令為||`` 方塊拖曳到編碼工作區，並將其重命名為 **"chop"**。
 
-You'll use a variable to keep track of the height of the tree. In the ``||Variables:VARIABLES||`` Toolbox drawer, click the **Make a Variable** button. Name the new variable **height**.
+你將使用一個變數來記錄樹的高度。在 ``||Variables:變數||`` 工具箱抽屜中，點擊 **創建變數** 按鈕。將新變數命名為 **height**。
 
-## Step 5
-Initialize height to **zero**. Drag out ``||Variables:set||`` and snap it inside ``||Player:on chat command "chop"||``.
+## 第五步  
+將 **height** 初始化為 **0**。將 ``||Variables:變數 設為||`` 方塊拖曳到 ``||Player:玩家 在聊天指令為 "chop"||`` 方塊內。
 
-## Step 6
-In the ``||Variables:set||`` block, use the drop-down menu to select **height** as the variable and set **height** to **0**.
+## 第六步  
+在 ``||Variables:變數 設為||`` 方塊中，使用下拉選單選擇 **height** 作為變數，並將 **height** 設為 **0**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let height = 0
 player.onChat("tp", function () {
     agent.teleportToPlayer()
@@ -49,17 +49,17 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 7
-Start at the base of a tree. Assume the agent is placed facing the base of the tree when the chop command is given. Use the "tp" and "lt" commands to get your agent in place and then finally "chop". Use a ``||Loops:while||`` loop, which is like a ``||Loops:repeat||`` loop combined with a conditional statement. The code will continue as long as there is a block in front of the agent. If there is a block in front of the agent, then it will keep moving up the tree.
+## 第七步  
+從樹的底部開始。假設在執行 **chop** 指令時，Agent 已經面向樹的底部。使用 **"tp"** 和 **"lt"** 指令將你的 Agent 放置到位，然後最後執行 **"chop"**。使用一個 ``||Loops:重複 判斷||`` 迴圈，這類似於結合了條件判斷的 ``||Loops:重複||`` 迴圈。只要 Agent 前方有方塊，代碼就會繼續執行。如果 Agent 前方有方塊，它將繼續向上移動。
 
-## Step 8
-Drag out a ``||Loops:while||`` loop and drop it under ``||Variables:set 'height'||``. This would be inside ``||Player:on chat command "chop"||``.
+## 第八步  
+將一個 ``||Loops:重複 判斷||`` 迴圈拖曳到 ``||Variables:變數 height 設為||`` 方塊下方。這應該放在 ``||Player:玩家 在聊天指令為 "chop"||`` 方塊內。
 
-## Step 9
-Drag out ``||Agent:agent detect 'block' 'forward'||`` and drop it into the ``||Loops:while||`` loop replacing ``||Logic:true||``.
+## 第九步  
+將 ``||Agent:Agent 偵測 方塊 前||`` 方塊拖曳到 ``||Loops:重複 判斷||`` 迴圈中，替換 ``||Logic:成立||``。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let height = 0
 player.onChat("tp", function () {
     agent.teleportToPlayer()
@@ -75,19 +75,19 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 10
-Move up the tree and chop. Place a ``||Variables:change||`` block inside the ``||Loops:while||`` loop.
+## 第十步  
+向上移動並砍伐樹木。將一個 ``||Variables:變數 改變||`` 方塊放入 ``||Loops:重複 判斷||`` 迴圈內。
 
-The new block should read ``||Variables:change 'height' by 1||``. This will increase the height variable by 1 each time the agent moves up. This is how we can keep track of the height of the tree.
+這個新方塊應該顯示為 ``||Variables:變數 height 改變 1||``。這將使 **height** 變數每次增加 1，這樣我們就可以記錄樹的高度。
 
-## Step 11
-If leaves or branches are above the agent's head, you need to destroy them in order to move the agent up. Place an ``||Agents: agent destroy||`` block below ``||Variables:change 'height' by 1||``. You will need to adjust this block by selecting **up** as the direction from the drop-down menu.
+## 第十一步  
+如果 Agent 頭頂上有樹葉或樹枝，你需要摧毀它們以便讓 Agent 向上移動。將一個 ``||Agent:Agent 破壞||`` 方塊放在 ``||Variables:變數 height 改變 1||`` 方塊下方。你需要從下拉選單中選擇 **上** 作為方向來調整這個方塊。
 
-## Step 12
-Finally, get your agent to move up. Grab an ``||Agent:agent move||`` block, and then use the drop-down menu to select up as the **direction** like you did in the previous step.
+## 第十二步  
+最後，讓你的 Agent 向上移動。抓取一個 ``||Agent:Agent 移動||`` 方塊，然後像上一步一樣從下拉選單中選擇 **上** 作為 **方向**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let height = 0
 player.onChat("tp", function () {
     agent.teleportToPlayer()
@@ -105,14 +105,14 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 13
-Come back down. Drag out a ``||Loops:repeat||`` loop, and drop it after the ``||Loops:while||`` loop in your ``||Player:on chat command "chop"||``.
+## 第十三步  
+返回地面。將一個 ``||Loops:重複||`` 迴圈拖曳到 ``||Loops:重複 判斷||`` 迴圈之後，放在 ``||Player:玩家 在聊天指令為 "chop"||`` 方塊內。
 
-## Step 14
-Drag out height and replace the **4** in the ``||Loops:repeat||`` loop.
+## 第十四步  
+將 **height** 拖曳到 ``||Loops:重複||`` 迴圈中，替換 **4**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 let height = 0
 player.onChat("tp", function () {
     agent.teleportToPlayer()
@@ -133,17 +133,17 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 15
-Chop while you drop. At this point the agent should be standing at the top of a tree. You need to get it to climb back down, chop the tree, and collect the wood. Place an ``||Agent:agent move||`` and ``||Agent:agent destroy||`` inside the ``||Loops:repeat||`` loop.
+## 第十五步  
+在下降時砍伐樹木。此時，Agent 應該站在樹頂。你需要讓它爬下來，砍伐樹木並收集木材。將一個 ``||Agent:Agent 移動||`` 和 ``||Agent:Agent 破壞||`` 方塊放入 ``||Loops:重複||`` 迴圈內。
 
-## Step 16
-Now you need to adjust these blocks for the situation. The agent needs to **move down** and will be chopping each piece of the tree that is **in front** of it. In the ``||Agent:move||`` block, select **down** as the direction. The agent will move down. Then, the agent should destroy the tree block in front of it. The default settings are ok for ``||Agent:destroy||``.
+## 第十六步  
+現在你需要根據情況調整這些方塊。Agent 需要 **向下移動**，並砍伐 **前方** 的每一塊樹木。在 ``||Agent:Agent 移動||`` 方塊中，選擇 **下** 作為方向。Agent 將向下移動。然後，Agent 應該摧毀前方的樹木方塊。``||Agent:Agent 破壞||`` 的預設設置即可。
 
-## Step 17
-Finally, you want your agent to collect all the wood it chopped. Place an ``||Agent:agent collect all||`` after the ``||Loops:repeat||`` loop. This is now the last block in our ``||Player:on chat command||`` for **"chop"**.
+## 第十七步  
+最後，你希望 Agent 收集所有砍伐的木材。將一個 ``||Agent:Agent 收集全部||`` 方塊放在 ``||Loops:重複||`` 迴圈之後。這是我們 ``||Player:玩家 在聊天指令為 "chop"||`` 中的最後一個方塊。
 
 ### ~ tutorialhint
-``` blocks 
+```blocks
 let height = 0
 player.onChat("tp", function () {
     agent.teleportToPlayer()
@@ -165,3 +165,4 @@ player.onChat("chop", function () {
     agent.collectAll()
 })
 ```
+ 

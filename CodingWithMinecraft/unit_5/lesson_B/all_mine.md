@@ -15,7 +15,7 @@ Click the **(+)** sign on ``||Player:on chat command "do"||`` and **rename num1*
 ``` blocks
 player.onChat("do", function (AgentOrder) {
     if (true) {
-
+        agent.teleportToPlayer()
     } else if (false) {
 
     } else {

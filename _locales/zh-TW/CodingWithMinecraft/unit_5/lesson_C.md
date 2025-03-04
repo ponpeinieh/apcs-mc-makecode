@@ -6,7 +6,7 @@
 Copy the Starter Code. Copy the code from the hint.
 
 ### ~ tutorialhint
-```javascript
+```template
 player.onChat("tp", function () {
         player.teleport(positions.create(3, 0, 3))
         agent.teleportToPlayer() 

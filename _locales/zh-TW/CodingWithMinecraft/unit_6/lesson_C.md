@@ -1,23 +1,23 @@
 ### @explicitHints 1
-# Activity: Burger 
+# 活動：漢堡 
 
-## Step 1
-Make a function. In the ``||Functions:FUNCTIONS||`` Toolbox drawer, click the **Make a Function** button.
+## 第一步
+建立一個函數。在 ``||Functions:函數||`` 工具箱抽屜中，點擊 **建立函數** 按鈕。
 
-Name the function. Name this function *bottomBun()*, and click **Ok**.
+為函數命名。將此函數命名為 *bottomBun()*，然後點擊 **確定**。
 
-## Step 2
-Make the meat(), lettuce(), tomato(), topBun() functions. Repeat the previous step to create two more functions named: **meat, lettuce, tomato,** and **Top Bun**.
+## 第二步
+建立 meat()、lettuce()、tomato()、topBun() 函數。重複上一步驟，建立另外四個函數，分別命名為：**meat**、**lettuce**、**tomato** 和 **topBun**。
 
-## Step 3
-Drag an ``||Player:on chat command||`` block onto the Workspace.
+## 第三步
+將一個 ``||Player:玩家 在聊天指令為||`` 方塊拖到工作區。
 
-Rename this ``||Player:on chat command||`` to **"burger"**.
+將此 ``||Player:玩家 在聊天指令為||`` 重新命名為 **"burger"**。
 
-## Step 4
-Drag five blocks ``||Functions:call function bottomBun||``, ``||Functions:call function meat||``, ``||Functions:call function lettuce||`` , ``||Functions:call function tomato||`` and ``||Functions:call function topBun||`` into ``||Player:on chat command "play"||``.
+## 第四步
+將五個方塊 ``||Functions:呼叫函數 bottomBun||``、``||Functions:呼叫函數 meat||``、``||Functions:呼叫函數 lettuce||``、``||Functions:呼叫函數 tomato||`` 和 ``||Functions:呼叫函數 topBun||`` 拖入 ``||Player:玩家 在聊天指令為 "burger"||`` 中。
 
-**NOTE**: The order of these function calls is important.
+**注意**：這些函數的呼叫順序非常重要。
 
 ### ~ tutorialhint
 ```blocks
@@ -45,13 +45,13 @@ function tomato()  {
 }
 ```
 
-## Step 5
-Create the bottom bun. The first thing you'll do is create the bottom bun.
+## 第五步
+建立底部麵包。首先，您需要建立底部麵包。
 
-Drag a ``||Blocks:fill||`` into ``||Functions:bottomBun||``. Change the block by clicking **Oak Wood Planks** from the drop-down menu.
+將一個 ``||Blocks:方塊 填充||`` 方塊拖入 ``||Functions:bottomBun||`` 函數中。點擊下拉選單，將方塊更改為 **橡木木板**。
 
-## Step 6
-Enter the coordinates for the top bun with a starting position of **(~3, ~0, ~3)** and ending position of **(~8, ~0, ~8)**.
+## 第六步
+輸入底部麵包的坐標，起始位置為 **(~3, ~0, ~3)**，結束位置為 **(~8, ~0, ~8)**。
 
 ### ~ tutorialhint
 ```blocks
@@ -83,12 +83,12 @@ function tomato() {
 }
 ```
 
-## Step 7
-"Cook" the meat. Let's create a layer of meat. Drag a ``||Blocks:fill||`` into ``||Functions:meat||``. 
+## 第七步
+“烹飪”肉片。讓我們建立一層肉片。將一個 ``||Blocks:方塊 填充||`` 方塊拖入 ``||Functions:meat||`` 函數中。
 
-Adjust the material by selecting **Brown Terracotta** from the drop-down menu. Then change the position in the coordinates section to a starting position of **(~4, ~1, ~4)** and a finishing position of **(~7, ~1, ~7)**.
+從下拉選單中選擇 **棕色陶土** 來調整材料。然後將坐標的起始位置更改為 **(~4, ~1, ~4)**，結束位置更改為 **(~7, ~1, ~7)**。
 
-Duplicate it. 
+複製它。
 
 ### ~ tutorialhint
 ```blocks
@@ -125,10 +125,11 @@ function tomato() {
 
 }
 ```
-## Step 8
-Create the lettuce. Let's create a layer of lettuce. Drag a ``||Blocks:fill||`` into the ``||Functions:lettuce||`` function.
 
-Change the material selecting **Lime Concrete** from the drop-down menu. Then change the position in the coordinates to a starting position of **(~4, ~2, ~4)** and a finishing position of **(~7, ~2, ~7)**.
+## 第八步
+建立生菜。讓我們建立一層生菜。將一個 ``||Blocks:方塊 填充||`` 方塊拖入 ``||Functions:lettuce||`` 函數中。
+
+從下拉選單中選擇 **石灰混凝土** 來更改材料。然後將坐標的起始位置更改為 **(~4, ~2, ~4)**，結束位置更改為 **(~7, ~2, ~7)**。
 
 ### ~ tutorialhint
 ```blocks
@@ -171,10 +172,10 @@ function tomato() {
 }
 ```
 
-## Step 9
-Create the tomato. Let's create a layer of tomato. Drag a ``||Blocks:fill||`` into the ``||Functions:tomato||`` function.
+## 第九步
+建立番茄。讓我們建立一層番茄。將一個 ``||Blocks:方塊 填充||`` 方塊拖入 ``||Functions:tomato||`` 函數中。
 
-Change the material selecting **Red Concrete** from the drop-down menu. Then change the position in the coordinates to a starting position of **(~4, ~3, ~4)** and a finishing position of **(~7, ~3, ~7)**.
+從下拉選單中選擇 **紅色混凝土** 來更改材料。然後將坐標的起始位置更改為 **(~4, ~3, ~4)**，結束位置更改為 **(~7, ~3, ~7)**。
 
 ### ~ tutorialhint
 ```blocks
@@ -189,19 +190,19 @@ function tomato() {
 tomato()
 ```
 
-## Step 10
-Create the top bun. The final function is the **top bun**. To give the burger a more realistic look, this function will fill in two layers instead of just one. Drag two ``||Blocks:fill||`` blocks into the ``||Functions:topBun||`` function.
+## 第十步
+建立頂部麵包。最後一個函數是 **頂部麵包**。為了讓漢堡看起來更真實，這個函數將填充兩層而不是一層。將兩個 ``||Blocks:方塊 填充||`` 方塊拖入 ``||Functions:topBun||`` 函數中。
 
-Change the material for each fill to **Oak Wood Planks**.
+將每個填充的材料更改為 **橡木木板**。
 
-## Step 11
-Change the top fill coordinates first. The position for the coordinates should have a starting position of **(~3, ~4, ~3)** and a finishing position of **(~8, ~4, ~8)**.
+## 第十一步
+首先更改頂部填充的坐標。坐標的起始位置應為 **(~3, ~4, ~3)**，結束位置應為 **(~8, ~4, ~8)**。
 
-## Step 12
-The bottom fill should have a starting position of **(~4, ~5, ~4)** and a finishing position of **(~7, ~5, ~7)**.
+## 第十二步
+底部填充的起始位置應為 **(~4, ~5, ~4)**，結束位置應為 **(~7, ~5, ~7)**。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function topBun() {
     blocks.fill(
     PLANKS_OAK,
@@ -219,9 +220,8 @@ function topBun() {
 topBun()
 ```
 
-## Step 13
-
-Complete the program!
+## 第十三步
+完成程式！
 
 ### ~ tutorialhint
 ```blocks

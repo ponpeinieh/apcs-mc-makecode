@@ -1,25 +1,25 @@
 ### @explicitHints 1
 
-# Activity: Zombie Pig 
+# 活動：殭屍豬人
 
-## Step 1
-Make a function. Click the Advanced tab on the Toolbox to display more Toolbox categories. 
+## 第一步  
+創建一個函數。點擊工具箱中的 **進階** 標籤以顯示更多工具箱類別。
 
-Name this function **zombiepig**, and click **Ok**.
+將此函數命名為 **zombiepig**，然後點擊 **確定**。
 
-## Step 2
-Make the platform() and teleport() functions. Repeat the previous step to create two more functions named: **atmosphere** and **setup**.
+## 第二步  
+創建 **platform()** 和 **teleport()** 函數。重複上一步驟，創建兩個名為 **atmosphere** 和 **setup** 的函數。
 
-## Step 3
-Drag ``||Player:on chat command||`` onto the Workspace.
+## 第三步  
+將 ``||Player:玩家 在聊天指令為||`` 方塊拖曳到工作區。
 
-Rename this ``||Player:on chat command||`` to **"play"**.
+將此 ``||Player:玩家 在聊天指令為||`` 重命名為 **"play"**。
 
-## Step 4
-Drag the three blocks ``||Functions:call function setup||``, ``||Functions:call function atmosphere||``, ``||Functions:call function zombiepig||`` into ``||Blocks:on chat command "play"||``.
+## 第四步  
+將三個方塊 ``||Functions:呼叫函數 setup||``、``||Functions:呼叫函數 atmosphere||``、``||Functions:呼叫函數 zombiepig||`` 放入 ``||Player:玩家 在聊天指令為 "play"||`` 方塊中。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function zombiepig()  {
 
 }
@@ -36,16 +36,16 @@ function setup()  {
 }
 ```
 
-## Step 5
-Create the Zombie Pig. Drag a ``||Mobs:spawn animal||`` block into ``||Functions:zombie pig||``. Change the animal by selecting **Pig** from the drop-down menu. Then change the position in the Z coordinate to spawn a pig five blocks north of the player.
+## 第五步  
+創建殭屍豬人。將一個 ``||Mobs:生物 生成 動物||`` 方塊拖曳到 ``||Functions:zombiepig||`` 函數中。從下拉選單中選擇 **豬** 來更改動物。然後更改 Z 坐標的位置，使豬生成在玩家北邊五格的位置。
 
-Create another spawn block and place it below the first. Replace **animal** with a projectile lightning bolt.
+創建另一個生成方塊並將其放在第一個方塊下方。將 **動物** 替換為 **閃電電流**。
 
-## Step 6
-Enter the same coordinates used for the pig: **(~0, ~0, ~-5)**. The trick here is that if a pig is hit by lightning, it transforms the pig into a Zombie Pigman! This is why you want to spawn both at the same coordinates **(~0, ~0, ~-5)**.
+## 第六步  
+輸入與豬相同的坐標：**(~0, ~0, ~-5)**。這裡的技巧是，如果豬被閃電擊中，它會變成殭屍豬人！這就是為什麼你希望兩者在相同坐標 **(~0, ~0, ~-5)** 生成。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function zombiepig() {
     mobs.spawn(PIG, pos(0, 0, -5))
     mobs.spawn(LIGHTNING_BOLT, pos(0, 0, -5))
@@ -63,29 +63,29 @@ function atmosphere()  {
 }
 ```
 
-## Step 7
-Adjust settings. You want the game to work automatically. After you enter play, the game should start with everything set up so you have some crazed Zombie Pigmen to battle. The first issue is the difficulty level of the game. The pig will not change into a Zombie Pig if the game is set to Peaceful.
+## 第七步  
+調整設置。你希望遊戲自動運行。輸入 **play** 後，遊戲應該開始並設置好一切，這樣你就可以與瘋狂的殭屍豬人戰鬥了。第一個問題是遊戲的難度等級。如果遊戲設置為和平模式，豬不會變成殭屍豬人。
 
-## Step 8
-Drag a ``||Gameplay:set difficulty to||`` into ``||Function:setup||``.
+## 第八步  
+將一個 ``||Gameplay:遊戲 設置難度為||`` 方塊拖曳到 ``||Functions:setup||`` 函數中。
 
-Adjust this new block so it reads ``||Gameplay:set difficulty to 'peaceful'||``.
+調整此新方塊，使其顯示為 ``||Gameplay:遊戲 設置難度為 '簡單'||``。
 
-## Step 9
-Next, you want to change the game mode for your player. Setting the gamemode to Survival mode ensures that the Pigman will come after you! As soon as you hit the Pigman, it will start to attack you back! Drag a ``||Gameplay:change game mode to||`` into ``||Function:setup||``.
+## 第九步  
+接下來，你希望更改玩家的遊戲模式。將遊戲模式設置為生存模式，確保殭屍豬人會追擊你！只要你攻擊殭屍豬人，它就會開始反擊！將一個 ``||Gameplay:遊戲 更改遊戲模式||`` 方塊拖曳到 ``||Functions:setup||`` 函數中。
 
-Adjust this new block so it reads ``||Gameplay:change game mode to 'survival'||``.
+調整此新方塊，使其顯示為 ``||Gameplay:遊戲 更改遊戲模式為 '生存'||``。
 
-Also, adjust the target so that it targets "yourself".
+同時，調整目標以選擇 **自己**。
 
-## Step 10
-Finally, fighting will be very difficult without a weapon. You can give yourself a weapon to make the game more reasonable for your player. Grab a ``||Mobs:give||`` block and place it as the last block in the ``||Function:setup||`` function.
+## 第十步  
+最後，沒有武器的戰鬥將非常困難。你可以給自己一把武器，使遊戲對玩家更合理。抓取一個 ``||Mobs:生物 給予||`` 方塊，並將其作為 ``||Functions:setup||`` 函數中的最後一個方塊。
 
-## Step 11
-You will need to target yourself and give yourself a sword or other weapon. The example gives one diamond sword.
+## 第十一步  
+你需要選擇自己並給自己一把劍或其他武器。範例中給了一把鑽石劍。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function atmosphere()  {
 
 }
@@ -112,22 +112,22 @@ player.onChat("play", function () {
 })
 ```
 
-## Step 12
-At this point, you can test your game! By entering play in the chat window, the mini-game will start.
+## 第十二步  
+此時，你可以測試你的遊戲！在聊天窗口中輸入 **play**，小遊戲將開始。
 
-## Step 13
-Adjust time. The last step for this mini-game is to add visual effects by adjusting the time of day. This will give the appropriate atmosphere that all zombies require. You will add a **time set** block. 
+## 第十三步  
+調整時間。這個小遊戲的最後一步是通過調整時間來添加視覺效果。這將為所有殭屍提供合適的氛圍。你將添加一個 **時間設置** 方塊。
 
-## Step 14
-A Minecraft day lasts 24,000 ticks for 20 minutes of play. By setting the game to midnight, you set the current time to the start of midnight. Time set blocks are an easy way to make time move to a common part of the day.  Midnight is equal to 18,000 ticks (12:00 AM).
+## 第十四步  
+Minecraft 的一天持續 24,000 刻，相當於 20 分鐘的遊戲時間。通過將遊戲時間設置為午夜，你將當前時間設置為午夜開始的時間。時間設置方塊是一種簡單的方法，可以將時間移動到一天的常見部分。午夜等於 18,000 刻（12:00 AM）。
 
-## Step 15
-Drag a ``||Gameplay:time set||`` block into the ``||Functions:atmosphere||`` function.
+## 第十五步  
+將一個 ``||Gameplay:遊戲 時間設置||`` 方塊拖曳到 ``||Functions:atmosphere||`` 函數中。
 
-Adjust this to read ``||Gameplay:time set 'midnight'||``. Try it out in Minecraft!
+調整此方塊，使其顯示為 ``||Gameplay:遊戲 時間設置為 '午夜'||``。在 Minecraft 中試試看吧！
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function atmosphere() {
     gameplay.timeSet(gameplay.time(MIDNIGHT))
 }
@@ -154,21 +154,21 @@ player.onChat("play", function () {
 })
 ```
 
-## Step 16
-Time not changing? Make sure the **Always Day** option isn't turned on. 
+## 第十六步  
+時間沒有改變？確保 **永遠白天** 選項未開啟。
 
-Spawn additional Pigmen. After defeating a pigman, you want another pigman to spawn. You can create a new pigman with the event ``||Mobs:on Mob killed||``. You will use the function ``||Agent:call Pigman||``.
+生成更多殭屍豬人。擊敗一個殭屍豬人後，你希望生成另一個殭屍豬人。你可以使用 ``||Mobs:生物 在被擊殺時||`` 事件來創建一個新的殭屍豬人。你將使用函數 ``||Functions:呼叫函數 zombiepig||``。
 
-## Step 17
-Grab an ``||Mobs:on animal killed||`` event and place it on the Workspace.
+## 第十七步  
+抓取一個 ``||Mobs:生物 在被擊殺時||`` 事件並將其放在工作區。
 
-Adjust this block so that it is ``||Mobs:on monster zombie pigman killed||``.
+調整此方塊，使其顯示為 ``||Mobs:生物 在被擊殺的怪物為 殭屍豬人 時||``。
 
-## Step 18
-Add a ``||Functions:call function zombiepig||`` to this new event.
+## 第十八步  
+在此新事件中添加一個 ``||Functions:呼叫函數 zombiepig||``。
 
 ### ~ tutorialhint
-``` blocks
+```blocks
 function setup() {
     gameplay.setDifficulty(EASY)
     gameplay.setGameMode(
@@ -197,4 +197,4 @@ player.onChat("play", function () {
     zombiepig()
 })
 ```
-
+ 

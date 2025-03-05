@@ -15,7 +15,7 @@ Drag an ``||Player:on chat command||`` block onto the Workspace.
 Rename this ``||Player:on chat command||`` to **"burger"**.
 
 ## Step 4
-Drag five blocks ``||Functions:call function bottomBun||``, ``||Functions:call function meat||``, ``||Functions:call function lettuce||`` , ``||Functions:call function tomato||`` and ``||Functions:call function topBun||`` into ``||Player:on chat command "play"||``.
+Drag five blocks ``||Functions:call function bottomBun||``, ``||Functions:call function meat||``, ``||Functions:call function lettuce||`` , ``||Functions:call function tomato||`` and ``||Functions:call function topBun||`` into ``||Player:on chat command "burger"||``.
 
 **NOTE**: The order of these function calls is important.
 
@@ -51,7 +51,7 @@ Create the bottom bun. The first thing you'll do is create the bottom bun.
 Drag a ``||Blocks:fill||`` into ``||Functions:bottomBun||``. Change the block by clicking **Oak Wood Planks** from the drop-down menu.
 
 ## Step 6
-Enter the coordinates for the top bun with a starting position of **(~3, ~0, ~3)** and ending position of **(~8, ~0, ~8)**.
+Enter the coordinates for the bottom bun with a starting position of **(~3, ~0, ~3)** and ending position of **(~8, ~0, ~8)**.
 
 ### ~ tutorialhint
 ```blocks

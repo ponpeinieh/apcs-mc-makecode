@@ -69,7 +69,7 @@ Adjust settings. You want the game to work automatically. After you enter play, 
 ## Step 8
 Drag a ``||Gameplay:set difficulty to||`` into ``||Function:setup||``.
 
-Adjust this new block so it reads ``||Gameplay:set difficulty to 'peaceful'||``.
+Adjust this new block so it reads ``||Gameplay:set difficulty to 'easy'||``.
 
 ## Step 9
 Next, you want to change the game mode for your player. Setting the gamemode to Survival mode ensures that the Pigman will come after you! As soon as you hit the Pigman, it will start to attack you back! Drag a ``||Gameplay:change game mode to||`` into ``||Function:setup||``.
@@ -157,7 +157,7 @@ player.onChat("play", function () {
 ## Step 16
 Time not changing? Make sure the **Always Day** option isn't turned on. 
 
-Spawn additional Pigmen. After defeating a pigman, you want another pigman to spawn. You can create a new pigman with the event ``||Mobs:on Mob killed||``. You will use the function ``||Agent:call Pigman||``.
+Spawn additional Pigmen. After defeating a pigman, you want another pigman to spawn. You can create a new pigman with the event ``||Mobs:on Mob killed||``. You will use the function ``||Functions:call function zombiepig||``.
 
 ## Step 17
 Grab an ``||Mobs:on animal killed||`` event and place it on the Workspace.

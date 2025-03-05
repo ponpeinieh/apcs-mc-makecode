@@ -476,10 +476,10 @@ Create the top bun. The final function is the **top bun**. To give the burger a 
 Change the material for each fill to **Oak Wood Planks**.
 
 ## Step 11
-Change the top fill coordinates first. The position for the coordinates should have a starting position of **(~3, ~4, ~3)** and a finishing position of **(~8, ~4, ~8)**.
+Change the bottom fill coordinates first. The position for the coordinates should have a starting position of **(~3, ~4, ~3)** and a finishing position of **(~8, ~4, ~8)**.
 
 ## Step 12
-The bottom fill should have a starting position of **(~4, ~5, ~4)** and a finishing position of **(~7, ~5, ~7)**.
+The top fill should have a starting position of **(~4, ~5, ~4)** and a finishing position of **(~7, ~5, ~7)**.
 
 ### ~ tutorialhint
 ``` blocks
